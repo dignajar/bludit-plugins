@@ -1,0 +1,14 @@
+{
+	"plugin-data":
+	{
+		"name": "Simditor",
+		"description": "Simple et rapide éditeur de texte enrichi.",
+		"author": "Fred",
+		"email": "",
+		"website": "",
+		"version":"2.2.3",
+		"releaseDate": "2015-08-08"
+	},
+
+    "activate-markdown": "Activer la syntaxe markdown"
+}

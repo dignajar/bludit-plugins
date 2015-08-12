@@ -1,0 +1,28 @@
+{
+	"plugin-data":
+	{
+		"name": "Backup",
+		"description": "Backup permet de sauvegarder vos données, de les télécharger, restaurer et de les supprimer de votre serveur.",
+		"author": "Fred",
+		"email": "",
+		"website": "",
+		"version": "0.4",
+		"releaseDate": "2015-08-08"
+	},
+	"download": "Télécharger",
+	"delete": "Supprimer",
+	"restore": "Restaurer",
+	"archives": "Archives",
+	"file-size": "Taille du fichier",
+	"date": "Date",
+	"actions": "Actions",
+	"make-a-backup": "Réaliser une sauvegarde",
+	"delete-this-backup?": "Supprimer cette archive ?",
+	"do-you-want-to-restore-this-backup?": "Voulez-vous restaurer cette sauvegarde ?",
+	"there-was-a-problem-writing-the-zip-archive.": "Une erreur est survenue lors de la création de l’archive.",
+	"successfully-created-the-zip-archive!": "L’archive au format ZIP a bien été créée !",
+	"successfully-deleted-file!": "Fichier supprimé avec succès !",
+	"an-error-occurred-while-deleting-the-file.": "Une erreur est survenue lors de la suppression du fichier.",
+	"archive-is-restored!": "Restauration de l’archive complète !",
+	"there-was-a-problem-to-restore-the-zip-archive": "Une erreur est survenue pendant la restauration de l’archive."
+}

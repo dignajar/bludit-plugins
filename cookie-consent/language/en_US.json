@@ -1,0 +1,25 @@
+{
+	"plugin-data":
+	{
+		"name": "Cookie Consent",
+		"description": "The most popular solution to the EU Cookie Law. Free and open source.",
+		"author": "Fred",
+		"email": "",
+		"website": "",
+		"version": "0.1",
+		"releaseDate": "2015-08-10"
+	},
+	"enable-plugin-(config-save)": "Enable plugin (Config save)",
+	"choose-theme": "Choose theme",
+	"dark-bottom": "Dark Bottom",
+	"dark-floating": "Dark Floating",
+	"dark-top": "Dark Top",
+	"light-bottom": "Light Bottom",
+	"light-floating": "Light Floating",
+	"light-top": "Light Top",
+	"headline-text": "Headline text",
+	"accept-button-text": "Accept button text",
+	"read-more-button-text": "Read more button text",
+	"your-cookie-policy": "Your cookie policy",
+	"if-you-already-have-a-cookie-policy,-link-to-it-here.": "If you already have a cookie policy, link to it here."	
+}

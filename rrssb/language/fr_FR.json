@@ -1,0 +1,32 @@
+{
+	"plugin-data":
+	{
+		"name": "Rrssb (boutons de partage)",
+		"description": "Boutons de partage des réseaux sociaux adaptatifs.",
+		"author": "Fred",
+		"email": "",
+		"website": "",
+		"version":"1.8.1d",
+		"releaseDate": "2015-08-08"
+	},
+
+	"to-customize-the-buttons-display-on-your-theme,-turn-off-the-display-in-the-sidebar-and-copy/paste-this-code-anywhere-you-want-in-your-theme."  : "Pour personnaliser l’affichage des boutons sur votre thème, désactiver l’affichage dans la colonne et copier/coller ce code où que vous le souhaiter dans votre thème.",
+	"select-buttons-to-display" : "Sélectionnez les boutons à afficher",
+	"your-github-repository-(leave-blank-to-disable)" : "Votre dépôt Github (laisser vide pour désactiver)",
+	"yes" : "Oui",
+	"no" : "Non",
+	"show-in-sidebar": "Afficher dans la colonne",
+	"check-all-/-uncheck-all" : "Cocher / Décocher tout",
+	"email" : "Email",
+	"facebook" : "Facebook",
+	"tumblr" : "Tumblr",
+	"linkedin" : "Linkedin",
+	"twitter" : "Twitter",
+	"reddit" : "Reddit",
+	"google+" : "Google+",
+	"youtube" : "Youtube",
+	"pinterest" : "Pinterest",
+	"github" : "Github",
+	"github-url" : "Url de votre dêpot Github",
+	"share-this-page:" : "Partager cette page:"
+}

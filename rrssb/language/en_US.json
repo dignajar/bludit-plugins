@@ -1,0 +1,32 @@
+{
+	"plugin-data":
+	{
+		"name": "Rrssb (Sharing Buttons)",
+		"description": "Ridiculously Responsive Social Sharing Buttons.",
+		"author": "Fred",
+		"email": "",
+		"website": "",
+		"version":"1.8.1d",
+		"releaseDate": "2015-08-08"
+	},
+
+	"to-customize-the-buttons-display-on-your-theme,-turn-off-the-display-in-the-sidebar-and-copy/paste-this-code-anywhere-you-want-in-your-theme."  : "To customize the buttons display on your theme, turn off the display in the sidebar and copy/paste this code anywhere you want in your theme.",
+	"select-buttons-to-display" : "Select buttons to display",
+	"your-github-repository-(leave-blank-to-disable)" : "Your Github repository (leave blank to disable)",
+	"yes" : "Yes",
+	"no" : "No",
+	"show-in-sidebar": "Show in sidebar",
+	"check-all-/-uncheck-all" : "Check all / Uncheck all",
+	"email" : "Email",
+	"facebook" : "Facebook",
+	"tumblr" : "Tumblr",
+	"linkedin" : "Linkedin",
+	"twitter" : "Twitter",
+	"reddit" : "Reddit",
+	"google+" : "Google+",
+	"youtube" : "Youtube",
+	"pinterest" : "Pinterest",
+	"github" : "Github",
+	"github-url" : "Url of your repository Github",
+	"share-this-page:" : "Share this page:"
+}

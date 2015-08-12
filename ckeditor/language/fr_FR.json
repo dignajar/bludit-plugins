@@ -1,0 +1,21 @@
+{
+	"plugin-data":
+	{
+		"name": "Ckeditor + KCFinder",
+		"description": "Add Ckeditor 4.5.1 + KCFinder 3.12 to Bludit",
+		"author": "Fred",
+		"email": "",
+		"website": "",
+		"version":"1.0.5",
+		"releaseDate": "2015-08-08"
+	},
+
+    "activate-markdown-plugin": "Activater le plugin Markdown",
+    "activate-toolbar-plugin": "Activater le plugin Toolbar",
+    "select-toolbar": "Sélectionnez le type de barre d’outils",
+    "basic": "Basique",
+    "standard": "Standard",
+    "advanced": "Avancée",
+    "advanced-is-the-full-package-of-ckeditor": "« Avancée », utilise toutes les options de CKEditor.",
+    "select-skin": "Sélectionner un skin"    
+}

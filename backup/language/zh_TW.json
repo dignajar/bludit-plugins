@@ -1,0 +1,28 @@
+{
+	"plugin-data":
+	{
+		"name": "備份",
+		"description": "讓您備份您的資料，並可以從您的伺服器下載、還原或是刪除這些備份檔案",
+		"author": "Fred",
+		"email": "",
+		"website": "",
+		"version": "0.4",
+		"releaseDate": "2015-08-08"
+	},
+	"download": "下載",
+	"delete": "刪除",
+	"restore": "還原",
+	"archives": "壓縮檔",
+	"file-size": "檔案大小",
+	"date": "日期",
+	"actions": "動作",
+	"make-a-backup": "製作一個備份",
+	"delete-this-backup?": "要刪除這個備份?",
+	"do-you-want-to-restore-this-backup?": "您想要使用這個備份進行還原?",
+	"there-was-a-problem-writing-the-zip-archive.": "製作ZIP壓縮檔發生一些錯誤",
+	"successfully-created-the-zip-archive!": "已經成功製作ZIP壓縮檔!",
+	"successfully-deleted-file!": "已經成功刪除檔案!",
+	"an-error-occurred-while-deleting-the-file.": "刪除檔案時發生錯誤",
+	"archive-is-restored!": "已使用此壓縮檔還原成功!",
+	"there-was-a-problem-to-restore-the-zip-archive": "使用此ZIP壓縮檔還原時發生了一些錯誤"
+}

@@ -1,0 +1,26 @@
+{
+	"plugin-data":
+	{
+		"name": "Ruban",
+		"description": "Ajoute un ruban dans le coin de votre site, ou une barre d’information entièrement personnalisable.",
+		"author": "Fred",
+		"email": "",
+		"website": "",
+		"version":"1.0.2",
+		"releaseDate": "2015-08-08"
+	},
+
+	"left" : "Gauche",
+	"right" : "Droite",
+	"display-type" : "Type d'affichage",
+	"stickybar" : "Barre Fixe",
+	"ribbon" : "Ruban",
+	"if-stickybar-is-selected-you-can-insert-more-text." : "Si barre fixe est sélectionné, vous pouvez insérer plus de textes.",
+	"link" : "Lien",
+	"horizontal-orientation" : "Orientation Horizontale",
+	"vertical-orientation" : "Orientation Verticale",
+	"top" : "Haut",
+	"bottom" : "Bas",
+	"background-color" : "Couleur de fond",
+	"link-color" : "Couleur du lien"
+}

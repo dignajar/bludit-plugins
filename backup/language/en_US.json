@@ -1,0 +1,28 @@
+{
+	"plugin-data":
+	{
+		"name": "Backup",
+		"description": "Backup lets you back up your data, download, restore and delete them from your server.",
+		"author": "Fred",
+		"email": "",
+		"website": "",
+		"version": "0.4",
+		"releaseDate": "2015-08-08"
+	},
+	"download": "Download",
+	"delete": "Delete",
+	"restore": "Restore",
+	"archives": "Archives",
+	"file-size": "File Size",
+	"date": "Date",
+	"actions": "Actions",
+	"make-a-backup": "Make a backup",
+	"delete-this-backup?": "Delete this backup?",
+	"do-you-want-to-restore-this-backup?": "Do you want to restore this backup?",
+	"there-was-a-problem-writing-the-zip-archive.": "There was a problem writing the ZIP archive.",
+	"successfully-created-the-zip-archive!": "Successfully created the ZIP Archive!",
+	"successfully-deleted-file!": "Successfully deleted file!",
+	"an-error-occurred-while-deleting-the-file.": "An error occurred while deleting the file.",
+	"archive-is-restored!": "Archive is restored!",
+	"there-was-a-problem-to-restore-the-zip-archive": "There was a problem to restore the ZIP archive"
+}

@@ -1,0 +1,26 @@
+{
+	"plugin-data":
+	{
+		"name": "Ribbon",
+		"description": "Add a ribbon in the corner of your site or information fully customizable bar.",
+		"author": "Fred",
+		"email": "",
+		"website": "",
+		"version":"1.0.2",
+		"releaseDate": "2015-08-08"
+	},
+
+	"left" : "Left",
+	"right" : "Right",
+	"display-type" : "Display type",
+	"ribbon" : "Ribbon",
+	"stickybar" : "Stickybar",
+	"if-stickybar-is-selected-you-can-insert-more-text." : "If stickybar is selected you can insert more text.",
+	"link" : "Link",
+	"horizontal-orientation" : "Horizontal orientation",
+	"vertical-orientation" : "Vertical orientation",
+	"top" : "Top",
+	"bottom" : "Bottom",
+	"background-color" : "Background color",
+	"link-color" : "Link color"
+}
