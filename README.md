@@ -1,6 +1,8 @@
 # Bludit Plugins
 Push your Bludit plugins here!
 
+*Note, the zip files inside /dist/ are automatically generated, do not push inside this folder, thanks.*
+
 ## How to install a plugin
 - Download the plugin.
 - Unzip if necessary.
