@@ -1,0 +1,19 @@
+{
+	"plugin-data":
+	{
+		"name": "Fond de site animé",
+		"description": "Ajouté de superbes effets animés en arrière-plan de votre site.",
+		"author": "Fred",
+		"email": "",
+		"website": "",
+		"version":"0.1",
+		"releaseDate": "2015-09-07"
+	},
+	
+	"choose-animation": "Choisissez une animation",	
+	"triangles,-squares-and-crosses": "Des triangles, des carrés et des croix multicolores",	
+	"floating-dots": "Points flottants",
+	"multicolored-hexagons": "Hexagones multicolores (fond sombre)",
+	"discrete-bubbles": "Des bulles discrètes",
+	"snowflake": "Flocons de neige"
+}
