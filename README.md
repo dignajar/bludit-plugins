@@ -16,6 +16,13 @@ Add a ribbon in the corner of your site or information fully customizable bar.
 - Website: 
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/ribbon.zip?raw=true)
 
+### Animate Background
+Add a great background effect in your theme.
+- Author: Fred
+- Version: 0.1
+- Website: 
+- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/animate-background.zip?raw=true)
+
 ### Tinymce
 Tinymce is an easy HTML editor, with many plugins and very customizable.
 - Author: Bludit
