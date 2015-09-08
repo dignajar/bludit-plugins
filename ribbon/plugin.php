@@ -29,16 +29,14 @@ class pluginRibbon extends Plugin {
 
 	public function adminHead()
 	{
-		global $Site;
 		global $layout;
-		$PathPlugins = 'plugins/ribbon/';
-		$config_url = $Site->url().$PathPlugins;
+		$pluginPath = $this->htmlPath();
 		
 		$html  = '';
 
 		if(in_array($layout['controller'], $this->loadWhenController))
 		{
-			$html .= '<script src="' .$config_url. 'libs/jscolor/jscolor.js"></script>'.PHP_EOL;		
+			$html .= '<script src="' .$pluginPath. 'libs/jscolor/jscolor.js"></script>'.PHP_EOL;		
 		}
 
 		return $html;

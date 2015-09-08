@@ -1,13 +1,13 @@
 {
 	"plugin-data":
 	{
-		"name": "Cookie Consent",
-		"description": "The most popular solution to the EU Cookie Law. Free and open source.",
+		"name": "Cookie Consent + Detect AdBlock",
+		"description": "The most popular solution to the EU Cookie Law, as well as a detector with AdBlock script customization..",
 		"author": "Fred",
-		"email": "",
+		"email": "frederic.kaplon@me.com",
 		"website": "",
-		"version": "0.1",
-		"releaseDate": "2015-08-10"
+		"version": "1.0",
+		"releaseDate": "2015-09-08"
 	},
 	"enable-plugin-(config-save)": "Enable plugin (Config save)",
 	"choose-theme": "Choose theme",
@@ -21,5 +21,9 @@
 	"accept-button-text": "Accept button text",
 	"read-more-button-text": "Read more button text",
 	"your-cookie-policy": "Your cookie policy",
-	"if-you-already-have-a-cookie-policy,-link-to-it-here.": "If you already have a cookie policy, link to it here."	
+	"if-you-already-have-a-cookie-policy,-link-to-it-here.": "If you already have a cookie policy, link to it here.",
+	"adblock_config": "AdBlock config",
+	"ad-blocker-detection-plugin": "Enable detection AdBlock",
+	"adblock_message": "Advert message",
+	"adblock_background_color": "Notice background color"	
 }
