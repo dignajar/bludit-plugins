@@ -81,6 +81,13 @@ A flat designed jQuery WYSIWYG Rich Text Editor based on HTML5
 - Website: 
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/froala_editor.zip?raw=true)
 
+### SimpleMDE
+A simple, beautiful, and embeddable JavaScript markdown editor.
+- Author: Bludit
+- Version: 0.1
+- Website: https://github.com/NextStepWebs/simplemde-markdown-editor
+- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/simplemde.zip?raw=true)
+
 ### Trumbowyg
 Trumbowyg is a very small jQuery plugin for creating a powerful WYSIWYG editor.
 - Author: Fred
