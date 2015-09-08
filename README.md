@@ -60,10 +60,10 @@ Minifies HTML, JS, CSS and removes comments (except IE tags and comments within 
 - Website: 
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/minify.zip?raw=true)
 
-### Cookie Consent
-The most popular solution to the EU Cookie Law. Free and open source.
+### Cookie Consent + Detect AdBlock
+The most popular solution to the EU Cookie Law, as well as a detector with AdBlock script customization..
 - Author: Fred
-- Version: 0.1
+- Version: 1.0
 - Website: 
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/cookie-consent.zip?raw=true)
 
