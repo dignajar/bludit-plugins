@@ -53,13 +53,6 @@ The most popular solution to the EU Cookie Law, as well as a detector with AdBlo
 - Website: 
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/cookie-consent.zip?raw=true)
 
-### Froala Editor
-A flat designed jQuery WYSIWYG Rich Text Editor based on HTML5
-- Author: Fred
-- Version: 1.2.7c
-- Website: 
-- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/froala_editor.zip?raw=true)
-
 ### Minify
 Minifies HTML, JS, CSS and removes comments (except IE tags and comments within script tags). To disable compression of code portions, use <em>&lt;!--html-compression no compression--&gt;</em> tag.
 - Author: Fred
