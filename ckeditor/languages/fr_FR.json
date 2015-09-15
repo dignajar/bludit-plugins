@@ -1,13 +1,13 @@
 {
 	"plugin-data":
 	{
-		"name": "Ckeditor + KCFinder",
-		"description": "Add Ckeditor 4.5.1 + KCFinder 3.12 to Bludit",
+		"name": "Ckeditor + gestionnaire de fichier",
+		"description": "Ajoute Ckeditor 4.5.1 + RESPONSIVE filemanager v.9.9.6 à Bludit",
 		"author": "Fred",
 		"email": "",
 		"website": "",
-		"version":"1.0.5",
-		"releaseDate": "2015-08-08"
+		"version":"1.0.6",
+		"releaseDate": "2015-09-15"
 	},
 
     "activate-markdown-plugin": "Activater le plugin Markdown",

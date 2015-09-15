@@ -1,11 +1,11 @@
 <?php
 /*
 	@Package: Bludit
-	@Plugin: CKeditor + KCFinder
-	@Version: 1.0.4
+	@Plugin: CKeditor + RESPONSIVE filemanager
+	@Version: 1.0.6
 	@Author: Fred K.
 	@Realised: 14 Juilly 2015	
-	@Updated: 30 Juilly 2015
+	@Updated: 15 September 2015
 */	
 class pluginCKeditor extends Plugin {
 	
@@ -30,16 +30,16 @@ class pluginCKeditor extends Plugin {
 	{
 		global $Site;
 		global $layout;
-		$PathPlugins = 'plugins/ckeditor/libs/ckeditor/';
-		$config_url = $Site->url().$PathPlugins;
-
+		$pluginPath = $this->htmlPath(). 'libs/ckeditor/';
+		
 		$html = '';
 
 		if(in_array($layout['controller'], $this->loadWhenController))
 		{
 			$language = $Site->shortLanguage();
-			$html .= '<script src="'.$config_url.'ckeditor.js"></script>'.PHP_EOL;
-			$html .= '<script src="'.$config_url.'lang/'.$language.'.js"></script>'.PHP_EOL;		
+			$_SESSION["editor_lang"] = $Site->language();
+			$html .= '<script src="'.$pluginPath.'ckeditor.js"></script>'.PHP_EOL;
+			$html .= '<script src="'.$pluginPath.'lang/'.$language.'.js"></script>'.PHP_EOL;		 
 		}
 
 		return $html;
@@ -49,8 +49,7 @@ class pluginCKeditor extends Plugin {
 	{
 		global $Site;
 		global $layout;
-		$PathPlugins = 'plugins/ckeditor/libs/kcfinder/';
-		$config_url = $Site->url().$PathPlugins;
+		$pluginPath = $this->htmlPath(). 'libs/filemanager/';
 		$html = '';
 
 		if(in_array($layout['controller'], $this->loadWhenController))
@@ -64,12 +63,9 @@ class pluginCKeditor extends Plugin {
 			language: \''.$language.'\',
 			fullPage: false,
 			allowedContent: false,
-			filebrowserBrowseUrl : \''.$config_url.'browse.php?type=files\',
-			filebrowserImageBrowseUrl : \''.$config_url.'browse.php?type=images\',
-			filebrowserFlashBrowseUrl : \''.$config_url.'browse.php?type=flash\',
-			filebrowserUploadUrl : \''.$config_url.'upload.php?type=files\',
-			filebrowserImageUploadUrl : \''.$config_url.'upload.php?type=images\',
-			filebrowserFlashUploadUrl : \''.$config_url.'upload.php?type=flash\'
+			filebrowserBrowseUrl : \''.$pluginPath.'dialog.php?type=2&editor=ckeditor&fldr=\',
+			filebrowserImageBrowseUrl : \''.$pluginPath.'dialog.php?type=1&editor=ckeditor&fldr=\',
+			filebrowserUploadUrl : \''.$pluginPath.'dialog.php?type=2&editor=ckeditor&fldr=\'
 		});
 			CKEDITOR.config.entities = false; // pour faciliter la lecture du code source, les accents ne sont pas transformés en entités HTML (inutiles avec le codage utf-8 des pages)
 			    
@@ -93,7 +89,6 @@ class pluginCKeditor extends Plugin {
 	});
 		</script>'.PHP_EOL;
 		}
-
 		return $html;
 	}
 
