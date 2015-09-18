@@ -13,7 +13,7 @@ class pluginsimpleMDE extends Plugin {
 	{
 		$this->dbFields = array(
 			'tabSize'=>'2',
-			'toolbar'=>'"bold", "italic", "heading", "|", "quote", "unordered-list", "|", "link", "image", "code", "horizontal-rule", "break", "|", "preview", "side-by-side", "fullscreen", "guide"'
+			'toolbar'=>'"bold", "italic", "heading", "|", "quote", "unordered-list", "|", "link", "image", "code", "horizontal-rule", "|", "preview", "side-by-side", "fullscreen", "guide"'
 		);
 	}
 
