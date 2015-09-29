@@ -60,6 +60,13 @@ Disqus is a blog comment hosting service for web sites. It's necesary to registe
 - Website: http://www.bludit.com
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/disqus.zip?raw=true)
 
+### Google Tools
+This plugin generate the meta tag to validate your site with Google Webmasters Tools and the JavaScript code to track your site with Google Analytics.
+- Author: Bludit
+- Version: 1.0
+- Website: 
+- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/googletools.zip?raw=true)
+
 ### Maintenance mode
 Set your site on maintenance mode, you can access to admin area.
 - Author: Bludit
@@ -76,11 +83,6 @@ Minifies HTML, JS, CSS and removes comments (except IE tags and comments within 
 
 ### Open Graph
 The Open Graph protocol enables any web page to become a rich object in a social graph.
-- Author: Bludit
-- Version: 0.1
-- Website: http://www.bludit.com
-- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/opengraph.zip?raw=true)
-
 ### Page list
 Shows the list of pages in order.
 - Author: Bludit
