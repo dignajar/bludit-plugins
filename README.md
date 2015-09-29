@@ -83,6 +83,11 @@ Minifies HTML, JS, CSS and removes comments (except IE tags and comments within 
 
 ### Open Graph
 The Open Graph protocol enables any web page to become a rich object in a social graph.
+- Author: Bludit
+- Version: 1.0
+- Website: http://www.bludit.com
+- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/opengraph.zip?raw=true)
+
 ### Page list
 Shows the list of pages in order.
 - Author: Bludit
