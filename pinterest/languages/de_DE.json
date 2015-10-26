@@ -1,0 +1,16 @@
+{
+	"plugin-data":
+	{
+		"name": "Pinterest-Verfifikation",
+		"description": "Dieses Plugin erzeugt den Meta-Tag, um deine Website mit den Google Webmasters Tools zu verbinden, und den Code für das JavaScript, der benötigt wird, um Google Analytics verwenden zu können.",
+		"author": "Edi Goetschel",
+		"email": "",
+		"website": "https://github.com/dignajar/bludit-plugins",
+		"version": "0.1",
+		"releaseDate": "2015-10-26"
+	},
+	"google-webmasters-tools": "Google Webmasters Tools",
+	"pinterest-verification-code": "Pinterest Verification Code",
+	"complete-this-field-with-the-google-site-verification": "Gib hier den Google Analytics-Tracking-Code ein, um zu bestätigen, dass die Website Dir gehört.",
+	"complete-this-field-with-the-tracking-id": "Gib hier die Tracking ID ein."
+}
