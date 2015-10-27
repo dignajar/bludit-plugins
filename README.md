@@ -95,6 +95,13 @@ Shows the list of pages in order.
 - Website: https://github.com/dignajar/bludit-plugins
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/pages.zip?raw=true)
 
+### Pinterest Verfication
+Plugin to add the verification meta tag for Pinterest. See http://business.pinterest.com/verify/.
+- Author: Edi Goetschel
+- Version: 0.1
+- Website: https://github.com/dignajar/bludit-plugins
+- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/pinterest.zip?raw=true)
+
 ### Ribbon
 Add a ribbon in the corner of your site or information fully customizable bar.
 - Author: Fred
