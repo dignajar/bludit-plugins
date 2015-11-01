@@ -12,8 +12,8 @@ class pluginTinymce extends Plugin {
 	public function init()
 	{
 		$this->dbFields = array(
-			'plugins'=>'autoresize, fullscreen, pagebreak, link, textcolor, code',
-			'toolbar'=>'bold italic underline strikethrough | alignleft aligncenter alignright | bullist numlist | styleselect | link forecolor backcolor removeformat | pagebreak code fullscreen'
+			'plugins'=>'autoresize, fullscreen, pagebreak, link, textcolor, code, image',
+			'toolbar'=>'bold italic underline strikethrough | alignleft aligncenter alignright | bullist numlist | styleselect | link forecolor backcolor removeformat image | pagebreak code fullscreen'
 		);
 	}
 
@@ -50,6 +50,11 @@ class pluginTinymce extends Plugin {
 
 			$html  = '<script src="'.$pluginPath.'tinymce/tinymce.min.js"></script>';
 			$html .= '<script src="'.$pluginPath.'tinymce/jquery.tinymce.min.js"></script>';
+
+			// Hack for Bludit
+			$html .= '<style>
+					#jscontent_ifr { height: 400px !important }
+				</style>';
 		}
 
 		return $html;
@@ -76,14 +81,14 @@ class pluginTinymce extends Plugin {
 				content_css: "'.$pluginPath.'css/editor.css",
 				theme: "modern",
 				height:"400px",
-				width:"80%",
+				width:"100%",
 				statusbar: false,
 				menubar:false,
 				browser_spellcheck: true,
 				autoresize_bottom_margin: "50",
 				pagebreak_separator: "'.PAGE_BREAK.'",
 				paste_as_text: true,
-    			document_base_url: "'.HTML_PATH_UPLOADS.'"
+    				document_base_url: "'.HTML_PATH_UPLOADS.'"
 			})';
 			$html .= '}); </script>';
 		}

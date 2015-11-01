@@ -1,12 +1,12 @@
 {
 	"plugin-data":
 	{
-		"name": "Tinymce",
+		"name": "TinyMCE",
 		"description": "Tinymce is an easy HTML editor, with many plugins and very customizable.",
-		"author": "Bludit",
+		"author": "TinyMCE",
 		"email": "",
-		"website": "http://www.bludit.com",
-		"version": "0.1",
+		"website": "http://www.tinymce.com",
+		"version": "4.2.7",
 		"releaseDate": "2015-08-02"
 	}
 }
