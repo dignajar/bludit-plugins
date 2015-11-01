@@ -126,7 +126,7 @@ Simple and fast rich text editor.
 ### SimpleMDE
 A simple, beautiful, and embeddable JavaScript markdown editor by @WesCossick. Adapted by Diego Najar for Bludit.
 - Author: NextStepWebs
-- Version: 1.7.4
+- Version: 1.8.0
 - Website: https://github.com/NextStepWebs/simplemde-markdown-editor
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/simplemde.zip?raw=true)
 
@@ -137,11 +137,11 @@ Shows all tags.
 - Website: https://github.com/dignajar/bludit-plugins
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/tags.zip?raw=true)
 
-### Tinymce
+### TinyMCE
 Tinymce is an easy HTML editor, with many plugins and very customizable.
-- Author: Bludit
-- Version: 0.1
-- Website: http://www.bludit.com
+- Author: TinyMCE
+- Version: 4.2.7
+- Website: http://www.tinymce.com
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/tinymce.zip?raw=true)
 
 ### Trumbowyg
