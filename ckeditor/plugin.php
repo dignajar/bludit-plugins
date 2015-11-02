@@ -2,10 +2,10 @@
 /*
 	@Package: Bludit
 	@Plugin: CKeditor + RESPONSIVE filemanager
-	@Version: 1.0.6
+	@Version: 1.0.6a
 	@Author: Fred K.
 	@Realised: 14 Juilly 2015	
-	@Updated: 15 September 2015
+	@Updated: 02 November 2015
 */	
 class pluginCKeditor extends Plugin {
 	
@@ -57,7 +57,7 @@ class pluginCKeditor extends Plugin {
 			$language = $Site->shortLanguage();
 			$html .= '		
 				<script>
-	$("textarea").each(function(){  
+	$(\'textarea[name="content"]\').each(function(){  
 		
 		CKEDITOR.replace( this , {
 			language: \''.$language.'\',
