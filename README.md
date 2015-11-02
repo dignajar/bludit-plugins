@@ -35,7 +35,7 @@ Backup lets you back up your data, download, restore and delete them from your s
 ### Ckeditor + filemanager
 Add Ckeditor 4.5.1 + RESPONSIVE filemanager v.9.9.6 to Bludit
 - Author: Fred
-- Version: 1.0.6
+- Version: 1.0.6a
 - Website: 
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/ckeditor.zip?raw=true)
 
