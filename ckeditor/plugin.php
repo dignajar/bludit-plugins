@@ -2,10 +2,10 @@
 /*
 	@Package: Bludit
 	@Plugin: CKeditor + RESPONSIVE filemanager
-	@Version: 1.0.6a
+	@Version: 1.0.7
 	@Author: Fred K.
 	@Realised: 14 Juilly 2015	
-	@Updated: 02 November 2015
+	@Updated: 05 November 2015
 */	
 class pluginCKeditor extends Plugin {
 	
@@ -118,7 +118,7 @@ class pluginCKeditor extends Plugin {
 		$html .= '<div>';
 		$html .= '<label for="skin">'.$Language->get('Select skin');
         $html .= '<select name="skin" class="width-50">';
-        $skinOptions = array('flat'=>'Flat','moono'=>'Moono','minimalist'=>'Minimalist','icy_orange'=>'Icy Orange','moono-dark'=>'Moono Dark','bludit'=>'Bludit');
+        $skinOptions = array('kama'=>'Kama','flat'=>'Flat','moono'=>'Moono','minimalist'=>'Minimalist','icy_orange'=>'Icy Orange','moono-dark'=>'Moono Dark','bludit'=>'Bludit');
         foreach($skinOptions as $text=>$value)
             $html .= '<option value="'.$text.'"'.( ($this->getDbField('skin')===$text)?' selected="selected"':'').'>'.$value.'</option>';
         $html .= '</select>';
