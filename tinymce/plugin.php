@@ -50,11 +50,6 @@ class pluginTinymce extends Plugin {
 
 			$html  = '<script src="'.$pluginPath.'tinymce/tinymce.min.js"></script>';
 			$html .= '<script src="'.$pluginPath.'tinymce/jquery.tinymce.min.js"></script>';
-
-			// Hack for Bludit
-			$html .= '<style>
-					#jscontent_ifr { height: 400px !important }
-				</style>';
 		}
 
 		return $html;
@@ -89,7 +84,8 @@ class pluginTinymce extends Plugin {
 				pagebreak_separator: "'.PAGE_BREAK.'",
 				paste_as_text: true,
     				document_base_url: "'.HTML_PATH_UPLOADS.'"
-			})';
+			});';
+
 			$html .= '}); </script>';
 		}
 
