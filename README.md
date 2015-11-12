@@ -42,7 +42,7 @@ Add Ckeditor 4.5.4 + RESPONSIVE filemanager v.9.9.6 to Bludit
 ### Contact
 Add a contact form to Bludit, with the ability to use a custom template.
 - Author: Fred
-- Version: 0.3
+- Version: 0.4
 - Website: 
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/contact.zip?raw=true)
 
