@@ -7,7 +7,7 @@
  *  @author Frédéric K.
  *  @copyright 2015 Frédéric K.
  *  @release 2015-08-10
- *  @update 2015-08-11
+ *  @update 2015-11-13
  *
  */
 class pluginContact extends Plugin {
@@ -39,8 +39,9 @@ class pluginContact extends Plugin {
 	public function form()
 	{
 		global $Language, $pagesParents;
-
+			
 		// Liste des pages ou afficher le formulaire
+		$_selectPageList = '';
 		foreach($pagesParents as $parentKey=>$pageList)
 		{
 			foreach($pageList as $Page)
@@ -56,21 +57,21 @@ class pluginContact extends Plugin {
 					$_selectPageList[$Page->key()] = $Language->g('Page').': '.$parentTitle.$Page->title();
 				}
 			}
-		}
+		}		
+		
 		$html  = '<div>';
-		$html .= '<label>'.$Language->get('Email').'</label>';
-		$html .= '<input name="email" id="jsemail" type="email" value="'.$this->getDbField('email').'" class="width-50" />';
+		$html .= '<label for="jsemail">'.$Language->get('Email').'</label>';
+		$html .= '<input name="email" id="jsemail" type="email" value="'.$this->getDbField('email').'">';
 		$html .= '</div>';
 		
-		$html .= '<div>';		
-		$html .= '<label for="page">' .$Language->get('Select a page to add the contact form');
+		$html .= '<div class="uk-form-select" data-uk-form-select>
+    <span></span>';		
+		$html .= '<label for="jspage">' .$Language->get('Select a page to add the contact form').'</label>';
 		$html .= '<select name="page" class="width-50">';
-            $htmlOptions = $_selectPageList;
-            foreach($htmlOptions as $value=>$text) {
+        foreach($_selectPageList as $value=>$text) {
                 $html .= '<option value="'.$value.'"'.( ($this->getDbField('page')===$value)?' selected="selected"':'').'>'.$text.'</option>';
-            }
-		$html .= '</select>';
-		$html .= '</label>';		
+        }
+		$html .= '</select>';	
 		$html .= '</div>';	
 	
 		return $html;
@@ -150,7 +151,7 @@ class pluginContact extends Plugin {
      * @return string 
      */
     public function cleanString($str) {
-        return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
+        return htmlspecialchars($str, ENT_QUOTES, CHARSET);
     }
 	/**
 	 * Valid mail address ?
@@ -188,7 +189,7 @@ class pluginContact extends Plugin {
 		   if(isset($_POST['submit']) && pluginContact::checkToken($token)){		            
 		            # Paramètres
 		            $site_title   = $Site->title();
-		            $site_charset = 'UTF-8';
+		            $site_charset = CHARSET;
 		            $site_email   = $this->getDbField('email');
 		            
 		            # Object du mail
@@ -240,13 +241,13 @@ class pluginContact extends Plugin {
 			 * VERSION 0.3
 			 * ON INCLUT LE TEMPLATE PAR DÉFAUT DU PLUG-IN OU LE TEMPLATE PERSONNALISÉ STOCKER DANS NOTRE THÈME 
 			 */
-		    $template = PATH_THEMES. $Site->theme(). '/php/contact.php';
+		    $template = PATH_THEME_PHP. 'contact.php';
 		    if(file_exists($template)) {
 			    include_once($template);
 		    } else {
 			    include(dirname(__FILE__).'/layout/contact.php');
 		    }	    			
-
+		    
 		}
 	}   
 

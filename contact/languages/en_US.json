@@ -4,10 +4,10 @@
 		"name": "Contact",
 		"description": "Add a contact form to Bludit, with the ability to use a custom template.",
 		"author": "Fred",
-		"email": "",
+		"email": "stradfred@gmail.com",
 		"website": "",
-		"version":"0.3",
-		"releaseDate": "2015-08-11"
+		"version":"0.4",
+		"releaseDate": "2015-11-13"
 	},
 	"contact": "Contact",
 	"select-a-page-to-add-the-contact-form": "Select a page to add the contact form",
