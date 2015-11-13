@@ -11,6 +11,13 @@ Push your Bludit plugins here!
 
 ## Plugin list
 
+### About
+Little description about your site or yourself.
+- Author: Bludit
+- Version: 0.6
+- Website: https://github.com/dignajar/bludit-plugins
+- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/about.zip?raw=true)
+
 ### Universal Analytics
 Universal Analytics is the next generation of Google Analytics. It is a series of technologies that helps businesses measure their digital world.
 - Author: Fred
@@ -56,21 +63,21 @@ The most popular solution to the EU Cookie Law, as well as a detector with AdBlo
 ### Disqus comment system
 Disqus is a blog comment hosting service for web sites. It's necesary to register on Disqus.com before using this plugin.
 - Author: Bludit
-- Version: 0.3
+- Version: 0.6
 - Website: https://github.com/dignajar/bludit-plugins
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/disqus.zip?raw=true)
 
 ### Google Tools
 This plugin generate the meta tag to validate your site with Google Webmasters Tools and the JavaScript code to track your site with Google Analytics.
 - Author: Bludit
-- Version: 0.3
+- Version: 0.6
 - Website: https://github.com/dignajar/bludit-plugins
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/googletools.zip?raw=true)
 
 ### Maintenance mode
 Set your site on maintenance mode, you can access to admin area.
 - Author: Bludit
-- Version: 0.3
+- Version: 0.6
 - Website: https://github.com/dignajar/bludit-plugins
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/maintancemode.zip?raw=true)
 
@@ -84,14 +91,14 @@ Minifies HTML, JS, CSS and removes comments (except IE tags and comments within 
 ### Open Graph
 The Open Graph protocol enables any web page to become a rich object in a social graph.
 - Author: Bludit
-- Version: 0.3
+- Version: 0.6
 - Website: https://github.com/dignajar/bludit-plugins
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/opengraph.zip?raw=true)
 
 ### Page list
 Shows the list of pages in order.
 - Author: Bludit
-- Version: 0.3
+- Version: 0.6
 - Website: https://github.com/dignajar/bludit-plugins
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/pages.zip?raw=true)
 
@@ -126,14 +133,14 @@ Simple and fast rich text editor.
 ### SimpleMDE
 A simple, beautiful, and embeddable JavaScript markdown editor by @WesCossick. Adapted by Diego Najar for Bludit.
 - Author: NextStepWebs
-- Version: 1.8.0
+- Version: 1.8.1
 - Website: https://github.com/NextStepWebs/simplemde-markdown-editor
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/simplemde.zip?raw=true)
 
 ### Tags list
 Shows all tags.
 - Author: Bludit
-- Version: 0.3
+- Version: 0.6
 - Website: https://github.com/dignajar/bludit-plugins
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/tags.zip?raw=true)
 
