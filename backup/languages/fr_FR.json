@@ -4,10 +4,10 @@
 		"name": "Backup",
 		"description": "Backup permet de sauvegarder vos données, de les télécharger, restaurer et de les supprimer de votre serveur.",
 		"author": "Fred",
-		"email": "",
+		"email": "stradfred@gmail.com",
 		"website": "",
-		"version": "0.4",
-		"releaseDate": "2015-08-08"
+		"version": "0.5",
+		"releaseDate": "2015-11-15"
 	},
 	"download": "Télécharger",
 	"delete": "Supprimer",

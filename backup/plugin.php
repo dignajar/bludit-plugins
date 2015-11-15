@@ -6,8 +6,8 @@
  * @copyright	(c) 2015
  * @license		http://opensource.org/licenses/MIT
  * @package		Bludit CMS
- * @version		0.4
- * @update		2015-08-08
+ * @version		0.5
+ * @update		2015-11-15
  */		
 define('BACKUP_FOLDER',		'backups' .DS);	
 define('PATH_BACKUP',		PATH_ROOT. BACKUP_FOLDER);
@@ -88,11 +88,11 @@ class pluginBackup extends Plugin {
 	{	
 		global $Site, $Language;	
 					
-		$html = '<table class="table-container table-hovered">
+		$html = '<table class="uk-table uk-table-striped">
 	<thead>
 		<tr>
 			<th>' .$Language->get("Archives"). '</th>
-			<th>' .$Language->get("File Size"). '</th>
+			<th>' .$Language->get("file-size"). '</th>
 			<th>' .$Language->get("Date"). '</th>
 			<th>' .$Language->get("Actions"). '</th>
 		</tr>
@@ -111,12 +111,12 @@ class pluginBackup extends Plugin {
 				if ($extension == 'zip') {
 					$html .= '<td><strong>' .$file. '</strong></td>';
 					$html .= '<td><span class="label label-outline label-black">' .$filesize. '</span></td>';
-					$html .= '<td><em>' .date('F d Y h:i A', $date). '</em></td>';
-					$html .= '<td><span class="btn-group">';					
-					$html .= '<a class="btn btn-smaller" href="' .$Site->url().BACKUP_FOLDER.$file. '"><i class="fa fa-cloud-download"></i> ' .$Language->get("Download"). '</a>';
-					$html .= '<a class="btn btn-smaller btn-green" href="' .pluginBackup::full_path(). '?restore=' .PATH_BACKUP.$file. '" onclick = "if(!confirm(\'' .$Language->get("Do you want to restore this backup?"). '\')) return false;"><i class="fa fa-undo"></i></i> ' .$Language->get("Restore"). '</a>';
-					$html .= '<a class="btn btn-smaller btn-red" href="' .pluginBackup::full_path(). '?delete=' .PATH_BACKUP.$file. '" onclick = "if(!confirm(\'' .$Language->get("Delete this backup?"). '\')) return false;"><i class="fa fa-trash-o"></i> ' .$Language->get("Delete"). '</a>';
-					$html .= '</span><td>';
+					$html .= '<td><em>' .date($Site->dateFormat(), $date). '</em></td>';
+					$html .= '<td><div class="uk-button-group">';					
+					$html .= '<a class="uk-button uk-button-small uk-button-success" href="' .$Site->url().BACKUP_FOLDER.$file. '"><i class="uk-icon-cloud-download"></i> ' .$Language->get("Download"). '</a>';
+					$html .= '<a class="uk-button uk-button-small uk-button-primary" href="' .pluginBackup::full_path(). '?restore=' .PATH_BACKUP.$file. '" onclick = "if(!confirm(\'' .$Language->get("Do you want to restore this backup?"). '\')) return false;"><i class="uk-icon-undo"></i></i> ' .$Language->get("restore"). '</a>';
+					$html .= '<a class="uk-button uk-button-small uk-button-danger" href="' .pluginBackup::full_path(). '?delete=' .PATH_BACKUP.$file. '" onclick = "if(!confirm(\'' .$Language->get("Delete this backup?"). '\')) return false;"><i class="uk-icon-trash-o"></i> ' .$Language->get("Delete"). '</a>';
+					$html .= '</div><td>';
 				}
 			$html .= '</tr>';			
 		}
@@ -229,9 +229,9 @@ class pluginBackup extends Plugin {
 		$html  = '';
 		if (file_exists(PATH_BACKUP)) $html .= pluginBackup::list_zipfiles(PATH_BACKUP);		
 		$html .= '<div class="unit-100">';
-		$html .= '<button class="btn btn-blue" type="submit" name="backup"><i class="fa fa-life-ring"></i> ' .$Language->get("Make a backup"). '</button>';
+		$html .= '<button class="uk-button uk-button-primary" type="submit" name="backup"><i class="uk-icon-life-ring"></i> ' .$Language->get("Make a backup"). '</button>';
 		$html .= '</div>';
-		$html .= '<style type="text/css" scoped>button[name="publish"] {display:none};</style>';
+		$html .= '<style type="text/css" scoped>.uk-form-row button, .uk-form-row a {display:none};</style>';
 		if (isset($_POST['backup'])) pluginBackup::zipData(PATH_CONTENT, PATH_BACKUP.$archiveName);
 		
 		return $html;

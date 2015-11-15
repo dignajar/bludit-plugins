@@ -4,10 +4,10 @@
 		"name": "備份",
 		"description": "讓您備份您的資料，並可以從您的伺服器下載、還原或是刪除這些備份檔案",
 		"author": "Fred",
-		"email": "",
+		"email": "stradfred@gmail.com",
 		"website": "",
-		"version": "0.4",
-		"releaseDate": "2015-08-08"
+		"version": "0.5",
+		"releaseDate": "2015-11-15"
 	},
 	"download": "下載",
 	"delete": "刪除",
