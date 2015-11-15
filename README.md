@@ -67,6 +67,13 @@ Disqus is a blog comment hosting service for web sites. It's necesary to registe
 - Website: https://github.com/dignajar/bludit-plugins
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/disqus.zip?raw=true)
 
+### Gitter
+This plugin is a (mostly) code-free way of embedding Gitter into your website with a simple JavaScript snippet.It works out of the box with no customization, or you can control its behaviour with some basic configuration.
+- Author: Fred  K.
+- Version: 0.1
+- Website: 
+- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/gitter.zip?raw=true)
+
 ### Google Tools
 This plugin generate the meta tag to validate your site with Google Webmasters Tools and the JavaScript code to track your site with Google Analytics.
 - Author: Bludit
