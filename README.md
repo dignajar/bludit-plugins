@@ -35,7 +35,7 @@ Add a great background effect in your theme.
 ### Backup
 Backup lets you back up your data, download, restore and delete them from your server.
 - Author: Fred
-- Version: 0.4
+- Version: 0.5
 - Website: 
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/backup.zip?raw=true)
 
