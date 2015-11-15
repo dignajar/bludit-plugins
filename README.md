@@ -71,7 +71,7 @@ Disqus is a blog comment hosting service for web sites. It's necesary to registe
 This plugin is a (mostly) code-free way of embedding Gitter into your website with a simple JavaScript snippet.It works out of the box with no customization, or you can control its behaviour with some basic configuration.
 - Author: Fred  K.
 - Version: 0.1
-- Website: 
+- Website: https://sidecar.gitter.im
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/gitter.zip?raw=true)
 
 ### Google Tools
