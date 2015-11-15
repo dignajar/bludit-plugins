@@ -18,7 +18,6 @@ class pluginGitter extends Plugin {
 		$html  = '<div>';
 		$html .= '<label for="jsroom">'.$Language->get('Room').'</label>';
 		$html .= '<input id="jsroom" type="text" name="room" value="'.$this->getDbField('room').'">';
-		$html .= '<div class="tip">'.$Language->get('complete-this-field-with-the-google-site-verification').'</div>';
 		$html .= '</div>';
 
 /*
