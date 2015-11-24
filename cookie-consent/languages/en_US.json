@@ -4,12 +4,15 @@
 		"name": "Cookie Consent + Detect AdBlock",
 		"description": "The most popular solution to the EU Cookie Law, as well as a detector with AdBlock script customization..",
 		"author": "Fred",
-		"email": "frederic.kaplon@me.com",
+		"email": "stradfred@gmail.com",
 		"website": "",
-		"version": "1.0",
-		"releaseDate": "2015-09-08"
+		"version": "1.1",
+		"releaseDate": "2015-11-24"
 	},
 	"enable-plugin-(config-save)": "Enable plugin (Config save)",
+	"this-website-uses-cookies-to-ensure-you-get-the-best-experience-on-our-website": "This website uses cookies to ensure you get the best experience on our website",
+	"dismiss": "Got it!",
+	"learnmore": "More info",
 	"choose-theme": "Choose theme",
 	"dark-bottom": "Dark Bottom",
 	"dark-floating": "Dark Floating",
@@ -22,7 +25,8 @@
 	"read-more-button-text": "Read more button text",
 	"your-cookie-policy": "Your cookie policy",
 	"if-you-already-have-a-cookie-policy,-link-to-it-here.": "If you already have a cookie policy, link to it here.",
-	"adblock_config": "AdBlock config",
+	"adblock-config": "AdBlock config",
+	"adblock-message": "<h4>You seem to use Adblock, or other software designed to block ads.</h4> When you click on a banner ad, it's also thank the author of the site for the articles you read.<br />If you believe that any work deserves reward, so feel free to do something good with a little click. Thank you.",
 	"ad-blocker-detection-plugin": "Enable detection AdBlock",
 	"adblock_message": "Advert message",
 	"adblock_background_color": "Notice background color"	

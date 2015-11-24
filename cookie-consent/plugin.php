@@ -46,50 +46,45 @@ class pluginCookieConsent extends Plugin {
 		$html .= '<input name="enable" id="jsenable" type="checkbox" value="true" '.($this->getDbField('enable')?'checked':'').'>';
 		$html .= '<label class="forCheckbox" for="jsenable">'.$Language->get('Enable plugin (Config save)').'</label>';
 		$html .= '</div>';
-
+		
 		$html .= '<div' .($this->getDbField('enable') ? '':' style="display:none"'). '>';
-		$html .= '<label for="theme">'.$Language->get('Choose theme');
+		$html .= '<label for="theme">'.$Language->get('Choose theme'). '</label>';
+		
+	    $html .= '<div class="uk-margin">';
+		$html .= '<figure class="uk-thumbnail uk-margin-small-right"><img src="'.$pluginPath. 'dark-bottom.png" alt="dark-bottom" style="width:150px" /> <figcaption class="uk-thumbnail-caption">' .$Language->get('Dark Bottom'). '</figcaption></figure></li>';
+		$html .= '<figure class="uk-thumbnail uk-margin-small-right"><img src="'.$pluginPath. 'dark-floating.png" alt="dark-floating" style="width:150px" /> <figcaption class="uk-thumbnail-caption">' .$Language->get('Dark Floating'). '</figcaption></figure></li>';
+		$html .= '<figure class="uk-thumbnail uk-margin-small-right"><img src="'.$pluginPath. 'dark-top.png" alt="dark-top" style="width:150px" /> <figcaption class="uk-thumbnail-caption">' .$Language->get('Dark Top'). '</figcaption></figure></li>';
+		$html .= '<figure class="uk-thumbnail uk-margin-small-right"><img src="'.$pluginPath. 'light-bottom.png" alt="light-bottom" style="width:150px" /> <figcaption class="uk-thumbnail-caption">' .$Language->get('Light Bottom'). '</figcaption></figure></li>';
+		$html .= '<figure class="uk-thumbnail uk-margin-small-right"><img src="'.$pluginPath. 'light-floating.png" alt="light-floating" style="width:150px" /> <figcaption class="uk-thumbnail-caption">' .$Language->get('Light Floating'). '</figcaption></figure></li>';
+		$html .= '<figure class="uk-thumbnail uk-margin-small-right"><img src="'.$pluginPath. 'light-top.png" alt="light-top" style="width:150px" /> <figcaption class="uk-thumbnail-caption">' .$Language->get('Light Top'). '</figcaption></figure></li>';      
+		$html .= '</div>';
+				
 	    $html .= '<select name="theme" class="image-picker show-labels show-html width-50">';
 	    $themeOptions = array('dark-bottom' => $Language->get('Dark Bottom'),'dark-floating' => $Language->get('Dark Floating'),'dark-top' => $Language->get('Dark Top'),'light-bottom' => $Language->get('Light Bottom'),'light-floating' => $Language->get('Light Floating'),'light-top' => $Language->get('Light Top'));
 	        foreach($themeOptions as $text=>$value)
 	    $html .= '<option style="background-image:url(\''.$pluginPath.$text.'.png\');" value="'.$text.'"'.( ($this->getDbField('theme')===$text)?' selected="selected"':'').'>'.$value.'</option>';
 	    $html .= '</select>';
-	    $html .= '<div class="forms-desc">';
-		$html .= '<ul class="blocks-6">';
-		$html .= '<li><figure><img src="'.$pluginPath. 'dark-bottom.png" alt="dark-bottom" /><figcaption>' .$Language->get('Dark Bottom'). '</figcaption></figure></li>';
-		$html .= '<li><figure><img src="'.$pluginPath. 'dark-floating.png" alt="dark-floating" /><figcaption>' .$Language->get('Dark Floating'). '</figcaption></figure></li>';
-		$html .= '<li><figure><img src="'.$pluginPath. 'dark-top.png" alt="dark-top" /><figcaption>' .$Language->get('Dark Top'). '</figcaption></figure></li>';
-		$html .= '<li><figure><img src="'.$pluginPath. 'light-bottom.png" alt="light-bottom" /><figcaption>' .$Language->get('Light Bottom'). '</figcaption></figure></li>';
-		$html .= '<li><figure><img src="'.$pluginPath. 'light-floating.png" alt="light-floating" /><figcaption>' .$Language->get('Light Floating'). '</figcaption></figure></li>';
-		$html .= '<li><figure><img src="'.$pluginPath. 'light-top.png" alt="light-top" /><figcaption>' .$Language->get('Light Top'). '</figcaption></figure></li>';
-		$html .= '</ul>';        
-		$html .= '</div>';
-		$html .= '</label>';
 		$html .= '</div>';	
 			
 		$html .= '<div' .($this->getDbField('enable') ? '':' style="display:none"'). '>';				
-		$html .= '<label for="message">'.$Language->get('Headline text');
-		$html .= '<textarea name="message" id="jsmessage" class="width-70" rows="3">'.$this->getDbField('message').'</textarea>';
-		$html .= '</label>';
+		$html .= '<label for="message">'.$Language->get('Headline text'). '</label>';
+		$html .= '<textarea name="message" id="jsmessage" rows="3">'.$this->getDbField('message').'</textarea>';
 		$html .= '</div>';
 	
 		$html .= '<div' .($this->getDbField('enable') ? '':' style="display:none"'). '>';				
-		$html .= '<label for="dismiss">'.$Language->get('Accept button text');
+		$html .= '<label for="dismiss">'.$Language->get('Accept button text'). '</label>';
 		$html .= '<input type="text" name="dismiss" id="jsdismiss" value="'.$this->getDbField('dismiss').'" />';
-		$html .= '</label>';
 		$html .= '</div>';
 			
 		$html .= '<div' .($this->getDbField('enable') ? '':' style="display:none"'). '>';				
-		$html .= '<label for="learnMore">'.$Language->get('Read more button text');
+		$html .= '<label for="learnMore">'.$Language->get('Read more button text'). '</label>';
 		$html .= '<input type="text" name="learnMore" id="jslearnMore" value="'.$this->getDbField('learnMore').'" />';
-		$html .= '</label>';
 		$html .= '</div>';
 			
 		$html .= '<div' .($this->getDbField('enable') ? '':' style="display:none"'). '>';				
-		$html .= '<label for="link">'.$Language->get('Your cookie policy');
-		$html .= '<input type="url" name="link" id="jslink" class="width-70" value="'.$this->getDbField('link').'" />';
+		$html .= '<label for="link">'.$Language->get('Your cookie policy'). '</label>';
+		$html .= '<input type="url" name="link" id="jslink" class="uk-form-large uk-form-width-large" value="'.$this->getDbField('link').'" />';
 		$html .= '<div class="forms-desc">'.$Language->get('If you already have a cookie policy, link to it here.'). '</div>';
-		$html .= '</label>';
 		$html .= '</div>';
 			
 		/*	Detect AdBlock Part */	
@@ -100,15 +95,13 @@ class pluginCookieConsent extends Plugin {
 		$html .= '</div>';
 
 		$html .= '<div' .($this->getDbField('adblock') ? '':' style="display:none"'). '>';				
-		$html .= '<label for="adblock_background_color">'.$Language->get('adblock_background_color');
+		$html .= '<label for="adblock_background_color">'.$Language->get('adblock_background_color'). '</label>';
 		$html .= '<input type="text" class="color" name="adblock_background_color" id="jsadblock_background_color" value="'.$this->getDbField('adblock_background_color').'" />';
-		$html .= '</label>';
 		$html .= '</div>';
 			
 		$html .= '<div' .($this->getDbField('adblock') ? '':' style="display:none"'). '>';				
-		$html .= '<label for="adblock_message">'.$Language->get('adblock_message');
-		$html .= '<textarea name="adblock_message" id="jsadblock_message" class="width-70" rows="5">'.$this->getDbField('adblock_message').'</textarea>';
-		$html .= '</label>';
+		$html .= '<label for="adblock_message">'.$Language->get('adblock_message'). '</label>';
+		$html .= '<textarea name="adblock_message" id="jsadblock_message" rows="5">'.$this->getDbField('adblock_message').'</textarea>';
 		$html .= '</div>';	
 		
 		return $html;
