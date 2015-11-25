@@ -38,8 +38,8 @@
 			    </ul>';
 	});
 	
-	// Add Shortcode {Discus name='bludit'}
-	Shortcode::add('Discus', function($attributes) {
+	// Add Shortcode {Disqus name='bludit'}
+	Shortcode::add('Disqus', function($attributes) {
 	    // Extract attributes
 	    extract($attributes);
 	    // name
