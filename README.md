@@ -130,6 +130,13 @@ Ridiculously Responsive Social Sharing Buttons.
 - Website: 
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/rrssb.zip?raw=true)
 
+### Shortcode API
+The Shortcode API is a simple set of functions for creating Bludit shortcodes for use in posts and pages.
+- Author: Fred K., Bludit & Sergey Romanenko
+- Version: 0.3
+- Website: 
+- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/shortcode.zip?raw=true)
+
 ### Simditor
 Simple and fast rich text editor.
 - Author: Fred
