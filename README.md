@@ -7,7 +7,7 @@ Push your Bludit plugins here!
 - Download the plugin.
 - Unzip if necessary.
 - Copy the folder plugin with all files inside `/plugins/`
-- Log into your Bludit panel administrator, go to Plugins, and install the new plugin.
+- Log into your Bludit panel administrator, go to Settings->Plugins, and select your new plugin.
 
 ## Plugin list
 
