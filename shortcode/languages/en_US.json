@@ -1,0 +1,16 @@
+{
+	"plugin-data":
+	{
+		"name": "Shortcode API",
+		"description": "The Shortcode API is a simple set of functions for creating Bludit shortcodes for use in posts and pages.",
+		"author": "Fred K., Bludit & Sergey Romanenko",
+		"email": "stradfred@gmail.com",
+		"website": "",
+		"version": "0.3",
+		"releaseDate": "2015-11-25"
+	},
+	"edit-shorcodes": "Edit Shorcodes",
+	"shortcodes-updated!": "Shortcodes updated!",
+	"this-page-is-for-edit/add-shortcodes.-don't-forget-to-share-your-best-shorctcodes-with-bludit-community!": "This page is for edit/add shortcodes. Don't forget to share your best shorctcodes with Bludit community!",
+	"you-can-directly-edit-the-file-that-is-located:": "You can directly edit the file that is located:"
+}

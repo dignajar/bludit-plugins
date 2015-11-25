@@ -1,0 +1,16 @@
+{
+	"plugin-data":
+	{
+		"name": "Shortcode API",
+		"description": "Les Shortcodes sont des macros qui permettent d’ajouter des fonctions à Bludit là où le code est placé dans les pages et les articles.",
+		"author": "Fred K., Bludit & Sergey Romanenko",
+		"email": "stradfred@gmail.com",
+		"website": "",
+		"version": "0.3",
+		"releaseDate": "2015-11-25"
+	},
+	"edit-shorcodes": "Édition des Shorcodes",
+	"shortcodes-updated!": "Shortcodes mis à jour !",
+	"this-page-is-for-edit/add-shortcodes.-don't-forget-to-share-your-best-shorctcodes-with-bludit-community!": "Cette page est permet de modifier/ajouter des shortcodes. Merci de bien vouloir partager vos shortcodes avec la communauté Bludit !",
+	"you-can-directly-edit-the-file-that-is-located:": "Vous pouvez directement éditer le fichier se trouvant :"
+}
