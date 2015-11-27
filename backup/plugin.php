@@ -64,7 +64,7 @@ class pluginBackup extends Plugin {
                         foreach ($files as $file) {
                             $file = realpath($file);
                             if (is_dir($file)) {
-                                $zip->addEmptyDir(str_replace($source . DS, '', $file . DS));
+                             	$zip->addEmptyDir(str_replace($source . DS, '', $file));
                             } else if (is_file($file)) {
                                 $zip->addFromString(str_replace($source . DS, '', $file), file_get_contents($file));
                             }
@@ -239,7 +239,7 @@ class pluginBackup extends Plugin {
 		if (isset($_POST['backup'])){
 
 			if(!pluginBackup::zipData(PATH_CONTENT, PATH_BACKUP.$archiveName)){
-				Alert::set($Language->get("Error ZIP Extension or file ZIP no exist!"));
+				Alert::set($Language->get("there-was-a-problem-writing-the-zip-archive."));
 			}
 		}
 
