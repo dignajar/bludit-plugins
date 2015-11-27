@@ -19,10 +19,10 @@
 	"make-a-backup": "Crear Backup",
 	"delete-this-backup?": "¿Eliminar backup?",
 	"do-you-want-to-restore-this-backup?": "¿Restaurar backup?",
-	"there-was-a-problem-writing-the-zip-archive.": "Ha ocurrido un problema escribiendo el archivo ZIP.",
-	"successfully-created-the-zip-archive!": "¡El ZIP se ha creado!",
-	"successfully-deleted-file!": "¡Se ha eliminado el archivo!",
-	"an-error-occurred-while-deleting-the-file.": "Ha ocurrido un error mientras se borraba el archivo.",
-	"archive-is-restored!": "¡El ZIP ha sido restaurado!",
-	"there-was-a-problem-to-restore-the-zip-archive": "Ha ocurrido un problema al restaurar el archivo ZIP"
+	"there-was-a-problem-writing-the-zip-archive.": "Ha ocurrido un problema y no se pudo crear el backup.",
+	"successfully-created-the-zip-archive!": "¡El backup se ha creado!",
+	"successfully-deleted-file!": "¡Se ha eliminado el backup!",
+	"an-error-occurred-while-deleting-the-file.": "Ha ocurrido un error mientras se borraba el backup.",
+	"archive-is-restored!": "¡El backup ha sido restaurado!",
+	"there-was-a-problem-to-restore-the-zip-archive": "Ha ocurrido un problema al restaurar el backup"
 }
