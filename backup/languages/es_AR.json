@@ -1,0 +1,28 @@
+{
+	"plugin-data":
+	{
+		"name": "Backup",
+		"description": "Backup permite realizar copias de seguridad de sus datos, descargar, restaurar y eliminarlas de su servidor.",
+		"author": "Fred",
+		"email": "stradfred@gmail.com",
+		"website": "",
+		"version": "0.5",
+		"releaseDate": "2015-11-15"
+	},
+	"download": "Descargar",
+	"delete": "Borrar",
+	"restore": "Restaurar",
+	"archives": "Archivos",
+	"file-size": "Tamaño",
+	"date": "Fecha",
+	"actions": "Acciones",
+	"make-a-backup": "Crear Backup",
+	"delete-this-backup?": "¿Eliminar backup?",
+	"do-you-want-to-restore-this-backup?": "¿Restaurar backup?",
+	"there-was-a-problem-writing-the-zip-archive.": "Ha ocurrido un problema escribiendo el archivo ZIP.",
+	"successfully-created-the-zip-archive!": "¡El ZIP se ha creado!",
+	"successfully-deleted-file!": "¡Se ha eliminado el archivo!",
+	"an-error-occurred-while-deleting-the-file.": "Ha ocurrido un error mientras se borraba el archivo.",
+	"archive-is-restored!": "¡El ZIP ha sido restaurado!",
+	"there-was-a-problem-to-restore-the-zip-archive": "Ha ocurrido un problema al restaurar el archivo ZIP"
+}
