@@ -9,8 +9,8 @@
  * @version		0.5
  * @update		2015-11-15
  */		
-define('BACKUP_FOLDER',		'backups' .DS);	
-define('PATH_BACKUP',		PATH_ROOT. BACKUP_FOLDER);
+define('BACKUP_FOLDER',		'backups');	
+define('PATH_BACKUP',		PATH_ROOT.BACKUP_FOLDER.DS);
 class pluginBackup extends Plugin {	
 	
 	// Plugin datas
@@ -113,7 +113,7 @@ class pluginBackup extends Plugin {
 					$html .= '<td><span class="label label-outline label-black">' .$filesize. '</span></td>';
 					$html .= '<td><em>' .date($Site->dateFormat(), $date). '</em></td>';
 					$html .= '<td><div class="uk-button-group">';					
-					$html .= '<a class="uk-button uk-button-small uk-button-success" href="' .$Site->url().BACKUP_FOLDER.$file. '"><i class="uk-icon-cloud-download"></i> ' .$Language->get("Download"). '</a>';
+					$html .= '<a class="uk-button uk-button-small uk-button-success" href="' .$Site->url().BACKUP_FOLDER.'/'.$file. '"><i class="uk-icon-cloud-download"></i> ' .$Language->get("Download"). '</a>';
 					$html .= '<a class="uk-button uk-button-small uk-button-primary" href="' .pluginBackup::full_path(). '?restore=' .PATH_BACKUP.$file. '" onclick = "if(!confirm(\'' .$Language->get("Do you want to restore this backup?"). '\')) return false;"><i class="uk-icon-undo"></i></i> ' .$Language->get("restore"). '</a>';
 					$html .= '<a class="uk-button uk-button-small uk-button-danger" href="' .pluginBackup::full_path(). '?delete=' .PATH_BACKUP.$file. '" onclick = "if(!confirm(\'' .$Language->get("Delete this backup?"). '\')) return false;"><i class="uk-icon-trash-o"></i> ' .$Language->get("Delete"). '</a>';
 					$html .= '</div><td>';
