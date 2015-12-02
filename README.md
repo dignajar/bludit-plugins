@@ -14,7 +14,7 @@ Push your Bludit plugins here!
 ### About
 Little description about your site or yourself.
 - Author: Bludit
-- Version: 0.6
+- Version: 0.7
 - Website: https://github.com/dignajar/bludit-plugins
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/about.zip?raw=true)
 
@@ -63,7 +63,7 @@ The most popular solution to the EU Cookie Law, as well as a detector with AdBlo
 ### Disqus comment system
 Disqus is a blog comment hosting service for web sites. It's necesary to register on Disqus.com before using this plugin.
 - Author: Bludit
-- Version: 0.6
+- Version: 0.7
 - Website: https://github.com/dignajar/bludit-plugins
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/disqus.zip?raw=true)
 
@@ -77,14 +77,14 @@ This plugin is a (mostly) code-free way of embedding Gitter into your website wi
 ### Google Tools
 This plugin generate the meta tag to validate your site with Google Webmasters Tools and the JavaScript code to track your site with Google Analytics.
 - Author: Bludit
-- Version: 0.6
+- Version: 0.7
 - Website: https://github.com/dignajar/bludit-plugins
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/googletools.zip?raw=true)
 
 ### Maintenance mode
 Set your site on maintenance mode, you can access to admin area.
 - Author: Bludit
-- Version: 0.6
+- Version: 0.7
 - Website: https://github.com/dignajar/bludit-plugins
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/maintancemode.zip?raw=true)
 
@@ -98,14 +98,14 @@ Minifies HTML, JS, CSS and removes comments (except IE tags and comments within 
 ### Open Graph
 The Open Graph protocol enables any web page to become a rich object in a social graph.
 - Author: Bludit
-- Version: 0.6
+- Version: 0.7
 - Website: https://github.com/dignajar/bludit-plugins
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/opengraph.zip?raw=true)
 
 ### Page list
 Shows the list of pages in order.
 - Author: Bludit
-- Version: 0.6
+- Version: 0.7
 - Website: https://github.com/dignajar/bludit-plugins
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/pages.zip?raw=true)
 
@@ -154,14 +154,14 @@ A simple, beautiful, and embeddable JavaScript markdown editor by @WesCossick. A
 ### Tags list
 Shows all tags.
 - Author: Bludit
-- Version: 0.6
+- Version: 0.7
 - Website: https://github.com/dignajar/bludit-plugins
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/tags.zip?raw=true)
 
 ### TinyMCE
 Tinymce is an easy HTML editor, with many plugins and very customizable.
 - Author: TinyMCE
-- Version: 4.2.7
+- Version: 4.3
 - Website: http://www.tinymce.com
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/tinymce.zip?raw=true)
 
