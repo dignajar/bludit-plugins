@@ -6,8 +6,8 @@ Push your Bludit plugins here!
 ## How to install a plugin
 - Download the plugin.
 - Unzip if necessary.
-- Copy the folder plugin with all files inside `/plugins/`
-- Log into your Bludit panel administrator, go to Settings->Plugins, and select your new plugin.
+- Copy the plugin folder with all files inside `/plugins/` folder.
+- Log into your Bludit panel administrator, go to *Settings->Plugins*, and activate your new plugin.
 
 ## Plugin list
 
