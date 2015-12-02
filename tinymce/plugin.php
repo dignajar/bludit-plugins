@@ -49,7 +49,6 @@ class pluginTinymce extends Plugin {
 			$pluginPath = $this->htmlPath();
 
 			$html  = '<script src="'.$pluginPath.'tinymce/tinymce.min.js"></script>';
-			$html .= '<script src="'.$pluginPath.'tinymce/jquery.tinymce.min.js"></script>';
 		}
 
 		return $html;
@@ -66,24 +65,41 @@ class pluginTinymce extends Plugin {
 		// Load CSS and JS only on Controllers in array.
 		if(in_array($layout['controller'], $this->loadWhenController))
 		{
-			$language = $Site->shortLanguage();
 			$pluginPath = $this->htmlPath();
 
+			$language = '';
+			if($Site->shortLanguage()!=='en') {
+				$language = 'language_url:"'.$pluginPath.'tinymce/langs/'.$Site->shortLanguage().'.js",';
+			}
+
 			$html  = '<script>$(document).ready(function() { ';
-			$html .= '$("#jscontent").tinymce({
+			$html .= 'tinymce.init({
+				selector: "#jscontent",
 				plugins: "'.$this->getDbField('plugins').'",
 				toolbar: "'.$this->getDbField('toolbar').'",
-				content_css: "'.$pluginPath.'css/editor.css",
+				content_css: "'.$pluginPath.'css/editor.css?version='.$this->version().'",
 				theme: "modern",
 				height:"400px",
 				width:"100%",
 				statusbar: false,
 				menubar:false,
+				'.$language.'
 				browser_spellcheck: true,
 				autoresize_bottom_margin: "50",
 				pagebreak_separator: "'.PAGE_BREAK.'",
 				paste_as_text: true,
     				document_base_url: "'.HTML_PATH_UPLOADS.'"
+			});';
+
+			$html .= '$("#jsaddImage").on("click", function() {
+
+					var filename = $("#jsimageList option:selected" ).text();
+
+					if(!filename.trim()) {
+						return false;
+					}
+
+					tinymce.activeEditor.insertContent("<img src=\""+filename+"\" alt=\"\">" + "\n");
 			});';
 
 			$html .= '}); </script>';
