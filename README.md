@@ -35,7 +35,7 @@ Add a great background effect in your theme.
 ### Backup
 Backup lets you back up your data, download, restore and delete them from your server.
 - Author: Fred
-- Version: 0.5
+- Version: 0.5.1
 - Website: 
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/backup.zip?raw=true)
 
@@ -73,6 +73,13 @@ This plugin is a (mostly) code-free way of embedding Gitter into your website wi
 - Version: 0.1
 - Website: https://sidecar.gitter.im
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/gitter.zip?raw=true)
+
+### Google CSE
+Plugin for adding a Google Custom Search Engine. To use it you need a Google account and a search engine ID. Please see https://cse.google.com.
+- Author: Clickwork
+- Version: 0.1
+- Website: https://www.clickwork.ch
+- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/googlecse.zip?raw=true)
 
 ### Google Tools
 This plugin generate the meta tag to validate your site with Google Webmasters Tools and the JavaScript code to track your site with Google Analytics.
