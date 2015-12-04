@@ -75,7 +75,7 @@ This plugin is a (mostly) code-free way of embedding Gitter into your website wi
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/gitter.zip?raw=true)
 
 ### Google CSE
-Plugin for adding a Google Custom Search Engine. To use it you need a Google account and a search engine ID. Please see https://cse.google.com.
+Plugin for adding a Google Custom Search Engine. To use it you need a Google account and a search engine ID. For further instructions please see the README file and https://cse.google.com.
 - Author: Clickwork
 - Version: 0.1
 - Website: https://www.clickwork.ch
