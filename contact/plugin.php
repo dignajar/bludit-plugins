@@ -21,15 +21,6 @@ class pluginContact extends Plugin {
 			'slug'=>''		// <= Slug url of contact page
 			);
 	}
-	# AFFICHE LA FEUILLE DE STYLE ET LE JAVASCRIPT SUR LA CONFIGURATION DU PLUG-IN.	
-	public function adminHead()
-	{
-		global $Language;
-		$html = '';
-
-		$html .= '<script></script>'.PHP_EOL;
-		return $html;
-	}	
 	# ADMINISTRATION DU PLUG-IN.
 	public function form()
 	{
@@ -77,15 +68,20 @@ class pluginContact extends Plugin {
      */			
 	public function siteHead()
 	{
-		global $Page, $Url, $Site;
+		global $Page, $Url;
 		$html = '';
 		
 		if($Url->whereAmI()==='page' && $Page->slug()==$this->getDbField('page'))
 		{
-			$html .= '<style type="text/css">input[name="interested"] {display: none;}
-			.alert{padding: 5px 8px;color: white;width: 50%}
-			.alert.error{background-color: crimson}
-			.alert.success{background-color: mediumaquamarine}</style>'.PHP_EOL;
+			$pluginPath = $this->htmlPath();
+			/** 
+			 * ON INCLUT LA CSS PAR DÉFAUT DU PLUG-IN OU LA CSS PERSONNALISÉE STOCKER DANS NOTRE THÈME 
+			 */
+		    $css = PATH_THEME_CSS. 'contact.css';
+		    if(file_exists($css))
+			    $html .= Theme::css('contact.css');
+		    else 
+			    $html .= '<link rel="stylesheet" href="'.$pluginPath.'layout/contact.css">';				
 		}
 		return $html;
 	}  
@@ -169,11 +165,10 @@ class pluginContact extends Plugin {
 			 * ON INCLUT LE TEMPLATE PAR DÉFAUT DU PLUG-IN OU LE TEMPLATE PERSONNALISÉ STOCKER DANS NOTRE THÈME 
 			 */
 		    $template = PATH_THEME_PHP. 'contact.php';
-		    if(file_exists($template)) {
+		    if(file_exists($template))
 			    include_once($template);
-		    } else {
-			    include(dirname(__FILE__).'/layout/contact.php');
-		    }	    			
+		    else 
+			    include(dirname(__FILE__). DS .'layout/contact.php');	    			
 		    
 		}
 	}   
