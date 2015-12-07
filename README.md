@@ -140,7 +140,7 @@ Ridiculously Responsive Social Sharing Buttons.
 ### Shortcode API
 The Shortcode API is a simple set of functions for creating Bludit shortcodes for use in posts and pages.
 - Author: Fred K., Bludit & Sergey Romanenko
-- Version: 0.3
+- Version: 0.4
 - Website: 
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/shortcode.zip?raw=true)
 
