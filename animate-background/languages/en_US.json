@@ -4,10 +4,10 @@
 		"name": "Animate Background",
 		"description": "Add a great background effect in your theme.",
 		"author": "Fred",
-		"email": "",
+		"email": "stradfred@gmail.com",
 		"website": "",
-		"version":"0.1",
-		"releaseDate": "2015-09-07"
+		"version":"0.2",
+		"releaseDate": "2015-12-08"
 	},
 	
 	"choose-animation": "Choose animation",	
