@@ -82,49 +82,43 @@ class pluginRibbon extends Plugin {
 		global $Language;
 
 		$html  = '<div>';
-		$html .= '<label for="type">'.$Language->get('Display Type');
-        $html .= '<select name="type" class="width-20">';
+		$html .= '<label for="type">'.$Language->get('Display Type').'</label>';
+        $html .= '<select name="type">';
         $typeOptions = array( 'ribbon'=> $Language->get('Ribbon'), 'stickybar'=> $Language->get('Stickybar') );
         foreach($typeOptions as $text=>$value)
             $html .= '<option value="'.$text.'"'.( ($this->getDbField('type')===$text)?' selected="selected"':'').'>'.$value.'</option>';
         $html .= '</select>';
-        $html .= '<div class="forms-desc">'.$Language->get('If stickybar is selected you can insert more text.').'</div>';
-		$html .= '</label>';
+        $html .= '<div class="uk-form-help-block">'.$Language->get('If stickybar is selected you can insert more text.').'</div>';
 		$html .= '</div>';	
 
-        $html .= '<div class="width-50">';
-		$html .= '<label for="title">'.$Language->get('Title');
+        $html .= '<div>';
+		$html .= '<label for="title">'.$Language->get('Title').'</label>';
 		$html .= '<input type="text" name="title" value="'.$this->getDbField('title').'" required/>';
-		$html .= '</label>';
 		$html .= '</div>';		
 
         $html .= '<div>';
-		$html .= '<label for="url">'.$Language->get('Link');
+		$html .= '<label for="url">'.$Language->get('Link').'</label>';
 		$html .= '<input class="width-40" type="url" name="url" value="'.$this->getDbField('url').'" required/>';
-		$html .= '</label>';
 		$html .= '</div>';	
 
-        $html .= '<div class="width-20">';
-		$html .= '<label for="color">'.$Language->get('Background color');
+        $html .= '<div>';
+		$html .= '<label for="color">'.$Language->get('Background color').'</label>';
 		$html .= '<input class="color" type="text" name="color" value="'.$this->getDbField('color').'" required/>';
-		$html .= '</label>';
 		$html .= '</div>';
 		
-        $html .= '<div class="width-20">';
-		$html .= '<label for="linkcolor">'.$Language->get('Link color');
+        $html .= '<div>';
+		$html .= '<label for="linkcolor">'.$Language->get('Link color').'</label>';
 		$html .= '<input class="color" type="text" name="linkcolor" value="'.$this->getDbField('linkcolor').'" required/>';
-		$html .= '</label>';
 		$html .= '</div>';
 				
 		if ($this->getDbField('type') == 'ribbon'){		
 			$html .= '<div>';
-			$html .= '<label for="display">'.$Language->get('Horizontal orientation');
-	        $html .= '<select name="display" class="width-20">';
+			$html .= '<label for="display">'.$Language->get('Horizontal orientation').'</label>';
+	        $html .= '<select name="display">';
 	        $displayOptions = array( 'left'=> $Language->get('Left'), 'right'=> $Language->get('Right') );
 	        foreach($displayOptions as $text=>$value)
 	            $html .= '<option value="'.$text.'"'.( ($this->getDbField('display')===$text)?' selected="selected"':'').'>'.$value.'</option>';
 	        $html .= '</select>';
-			$html .= '</label>';
 			$html .= '</div>';	
 		}		
 		return $html;
