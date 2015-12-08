@@ -1,12 +1,16 @@
 <?php
-/*
-	@Package: Bludit
-	@Plugin: CKeditor + RESPONSIVE filemanager
-	@Version: 1.0.7
-	@Author: Fred K.
-	@Realised: 14 Juilly 2015	
-	@Updated: 05 November 2015
-*/	
+/**
+ *  Ckeditor + filemanager
+ *
+ *  @package Bludit
+ *  @subpackage Plugins
+ *  @author Frédéric K.
+ *  @copyright 2015 Frédéric K.
+ *	@version 1.0.7b
+ *  @release 2015-07-14
+ *  @update 2015-12-08
+ *
+ */	
 class pluginCKeditor extends Plugin {
 	
 	private $loadWhenController = array(
@@ -97,32 +101,34 @@ class pluginCKeditor extends Plugin {
 		global $Language;
 
 		$html  = '<div>';
-		$html .= '<input name="plugin_markdown" type="checkbox" value="false" '.($this->getDbField('plugin_markdown')?'checked':'').'>';
-		$html .= '<label class="forCheckbox" for="plugin_markdown">'.$Language->get('Activate Markdown Plugin').'</label>';
+		$html .= '<input name="plugin_markdown" type="checkbox" value="false" '.($this->getDbField('plugin_markdown')?'checked':'').'>';	
+		$html .= '<label class="forCheckbox" for="plugin_markdown">'.$Language->get('Activate Markdown Plugin').'</label>';			
 		$html .= '</div>';
+		
 		$html .= '<div>';
-		$html .= '<input name="plugin_toolbar" type="checkbox" value="false" '.($this->getDbField('plugin_toolbar')?'checked':'').'>';
-		$html .= '<label class="forCheckbox" for=plugin_toolbar">'.$Language->get('Activate Toolbar Plugin').'</label>';
+		$html .= '<input name="plugin_toolbar" type="checkbox" value="false" '.($this->getDbField('plugin_toolbar')?'checked':'').'>';		
+		$html .= '<label class="forCheckbox" for=plugin_toolbar">'.$Language->get('Activate Toolbar Plugin').'</label>';		
 		$html .= '</div>';
-		$html .= '<div>';
-		$html .= '<label for="toolbar">'.$Language->get('Select toolbar');
-        $html .= '<select name="toolbar" class="width-50">';
+		
+		$html .= '<div class="uk-form-select" data-uk-form-select>
+    <span></span>';	
+		$html .= '<label for="toolbar">'.$Language->get('Select toolbar').'</label>';
+        $html .= '<select name="toolbar">';
         $toolbarOptions = array('basic' => $Language->get('Basic'),'standard' => $Language->get('Standard'),'advanced' => $Language->get('Advanced'));
         foreach($toolbarOptions as $text=>$value)
             $html .= '<option value="'.$text.'"'.( ($this->getDbField('toolbar')===$text)?' selected="selected"':'').'>'.$value.'</option>';
         $html .= '</select>';
-        $html .= '<div class="forms-desc">'.$Language->get('Advanced is the full package of CKEditor').'</div>';
-		$html .= '</label>';
+        $html .= '<div class="uk-form-help-block">'.$Language->get('Advanced is the full package of CKEditor').'</div>';
 		$html .= '</div>';		
 
-		$html .= '<div>';
-		$html .= '<label for="skin">'.$Language->get('Select skin');
-        $html .= '<select name="skin" class="width-50">';
+		$html .= '<div class="uk-form-select" data-uk-form-select>
+    <span></span>';	
+		$html .= '<label for="skin">'.$Language->get('Select skin').'</label>';
+        $html .= '<select name="skin">';
         $skinOptions = array('kama'=>'Kama','flat'=>'Flat','moono'=>'Moono','minimalist'=>'Minimalist','icy_orange'=>'Icy Orange','moono-dark'=>'Moono Dark','bludit'=>'Bludit');
         foreach($skinOptions as $text=>$value)
             $html .= '<option value="'.$text.'"'.( ($this->getDbField('skin')===$text)?' selected="selected"':'').'>'.$value.'</option>';
         $html .= '</select>';
-		$html .= '</label>';
 		$html .= '</div>';	
 				
 		return $html;

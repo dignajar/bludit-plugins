@@ -6,10 +6,9 @@
 		"author": "Fred",
 		"email": "stradfred@gmail.com",
 		"website": "",
-		"version":"1.0.7",
+		"version":"1.0.7b",
 		"releaseDate": "2015-11-05"
 	},
-
     "activate-markdown-plugin": "Activate Markdown Plugin",
     "activate-toolbar-plugin": "Activate Toolbar Plugin",
     "select-toolbar": "Select toolbar",
