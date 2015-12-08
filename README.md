@@ -133,7 +133,7 @@ Add a ribbon in the corner of your site or information fully customizable bar.
 ### Rrssb (Sharing Buttons)
 Ridiculously Responsive Social Sharing Buttons.
 - Author: Fred
-- Version: 1.8.1d
+- Version: 1.8.6
 - Website: 
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/rrssb.zip?raw=true)
 
