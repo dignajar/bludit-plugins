@@ -29,11 +29,12 @@ class pluginCookieConsent extends Plugin {
 	public function adminHead()
 	{
 		global $layout;
-
+		$html = '';
 		if(in_array($layout['controller'], $this->loadWhenController))
 		{
 			$pluginPath = $this->htmlPath();
-			return '<script src="' .$pluginPath. 'jscolor/jscolor.js"></script>'.PHP_EOL;		
+			$html .= '<script src="' .$pluginPath. 'jscolor/jscolor.js"></script>'.PHP_EOL;	
+			return $html;	
 		}
 	}		
 	// Backend configuration page
@@ -59,11 +60,11 @@ class pluginCookieConsent extends Plugin {
 		$html .= '<figure class="uk-thumbnail uk-margin-small-right"><img src="'.$pluginPath. 'light-top.png" alt="light-top" style="width:150px" /> <figcaption class="uk-thumbnail-caption">' .$Language->get('Light Top'). '</figcaption></figure></li>';      
 		$html .= '</div>';
 				
-	    $html .= '<select name="theme" class="image-picker show-labels show-html width-50">';
+	    $html .= '<select name="theme">';
 	    $themeOptions = array('dark-bottom' => $Language->get('Dark Bottom'),'dark-floating' => $Language->get('Dark Floating'),'dark-top' => $Language->get('Dark Top'),'light-bottom' => $Language->get('Light Bottom'),'light-floating' => $Language->get('Light Floating'),'light-top' => $Language->get('Light Top'));
 	        foreach($themeOptions as $text=>$value)
-	    $html .= '<option style="background-image:url(\''.$pluginPath.$text.'.png\');" value="'.$text.'"'.( ($this->getDbField('theme')===$text)?' selected="selected"':'').'>'.$value.'</option>';
-	    $html .= '</select>';
+	    $html .= '<option value="'.$text.'"'.( ($this->getDbField('theme')===$text)?' selected="selected"':'').'>'.$value.'</option>';
+	    $html .= '</select>';	
 		$html .= '</div>';	
 			
 		$html .= '<div' .($this->getDbField('enable') ? '':' style="display:none"'). '>';				
@@ -84,7 +85,7 @@ class pluginCookieConsent extends Plugin {
 		$html .= '<div' .($this->getDbField('enable') ? '':' style="display:none"'). '>';				
 		$html .= '<label for="link">'.$Language->get('Your cookie policy'). '</label>';
 		$html .= '<input type="url" name="link" id="jslink" class="uk-form-large uk-form-width-large" value="'.$this->getDbField('link').'" />';
-		$html .= '<div class="forms-desc">'.$Language->get('If you already have a cookie policy, link to it here.'). '</div>';
+		$html .= '<div class="uk-form-help-block">'.$Language->get('If you already have a cookie policy, link to it here.'). '</div>';
 		$html .= '</div>';
 			
 		/*	Detect AdBlock Part */	
