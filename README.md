@@ -28,7 +28,7 @@ Universal Analytics is the next generation of Google Analytics. It is a series o
 ### Animate Background
 Add a great background effect in your theme.
 - Author: Fred
-- Version: 0.1
+- Version: 0.2
 - Website: 
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/animate-background.zip?raw=true)
 
@@ -42,7 +42,7 @@ Backup lets you back up your data, download, restore and delete them from your s
 ### Ckeditor + filemanager
 Add Ckeditor 4.5.4 + RESPONSIVE filemanager v.9.9.6 to Bludit
 - Author: Fred
-- Version: 1.0.7
+- Version: 1.0.7b
 - Website: 
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/ckeditor.zip?raw=true)
 
@@ -126,7 +126,7 @@ Plugin to add the verification meta tag for Pinterest. See http://business.pinte
 ### Ribbon
 Add a ribbon in the corner of your site or information fully customizable bar.
 - Author: Fred
-- Version: 1.0.2
+- Version: 1.0.3
 - Website: 
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/ribbon.zip?raw=true)
 
