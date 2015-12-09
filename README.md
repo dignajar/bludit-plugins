@@ -11,6 +11,13 @@ Push your Bludit plugins here!
 
 ## Plugin list
 
+### SnowFlakes
+Snow in your site!
+- Author: Frédéric K.
+- Version: 0.1
+- Website: 
+- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/SnowFlakes.zip?raw=true)
+
 ### About
 Little description about your site or yourself.
 - Author: Bludit
