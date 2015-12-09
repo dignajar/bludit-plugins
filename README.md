@@ -168,7 +168,7 @@ Shows all tags.
 ### TinyMCE
 Tinymce is an easy HTML editor, with many plugins and very customizable.
 - Author: TinyMCE
-- Version: 4.3
+- Version: 4.3.1
 - Website: http://www.tinymce.com
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/tinymce.zip?raw=true)
 
