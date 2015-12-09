@@ -1,0 +1,21 @@
+{
+	"plugin-data":
+	{
+		"name": "SnowFlakes",
+		"description": "Snow in your site!",
+		"author": "Frédéric K.",
+		"email": "stradfred@gmail.com",
+		"website": "",
+		"version": "0.1",
+		"releaseDate": "2015-12-09"
+	},
+	"enable-plugin-(config-save)": "Enable plugin (Config save)",
+	"snowmax": "Number of snowflakes <em>(more than 30 / 40 not recommended)</em>",
+	"snowcolor": "Colors for the snow. Add as many colors as you like",
+	"snowtype": "Fonts, that create the snowflake",
+	"snowletter": "Letter that creates your snowflake <em>(*, ❄, ❅, ❆)</em>",
+	"sinkspeed": "Speed of sinking <em>(recommended values range from 0.3 to 2)</em>",
+	"snowmaxsize": "Maximum-size", 
+	"snowminsize": "Minimal-size",
+	"snowingzone": "Set 1 for all-over-snowing, 2 for left-side-snowing, 3 for center-snowing, 4 for right-side-snowing"
+}
