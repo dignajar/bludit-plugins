@@ -1,0 +1,18 @@
+{
+	"plugin-data":
+	{
+		"name": "Twitter Cards",
+		"description": "With Twitter Cards, you can attach rich photos, videos and media experience to Tweets that drive traffic to your website.",
+		"author": "SpecKtator",
+		"email": "specktator@totallynoob.com",
+		"website": "http://totallynoob.com",
+		"version": "0.1",
+		"releaseDate": "2015-12-11"
+	},
+	"twitterusername": "Twitter Username",
+	"twittercardtypepost": "Twitter card type for posts",
+	"twittercardtypepage": "Twitter card type for pages",
+	"complete-this-field-with-the-twitter-sites-owner-username": "Complete this field with site's owner twitter username.",
+	"complete-this-field-with-the-twitter-card-type-for-post": "Complete this field with the twitter card type for posts (default: summary)",
+	"complete-this-field-with-the-twitter-card-type-for-page": "Complete this field with the twitter card type for posts (default: summary_large_image)"
+}
