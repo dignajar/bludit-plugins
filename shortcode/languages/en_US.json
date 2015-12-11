@@ -6,10 +6,11 @@
 		"author": "Fred K., Bludit & Sergey Romanenko",
 		"email": "stradfred@gmail.com",
 		"website": "",
-		"version": "0.3",
-		"releaseDate": "2015-11-25"
+		"version": "0.4",
+		"releaseDate": "2015-12-07"
 	},
 	"edit-shorcodes": "Edit Shorcodes",
+	"help": "Help",
 	"shortcodes-updated!": "Shortcodes updated!",
 	"this-page-is-for-edit/add-shortcodes.-don't-forget-to-share-your-best-shorctcodes-with-bludit-community!": "This page is for edit/add shortcodes. Don't forget to share your best shorctcodes with Bludit community!",
 	"you-can-directly-edit-the-file-that-is-located:": "You can directly edit the file that is located:"

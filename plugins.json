@@ -15,7 +15,7 @@
 				"email":"",
 				"website":"https://github.com/dignajar/bludit-plugins",
 				"version":"0.6",
-				"compatibility":"0.5 & +",
+				"compatibility":"0.7 & +",
 				"support":"http:\/\/forum.bludit.com"
 			},			
 			{
@@ -30,8 +30,8 @@
 				"author":"Fred K.",
 				"email":"stradfred@gmail.com",
 				"website":"http:\/\/mi.france.free.fr",
-				"version":"0.8",
-				"compatibility":"0.5 & +",
+				"version":"0.9",
+				"compatibility":"0.7 & +",
 				"support":"http:\/\/forum.bludit.com\/viewtopic.php?f=14&t=18"
 			},
 			{
@@ -46,8 +46,8 @@
 				"author":"Fred K.",
 				"email":"stradfred@gmail.com",
 				"website":"http:\/\/mi.france.free.fr",
-				"version":"0.1",
-				"compatibility":"0.5 & +",
+				"version":"0.2",
+				"compatibility":"0.7 & +",
 				"support":"http:\/\/forum.bludit.com\/viewtopic.php?f=14&t=77"
 			},
 			{
@@ -62,8 +62,8 @@
 				"author":"Fred K.",
 				"email":"stradfred@gmail.com",
 				"website":"http:\/\/mi.france.free.fr",
-				"version":"0.5",
-				"compatibility":"0.5 & +",
+				"version":"0.5.1",
+				"compatibility":"0.7 & +",
 				"support":"http:\/\/forum.bludit.com\/viewtopic.php?f=14&t=41"
 			},
 			{
@@ -79,7 +79,7 @@
 				"email":"stradfred@gmail.com",
 				"website":"",
 				"version":"1.0.7",
-				"compatibility":"0.5 & +",
+				"compatibility":"0.7 & +",
 				"support":"http:\/\/forum.bludit.com\/viewtopic.php?f=14&t=35"
 			},
 			{
@@ -95,7 +95,7 @@
 				"email":"stradfred@gmail.com",
 				"website":"http:\/\/mi.france.free.fr",
 				"version":"0.4",
-				"compatibility":"0.5 & +",
+				"compatibility":"0.7 & +",
 				"support":"http:\/\/forum.bludit.com\/viewtopic.php?f=14&t=61"
 			},
 			{
@@ -111,7 +111,7 @@
 				"email":"stradfred@gmail.com",
 				"website":"http:\/\/mi.france.free.fr",
 				"version":"1.0",
-				"compatibility":"0.5 & +",
+				"compatibility":"0.7 & +",
 				"support":"http:\/\/forum.bludit.com\/viewtopic.php?f=14&t=62"
 			},
 			{
@@ -127,7 +127,7 @@
 				"email":"",
 				"website":"https:\/\/github.com\/dignajar\/bludit-plugins",
 				"version":"0.6",
-				"compatibility":"0.5 & +",
+				"compatibility":"0.7 & +",
 				"support":"http:\/\/forum.bludit.com\/viewtopic.php?f=14&t=66"
 			},			
 			{
@@ -143,7 +143,7 @@
 				"email":"stradfred@gmail.com",
 				"website":"http:\/\/mi.france.free.fr",
 				"version":"1.2.7c",
-				"compatibility":"0.5 & +",
+				"compatibility":"0.7 & +",
 				"support":"http:\/\/forum.bludit.com\/viewtopic.php?f=14&t=14"
 			},
 			{
@@ -159,7 +159,7 @@
 				"email":"",
 				"website":"https:\/\/github.com\/dignajar\/bludit-plugins",
 				"version":"0.6",
-				"compatibility":"0.5 & +",
+				"compatibility":"0.7 & +",
 				"support":"http:\/\/forum.bludit.com"
 			},	
 			{
@@ -175,7 +175,7 @@
 				"email":"",
 				"website":"https:\/\/github.com\/dignajar\/bludit-plugins",
 				"version":"0.6",
-				"compatibility":"0.5 & +",
+				"compatibility":"0.7 & +",
 				"support":"http:\/\/forum.bludit.com"
 			},					
 			{
@@ -191,7 +191,7 @@
 				"email":"stradfred@gmail.com",
 				"website":"http:\/\/mi.france.free.fr",
 				"version":"0.3",
-				"compatibility":"0.5 & +",
+				"compatibility":"0.7 & +",
 				"support":"http:\/\/forum.bludit.com\/viewtopic.php?f=14&t=58"
 			},
 			{
@@ -207,7 +207,7 @@
 				"email":"",
 				"website":"https:\/\/github.com\/dignajar\/bludit-plugins",
 				"version":"0.6",
-				"compatibility":"0.5 & +",
+				"compatibility":"0.7 & +",
 				"support":"http:\/\/forum.bludit.com"
 			},	
 			{
@@ -223,7 +223,7 @@
 				"email":"",
 				"website":"https:\/\/github.com\/dignajar\/bludit-plugins",
 				"version":"0.6",
-				"compatibility":"0.5 & +",
+				"compatibility":"0.7 & +",
 				"support":"http:\/\/forum.bludit.com"
 			},	
 			{
@@ -239,7 +239,7 @@
 				"email":"",
 				"website":"https:\/\/github.com\/dignajar\/bludit-plugins",
 				"version":"0.1",
-				"compatibility":"0.5 & +",
+				"compatibility":"0.7 & +",
 				"support":"http:\/\/forum.bludit.com\/viewtopic.php?f=14&t=114"
 			},									
 			{
@@ -255,7 +255,7 @@
 				"email":"stradfred@gmail.com",
 				"website":"http:\/\/mi.france.free.fr",
 				"version":"1.0.2",
-				"compatibility":"0.5 & +",
+				"compatibility":"0.7 & +",
 				"support":"http:\/\/forum.bludit.com\/viewtopic.php?f=14&t=45"
 			},
 			{
@@ -271,7 +271,7 @@
 				"email":"stradfred@gmail.com",
 				"website":"http:\/\/mi.france.free.fr",
 				"version":"1.8.1d",
-				"compatibility":"0.5 & +",
+				"compatibility":"0.7 & +",
 				"support":"http:\/\/forum.bludit.com\/viewtopic.php?f=14&t=38"
 			},
 			{
@@ -287,7 +287,7 @@
 				"email":"stradfred@gmail.com",
 				"website":"http:\/\/mi.france.free.fr",
 				"version":"2.2.3",
-				"compatibility":"0.5 & +",
+				"compatibility":"0.7 & +",
 				"support":"http:\/\/forum.bludit.com\/viewtopic.php?f=14&t=36"
 			},
 			{
@@ -303,11 +303,27 @@
 				"email":"",
 				"website":"https:\/\/github.com\/NextStepWebs\/simplemde-markdown-editor",
 				"version":"0.1",
-				"compatibility":"0.5 & +",
+				"compatibility":"0.7 & +",
 				"support":"http:\/\/forum.bludit.com"
 			},
 			{
 				"id":20,
+				"cat":"plugin",
+				"type":"free",
+				"name":"Shortcode API",
+				"releaseDate":"2015-12-07",
+				"screenshot":"",
+				"description":"The Shortcode API is a simple set of functions for creating Bludit shortcodes for use in posts and pages.",
+				"archive":"https:\/\/github.com\/dignajar\/bludit-plugins\/blob\/master\/dist\/shortcode.zip?raw=true",
+				"author":"Fred K.",
+				"email":"stradfred@gmail.com",
+				"website":"http:\/\/mi.france.free.fr",
+				"version":"0.4",
+				"compatibility":"0.7 & +",
+				"support":"http:\/\/forum.bludit.com\/viewtopic.php?f=14&t=137"
+			},			
+			{
+				"id":21,
 				"cat":"plugin",
 				"type":"free",
 				"name":"Tags list",
@@ -319,11 +335,11 @@
 				"email":"",
 				"website":"http:\/\/bludit.com",
 				"version":"0.1",
-				"compatibility":"0.5 & +",
+				"compatibility":"0.7 & +",
 				"support":"http:\/\/forum.bludit.com"
 			},			
 			{
-				"id":21,
+				"id":22,
 				"cat":"plugin",
 				"type":"free",
 				"name":"Tinymce",
@@ -335,11 +351,11 @@
 				"email":"",
 				"website":"http:\/\/bludit.com",
 				"version":"0.1",
-				"compatibility":"0.5 & +",
+				"compatibility":"0.7 & +",
 				"support":"http:\/\/forum.bludit.com\/viewtopic.php?f=14&t=48"
 			},
 			{
-				"id":22,
+				"id":23,
 				"cat":"plugin",
 				"type":"free",
 				"name":"Trumbowyg",
@@ -351,7 +367,7 @@
 				"email":"stradfred@gmail.com",
 				"website":"http:\/\/mi.france.free.fr",
 				"version":"2.0.0-beta 7",
-				"compatibility":"0.5 & +",
+				"compatibility":"0.7 & +",
 				"support":"http:\/\/forum.bludit.com\/viewtopic.php?f=14&t=34"
 			}									
         ] 

@@ -6,36 +6,22 @@
  *  @subpackage Plugins
  *  @author Frédéric K.
  *  @copyright 2015 Frédéric K.
+ *	@version 0.5
  *  @release 2015-08-10
- *  @update 2015-11-13
+ *  @update 2015-12-07
  *
  */
 class pluginContact extends Plugin {
-	
-	protected static $security_token_name = 'security_token';
-	/**
-	 * Instance handler
-	 * @var string
-	 */
-	var $handler		= null;		
-	# DONNÉES DU PLUG-IN
+		
+	# DONNÉES DU PLUG-IN.
 	public function init()
 	{
 		$this->dbFields = array(
-			'email'=>'',  // <= Your contact email
-			'slug'=>''
+			'email'=>'',	// <= Your contact email
+			'slug'=>''		// <= Slug url of contact page
 			);
 	}
-	# AFFICHE LA FEUILLE DE STYLE ET LE JAVASCRIPT SUR LA CONFIGURATION DU PLUG-IN	
-	public function adminHead()
-	{
-		global $Language;
-		$html = '';
-
-		$html .= '<script></script>'.PHP_EOL;
-		return $html;
-	}	
-	# ADMINISTRATION DU PLUG-IN
+	# ADMINISTRATION DU PLUG-IN.
 	public function form()
 	{
 		global $Language, $pagesParents;
@@ -75,110 +61,43 @@ class pluginContact extends Plugin {
 		$html .= '</div>';	
 	
 		return $html;
-	}	
-	# AFFICHE LA FEUILLE DE STYLE ET LE JAVASCRIPT UNIQUEMENT SUR LA PAGE DEMANDÉE	
+	}
+    /**
+     * AFFICHE LA FEUILLE DE STYLE ET LE JAVASCRIPT UNIQUEMENT SUR LA PAGE DEMANDÉE.
+     *
+     */			
 	public function siteHead()
 	{
-		global $Page, $Url, $Site;
+		global $Page, $Url;
 		$html = '';
 		
 		if($Url->whereAmI()==='page' && $Page->slug()==$this->getDbField('page'))
 		{
-			$html .= '<style type="text/css">input[name="interested"] {display: none;}
-			.alert{padding: 5px 8px;color: white;width: 50%}
-			.alert.error{background-color: crimson}
-			.alert.success{background-color: mediumaquamarine}</style>'.PHP_EOL;
-			$html .= '<script>$(".alert").fadeOut(10000);</script>'.PHP_EOL;
+			$pluginPath = $this->htmlPath();
+			/** 
+			 * ON INCLUT LA CSS PAR DÉFAUT DU PLUG-IN OU LA CSS PERSONNALISÉE STOCKER DANS NOTRE THÈME 
+			 */
+		    $css = PATH_THEME_CSS. 'contact.css';
+		    if(file_exists($css))
+			    $html .= Theme::css('contact.css');
+		    else 
+			    $html .= '<link rel="stylesheet" href="'.$pluginPath.'layout/contact.css">';				
 		}
 		return $html;
-	}
-	
+	}  
     /**
-     * Generate and store a unique token which can be used to help prevent
-     * [CSRF](http://wikipedia.org/wiki/Cross_Site_Request_Forgery) attacks.
-     *
-     *  <code>
-     *      $token = pluginContact::generateToken();
-     *  </code>
-     *
-     * You can insert this token into your forms as a hidden field:
-     *
-     *  <code>
-     *      <input type="hidden" name="token" value="<?php echo pluginContact::generateToken(); ?>">
-     *  </code>
-     *
-     * This provides a basic, but effective, method of preventing CSRF attacks.
-     *
-     * @param  boolean $new force a new token to be generated?. Default is false
-     * @return string
-     */
-    public function generateToken($new = false) {
-        # Get the current token
-        if (isset($_SESSION[(string) pluginContact::$security_token_name])) $token = $_SESSION[(string) pluginContact::$security_token_name]; else $token = null;
-        # Create a new unique token
-        if ($new === true or ! $token) {
-            # Generate a new unique token
-            $token = sha1(uniqid(mt_rand(), true));
-            # Store the new token
-            $_SESSION[(string) pluginContact::$security_token_name] = $token;
-        }
-        # Return token
-        return $token;
-    }
-    /**
-     * Check that the given token matches the currently stored security token.
-     *
-     *  <code>
-     *     if (pluginContact::checkToken($token)) {
-     *         // Pass
-     *     }
-     *  </code>
-     *
-     * @param  string  $token token to check
-     * @return boolean
-     */
-    public function checkToken($token) {
-        return pluginContact::generateToken() === $token;
-    }
-    /**
-     * Sanitize data to prevent XSS - Cross-site scripting
-     *
-     *  <code>
-     *     $str = pluginContact::cleanString($str);
-     *  </code>
-     *
-     * @param  string $str String
-     * @return string 
-     */
-    public function cleanString($str) {
-        return htmlspecialchars($str, ENT_QUOTES, CHARSET);
-    }
-	/**
-	 * Valid mail address ?
-     *
-     *  <code>
-     *     $str = pluginContact::mailcheck();
-     *  </code>
-     *	 
-	 * @return boolean
-	 */
-	public function mailcheck() { 
-		return (filter_var($this->handler, FILTER_VALIDATE_EMAIL)) ? true : false; 
-	}    
-    /**
-     * Add the contact form after content page
+     * AJOUTE LE FORMULAIRE DE CONTACT APRÈS LE CONTENU DE LA PAGE.
      *
      */		
 	public function pageEnd()
 	{
-		global $Page, $Url, $Site, $Language;
+		global $Page, $Url, $Site, $Language, $Security;
 		# On charge le script uniquement sur la page en paramètre
 		if($Url->whereAmI()==='page' && $Page->slug()==$this->getDbField('page'))
 		{ 
 		   $error = false;
 		   $success = false;
-		   $token = pluginContact::generateToken(); // Très important de déclarer le jeton !!!
-
+		   
 		   # $_POST
 		   $name       = isset($_POST['name']) ? $_POST['name'] : '';
 		   $email      = isset($_POST['email']) ? $_POST['email'] : '';
@@ -186,7 +105,11 @@ class pluginContact extends Plugin {
 		   $interested = isset($_POST['interested']) ? $_POST['interested'] : '';			            		           
 		   $contentType = 'text'; // Type de mail (text/html)
 		             
-		   if(isset($_POST['submit']) && pluginContact::checkToken($token)){		            
+		   if(isset($_POST['submit'])){	
+
+					// Renew the token. This token will be the same inside the session for multiple forms.
+					$Security->generateTokenCSRF();
+								   	            
 		            # Paramètres
 		            $site_title   = $Site->title();
 		            $site_charset = CHARSET;
@@ -222,15 +145,15 @@ class pluginContact extends Plugin {
 				    elseif($interested)
 				       $error = $Language->get('Oh my god a Bot!');
 				    if(!$error) {
-		               if(mail($site_email, $subject, $email_content, $email_headers)) { 
-			              # Reset fields, work ?
-			              $_POST = array();  
-		                  # Envoi du Mail             
-		                  $success = $Language->get('Thank you for having contacted me. I will reply you as soon as possible.');
-		                  #Redirect::page($Page->slug());
-		               } else {
+					    # Si tout ok, on envoi notre mail
+		                if(mail($site_email, $subject, $email_content, $email_headers)) { 
+		                  # Retourne le message de confirmation d’envoi           
+		                  $success = $Language->get('Thank you for having contacted me. I will reply you as soon as possible.');				                
+		                  # Redirection sur le formulaire
+		                  # Redirect::page( '', $Page->slug() );	                  
+		                } else {
 		                  $error = $Language->get('Oops! An error occurred while sending your message, thank you to try again later.');
-		               }
+		                }
 		            }
 		        # On retourne les erreurs    
 		        if($error) echo '<div class="alert fade error">'.$error.'</div>'."\r\n";
@@ -242,11 +165,10 @@ class pluginContact extends Plugin {
 			 * ON INCLUT LE TEMPLATE PAR DÉFAUT DU PLUG-IN OU LE TEMPLATE PERSONNALISÉ STOCKER DANS NOTRE THÈME 
 			 */
 		    $template = PATH_THEME_PHP. 'contact.php';
-		    if(file_exists($template)) {
+		    if(file_exists($template))
 			    include_once($template);
-		    } else {
-			    include(dirname(__FILE__).'/layout/contact.php');
-		    }	    			
+		    else 
+			    include(dirname(__FILE__). DS .'layout/contact.php');	    			
 		    
 		}
 	}   

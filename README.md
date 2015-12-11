@@ -11,6 +11,13 @@ Push your Bludit plugins here!
 
 ## Plugin list
 
+### SnowFlakes
+Snow in your site!
+- Author: Frédéric K.
+- Version: 0.1
+- Website: 
+- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/SnowFlakes.zip?raw=true)
+
 ### About
 Little description about your site or yourself.
 - Author: Bludit
@@ -28,7 +35,7 @@ Universal Analytics is the next generation of Google Analytics. It is a series o
 ### Animate Background
 Add a great background effect in your theme.
 - Author: Fred
-- Version: 0.1
+- Version: 0.2
 - Website: 
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/animate-background.zip?raw=true)
 
@@ -42,14 +49,14 @@ Backup lets you back up your data, download, restore and delete them from your s
 ### Ckeditor + filemanager
 Add Ckeditor 4.5.4 + RESPONSIVE filemanager v.9.9.6 to Bludit
 - Author: Fred
-- Version: 1.0.7
+- Version: 1.0.7b
 - Website: 
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/ckeditor.zip?raw=true)
 
 ### Contact
 Add a contact form to Bludit, with the ability to use a custom template.
 - Author: Fred
-- Version: 0.4
+- Version: 0.5
 - Website: 
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/contact.zip?raw=true)
 
@@ -75,7 +82,7 @@ This plugin is a (mostly) code-free way of embedding Gitter into your website wi
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/gitter.zip?raw=true)
 
 ### Google CSE
-Plugin for adding a Google Custom Search Engine. To use it you need a Google account and a search engine ID. Please see https://cse.google.com.
+Plugin for adding a Google Custom Search Engine. To use it you need a Google account and a search engine ID. For further instructions please see the README file and https://cse.google.com.
 - Author: Clickwork
 - Version: 0.1
 - Website: https://www.clickwork.ch
@@ -126,21 +133,21 @@ Plugin to add the verification meta tag for Pinterest. See http://business.pinte
 ### Ribbon
 Add a ribbon in the corner of your site or information fully customizable bar.
 - Author: Fred
-- Version: 1.0.2
+- Version: 1.0.3
 - Website: 
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/ribbon.zip?raw=true)
 
 ### Rrssb (Sharing Buttons)
 Ridiculously Responsive Social Sharing Buttons.
 - Author: Fred
-- Version: 1.8.1d
+- Version: 1.8.6
 - Website: 
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/rrssb.zip?raw=true)
 
 ### Shortcode API
 The Shortcode API is a simple set of functions for creating Bludit shortcodes for use in posts and pages.
 - Author: Fred K., Bludit & Sergey Romanenko
-- Version: 0.3
+- Version: 0.4
 - Website: 
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/shortcode.zip?raw=true)
 
@@ -168,7 +175,7 @@ Shows all tags.
 ### TinyMCE
 Tinymce is an easy HTML editor, with many plugins and very customizable.
 - Author: TinyMCE
-- Version: 4.3
+- Version: 4.3.1
 - Website: http://www.tinymce.com
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/tinymce.zip?raw=true)
 

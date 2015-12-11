@@ -6,8 +6,9 @@
  *  @subpackage Plugins
  *  @author Frédéric K.
  *  @copyright 2015 Frédéric K, Bludit & Sergey Romanenko for the shortcode class.
+ *	@version 0.4
  *  @release 2015-11-19
- *  @update 2015-11-25
+ *  @update 2015-12-07
  *
  */
 class pluginShorcode extends Plugin {
@@ -16,17 +17,14 @@ class pluginShorcode extends Plugin {
 		'configure-plugin'
 	);
 	
-	# add shortcode from themes
-	private  function addons_shortcode_themes() {
+	# PARSE SHORTCODES IN THEME (DON'T WORK FOR THE MOMENT!)
+	private function addons_shortcode_themes() {
 		global $Site;
-		$template = PATH_THEMES.$Site->theme(). DS .'init.php';
-		// Theme init.php
-		if( Sanitize::pathFile(PATH_THEMES, $Site->theme(). DS .'init.php') ) {
-			include_once( $template );
-			Shortcode::parse( $template );
-		}	
+		$template = PATH_THEMES.$Site->theme().DS.'index.php';
+		Shortcode::parse( $template );
 	}
-
+	
+	# ADD EDITOR IN PLUGIN CONFIGURATION
 	public function adminHead()
 	{
 		global $layout, $Site;
@@ -60,20 +58,21 @@ class pluginShorcode extends Plugin {
 		}
 
 		return $html;
-	}	
+	}
+		
+	# PARSE SHORTCODES BEFORE BLUDIT LOAD
 	public function beforeSiteLoad()
 	{
 		global $Page, $Post, $Url, $posts; // Better with instance() no?
-				
-		# Add Shorcode class
+					
+		# Add Shortcode class
 		require_once(dirname(__FILE__). DS .'Shortcode.class.php');
 				
 		# Add great extras shorcode!
-		include_once(dirname(__FILE__). DS .'shortcodes.php');
-		
+		include_once(dirname(__FILE__). DS .'shortcodes.php');		
 
-		# include shorcodes in themes with init.php
-		$this->addons_shortcode_themes();
+		# include shortcodes in themes		
+		# $this->addons_shortcode_themes(); // FEATURES
 								     
 		// Filter then build it!
 		switch($Url->whereAmI())
@@ -109,10 +108,8 @@ class pluginShorcode extends Plugin {
 					$Post->setField('breakContent', $explode[0], true);
 					$Post->setField('readMore', !empty($explode[1]), true);
 				}    
-			
-
 		}
-		     
+	     
 	}
 
 	# WRITE SHORTCODE FILE
@@ -129,7 +126,6 @@ class pluginShorcode extends Plugin {
 		# Write finish :)
 		Alert::set($Language->get("Shortcodes updated!"));
 		Redirect::page('admin', 'configure-plugin/pluginShorcode');	
-
 	}
 		
 	# ADD SHORCODE IN PLUGIN CONFIGURATION
@@ -143,7 +139,7 @@ class pluginShorcode extends Plugin {
 		$content = file_get_contents($shortcodeFile);
 		
 		$html  = '<div class="uk-button-group">';
-		$html .= '<button class="uk-button uk-button-success" type="submit" name="add"><i class="uk-icon-pencil"></i> ' .$Language->get("Edit Shorcodes"). '</button> <a class="uk-button uk-button-primary" href="#help" data-uk-modal=""><i class="uk-icon-info-circle"></i></a>';
+		$html .= '<button class="uk-button uk-button-success" type="submit" name="add"><i class="uk-icon-pencil"></i> ' .$Language->get("edit-shorcodes"). '</button> <a class="uk-button uk-button-primary" href="#help" data-uk-modal=""><i class="uk-icon-info-circle"></i> ' .$Language->get("Help"). '</a>';
 		$html .= '</div>';		
 		$html .= '<div style="display: none; overflow-y: auto;" aria-hidden="true" id="help" class="uk-modal">';
 		$html .= '<div class="uk-modal-dialog">';
@@ -159,7 +155,7 @@ class pluginShorcode extends Plugin {
 		# Tip for hide default submit button
 		$html .= '<style type="text/css" scoped>.uk-form-row button, .uk-form-row a {display:none};</style>';
 		# Insert new button to save
-		$html .= '<button class="uk-button uk-button-success" type="submit" name="add"><i class="uk-icon-pencil"></i> ' .$Language->get("Edit Shorcodes"). '</button>';	
+		$html .= '<button class="uk-button uk-button-success" type="submit" name="add"><i class="uk-icon-pencil"></i> ' .$Language->get("edit-shorcodes"). '</button>';	
 		# Submited? write the shorcode file		
 		if (isset($_POST['add'])) pluginShorcode::write_shortcode();
 

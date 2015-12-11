@@ -1,0 +1,16 @@
+{
+	"plugin-data":
+	{
+		"name": "SnowFlakes (Flocons de Neige)",
+		"description": "Ajoute des flocons de neige sur votre site entièrement personnalisable."
+	},
+	"enable-plugin-(config-save)": "Activer le plugin (configuration sauvegardée)",
+	"snowmax": "Nombre de Flocons <em>(pas plus de 30 / 40 recommandé)</em>",
+	"snowcolor": "Couleur des flocons. Ajouter autant de couleur que vous voulez.",
+	"snowtype": "Police, pour permettre de créer le flocon",
+	"snowletter": "Lettre, symbole que vous désirez faire tomber <em>(*, ❄, ❅, ❆)</em>",
+	"sinkspeed": "Vitesse de défilement <em>(nous vous recommandons une fourchette de 0.3 à 2)</em>",
+	"snowmaxsize": "Taille maxi", 
+	"snowminsize": "Taille mini",
+	"snowingzone": "Réglage 1 pour faire tomber la neige sur tout l'écran, 2 pour le côté gauche, 3 pour le centre uniquement, 4 pour le côté droit"
+}

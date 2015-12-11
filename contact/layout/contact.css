@@ -1,0 +1,4 @@
+input[name="interested"] { display: none }
+.alert { padding: 5px 8px;color: white;width: 50% }
+.alert.error { background-color: crimson }
+.alert.success { background-color: mediumaquamarine }
