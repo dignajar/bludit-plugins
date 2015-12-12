@@ -1,0 +1,13 @@
+{
+	"plugin-data":
+	{
+		"name": "Twitter Cards",
+		"description": "Протокол Twitter Cards дает возможность связывать свой контент с социальными сетями."
+	},
+	"twitterusername": "Twitter Username",
+	"twittercardtypepost": "Twitter card type for posts",
+	"twittercardtypepage": "Twitter card type for pages",
+	"complete-this-field-with-the-twitter-sites-owner-username": "Complete this field with site's owner twitter username.",
+	"complete-this-field-with-the-twitter-card-type-for-post": "Complete this field with the twitter card type for posts (default: summary)",
+	"complete-this-field-with-the-twitter-card-type-for-page": "Complete this field with the twitter card type for posts (default: summary_large_image)"
+}

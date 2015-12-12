@@ -67,6 +67,13 @@ The most popular solution to the EU Cookie Law, as well as a detector with AdBlo
 - Website: 
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/cookie-consent.zip?raw=true)
 
+### Cover Image
+Cover Image allow you to add a featured image for post and pages.
+- Author: TetoQ
+- Version: 0.1
+- Website: http://www.freeco.it
+- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/coverimage.zip?raw=true)
+
 ### Disqus comment system
 Disqus is a blog comment hosting service for web sites. It's necesary to register on Disqus.com before using this plugin.
 - Author: Bludit
@@ -185,4 +192,11 @@ Trumbowyg is a very small jQuery plugin for creating a powerful WYSIWYG editor.
 - Version: 2.0.0-beta.7
 - Website: 
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/trumbowyg.zip?raw=true)
+
+### Twitter Cards
+With Twitter Cards, you can attach rich photos, videos and media experience to Tweets that drive traffic to your website.
+- Author: SpecKtator
+- Version: 0.1
+- Website: http://totallynoob.com
+- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/twittercards.zip?raw=true)
 

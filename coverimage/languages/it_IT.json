@@ -1,0 +1,16 @@
+{
+	"plugin-data":
+	{
+		"name": "Cover Image",
+		"description": "Questo plugin ti permette di associare un'immagine ad un post o ad una pagina.",
+		"author": "TetoQ",
+		"email": "",
+		"website": "http://www.freeco.it",
+		"version": "0.1",
+		"releaseDate": "2015-12-09"
+	},
+	"label":"Abilita il plugin per:",
+	"all-pages-and-posts": "Tutto, pagine e posts.",
+	"posts-only": "Solo posts.",
+	"pages-only": "Solo pagine."
+}
