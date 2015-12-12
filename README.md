@@ -186,3 +186,10 @@ Trumbowyg is a very small jQuery plugin for creating a powerful WYSIWYG editor.
 - Website: 
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/trumbowyg.zip?raw=true)
 
+### Twitter Cards
+With Twitter Cards, you can attach rich photos, videos and media experience to Tweets that drive traffic to your website.
+- Author: SpecKtator
+- Version: 0.1
+- Website: http://totallynoob.com
+- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/twittercards.zip?raw=true)
+
