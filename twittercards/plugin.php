@@ -42,7 +42,7 @@ class pluginTwitterCards extends Plugin {
 	    $html  = '<div>';
 	    $html .= '<label for="twitter-username">'.$Language->get('twitterusername').'</label>';
 	    $html .= '<input type="text" name="twitter-username" value="'.$this->getDbField('twitter-username').'" />';
-	    $html .= '<div class="tip">'.$Language->get("complete-this-field-with-the-twitter-card-type-for-post").'</div>';
+	    $html .= '<div class="tip">'.$Language->get("complete-this-field-with-the-twitter-sites-owner-username").'</div>';
 
 	    $html .= '<label for="twitter-card-type-post">'.$Language->get('twittercardtypepost').'</label>';
 	    $html .= '<input type="text" name="twitter-card-type-post" value="'.$this->getDbField('twitter-card-type-post').'" />';

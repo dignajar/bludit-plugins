@@ -1,0 +1,13 @@
+{
+	"plugin-data":
+	{
+		"name": "Twitter Cards",
+		"description": "Twitter Cards erlauben es, Bilder, Videos und andere Medien als Tweets zu veröffentlichen und dadurch eine grössere Aufmerksamkeit für die Website zu schaffen."
+	},
+	"twitterusername": "Nutzername bei Twitter",
+	"twittercardtypepost": "Typus der Twitter Card für Beiträge",
+	"twittercardtypepage": "Typus der Twitter Card für Seiten",
+	"complete-this-field-with-the-twitter-sites-owner-username": "Nutzername bei Twitter des Betreibers der Website.",
+	"complete-this-field-with-the-twitter-card-type-for-post": "Bitte den Typus der Twitter Card für Beiträge angeben (Standardvorgabe: summary).",
+	"complete-this-field-with-the-twitter-card-type-for-page": "Bitte den Typus der Twitter Card für Seiten angeben (Standardvorgabe: summary_large_image)."
+}
