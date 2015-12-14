@@ -25,6 +25,13 @@ Little description about your site or yourself.
 - Website: https://github.com/dignajar/bludit-plugins
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/about.zip?raw=true)
 
+### AddToAny Social Sharing
+AddToAny is a set of social sharing buttons. 
+- Author: 320up
+- Version: 0.1
+- Website: http://320up.com.au
+- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/addtoany.zip?raw=true)
+
 ### Universal Analytics
 Universal Analytics is the next generation of Google Analytics. It is a series of technologies that helps businesses measure their digital world.
 - Author: Fred
