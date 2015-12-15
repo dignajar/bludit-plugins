@@ -1,0 +1,11 @@
+{
+	"plugin-data":
+	{
+		"name": "Cover Image",
+		"description": "Cover Image erlaubt es, ein Beitragsbild (featured image) zu einem Beitrag oder einer Seite hinzuzufügen."
+	},
+	"label":"Beitragbild hinzufügen",
+	"all-pages-and-posts": "zu Beitägen und zu Seiten",
+	"posts-only": "zu Beiträgen",
+	"pages-only": "zu Seiten"
+}
