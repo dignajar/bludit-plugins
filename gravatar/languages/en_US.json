@@ -1,0 +1,12 @@
+{
+	"plugin-data":
+	{
+		"name": "Gravatar",
+		"description": "Retrieve Gravatar avatars",
+		"author": "SpecKtator",
+		"email": "specktator@totallynoob.com",
+		"website": "http://totallynoob.com",
+		"version": "0.1",
+		"releaseDate": "2015-12-11"
+	}
+}
