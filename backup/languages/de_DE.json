@@ -2,7 +2,7 @@
 	"plugin-data":
 	{
 		"name": "Backup",
-		"description": "Backup erlaubt es, die Daten einer Website zu sichern, herunterzuladen, wiederzuherstellen und Backups vom Server löschen."
+		"description": "Backup erlaubt es, die Daten einer Website zu sichern, herunterzuladen, wiederherzustellen und Backups vom Server löschen."
 	},
 	"download": "Herunterladen",
 	"delete": "Löschen",
