@@ -1,0 +1,12 @@
+{
+	"plugin-data":
+	{
+		"name": "Gravatar",
+		"description": "Retrieves Gravatar full profile. Admin can choose from the configuration page where to load the plugin and which Gravatar profile field to display on each theme's position. The plugin use, per user, cache expire time to update it self with gravatar profile changes and a custom css file in plugins folder.",
+		"author": "SpecKtator",
+		"email": "specktator@totallynoob.com",
+		"website": "http://totallynoob.com",
+		"version": "0.1",
+		"releaseDate": "2015-12-22"
+	}
+}
