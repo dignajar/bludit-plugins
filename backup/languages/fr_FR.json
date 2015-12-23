@@ -2,12 +2,7 @@
 	"plugin-data":
 	{
 		"name": "Backup",
-		"description": "Backup permet de sauvegarder vos données, de les télécharger, restaurer et de les supprimer de votre serveur.",
-		"author": "Fred",
-		"email": "stradfred@gmail.com",
-		"website": "",
-		"version": "0.5.1",
-		"releaseDate": "2015-11-27"
+		"description": "Backup permet de sauvegarder vos données, de les télécharger, restaurer et de les supprimer de votre serveur."
 	},
 	"download": "Télécharger",
 	"delete": "Supprimer",
