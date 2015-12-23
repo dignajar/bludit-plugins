@@ -2,12 +2,7 @@
 	"plugin-data":
 	{
 		"name": "備份",
-		"description": "讓您備份您的資料，並可以從您的伺服器下載、還原或是刪除這些備份檔案",
-		"author": "Fred",
-		"email": "stradfred@gmail.com",
-		"website": "",
-		"version": "0.5.1",
-		"releaseDate": "2015-11-27"
+		"description": "讓您備份您的資料，並可以從您的伺服器下載、還原或是刪除這些備份檔案"
 	},
 	"download": "下載",
 	"delete": "刪除",
