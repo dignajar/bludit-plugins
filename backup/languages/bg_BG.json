@@ -1,0 +1,23 @@
+{
+	"plugin-data":
+	{
+		"name": "Backup",
+		"description": "Backup ви позволява да архивирате,изтегляте,възстановявате или изтривате вашите данни от сървъра."
+	},
+	"download": "Свали",
+	"delete": "Изтрий",
+	"restore": "Възстанови",
+	"archives": "Архиви",
+	"file-size": "Размер на файла",
+	"date": "Дата",
+	"actions": "Действие",
+	"make-a-backup": "Създай резервно копие",
+	"delete-this-backup?": "Изтрий това резервно копие!",
+	"do-you-want-to-restore-this-backup?": "Искате ли да възстановите това резервно копие?",
+	"there-was-a-problem-writing-the-zip-archive.": "Възникна проблем при създаването на ZIP архива",
+	"successfully-created-the-zip-archive!": "Успешно създаден на ZIP архив!",
+	"successfully-deleted-file!": "Успешно изтрити файлове!",
+	"an-error-occurred-while-deleting-the-file.": "Възникна грешка при изтриването на файловете.",
+	"archive-is-restored!": "Архива възстановен!",
+	"there-was-a-problem-to-restore-the-zip-archive": "Имаше проблем за възстановяването на ZIP архива."
+}

@@ -109,6 +109,13 @@ This plugin generate the meta tag to validate your site with Google Webmasters T
 - Website: https://github.com/dignajar/bludit-plugins
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/googletools.zip?raw=true)
 
+### Gravatar
+Retrieves Gravatar full profile. Admin can choose from the configuration page where to load the plugin and which Gravatar profile field to display on each theme's position. The plugin use, per user, cache expire time to update it self with gravatar profile changes and a custom css file in plugins folder.
+- Author: SpecKtator
+- Version: 0.1
+- Website: http://totallynoob.com
+- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/gravatar.zip?raw=true)
+
 ### Maintenance mode
 Set your site on maintenance mode, you can access to admin area.
 - Author: Bludit
