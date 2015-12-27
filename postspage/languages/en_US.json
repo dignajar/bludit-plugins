@@ -1,0 +1,13 @@
+{
+	"plugin-data":
+	{
+		"name": "Posts Page",
+		"description": "Select a page for displaying posts.",
+		"author": "Clickwork",
+		"email": "egoetschel@yabyum.ch",
+		"website": "https://www.clickwork.ch",
+		"version": "0.1",
+		"releaseDate": "2015-12-25"
+	},
+	"post-page": "Select a page for displaying posts"
+}
