@@ -144,6 +144,13 @@ Shows the list of pages in order.
 - Website: https://github.com/dignajar/bludit-plugins
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/pages.zip?raw=true)
 
+### Page with Posts
+Select a page to show posts.
+- Author: Clickwork
+- Version: 0.1
+- Website: https://www.clickwork.ch
+- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/pagewithposts.zip?raw=true)
+
 ### Pinterest Verfication
 Plugin to add the verification meta tag for Pinterest. See http://business.pinterest.com/verify/.
 - Author: Edi Goetschel
