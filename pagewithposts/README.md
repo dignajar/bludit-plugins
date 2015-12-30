@@ -1,7 +1,7 @@
 Page with Posts
 ===============
 
-Plugin to define a page to show posts.
+Plugin to use a page to show posts.
 
 Versions
 --------
