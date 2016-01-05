@@ -147,7 +147,7 @@ Shows the list of pages in order.
 ### Page with Posts
 Select a page to show posts.
 - Author: Clickwork
-- Version: 0.1
+- Version: 0.2
 - Website: https://www.clickwork.ch
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/pagewithposts.zip?raw=true)
 
