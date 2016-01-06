@@ -81,6 +81,13 @@ Cover Image allow you to add a featured image for post and pages.
 - Website: http://www.freeco.it
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/coverimage.zip?raw=true)
 
+### Custom CSS
+Add custom CSS to a theme.
+- Author: Clickwork
+- Version: 0.1
+- Website: https://github.com/dignajar/bludit-plugins
+- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/customcss.zip?raw=true)
+
 ### Disqus comment system
 Disqus is a blog comment hosting service for web sites. It's necesary to register on Disqus.com before using this plugin.
 - Author: Bludit
