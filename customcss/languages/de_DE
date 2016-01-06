@@ -1,0 +1,12 @@
+{
+	"plugin-data":
+	{
+		"name": "Benutzerdefiniertes CSS",
+		"description": "Fügt einem Design benutzerdefiniertes CSS hinzu.",
+		"author": "Clickwork",
+		"email": "egoetschel@yabyum.ch",
+		"website": "https://github.com/dignajar/bludit-plugins",
+		"version": "0.1",
+		"releaseDate": "2016-01-06"
+	}
+}
