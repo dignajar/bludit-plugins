@@ -24,7 +24,7 @@ class pluginContact extends Plugin {
 	# ADMINISTRATION DU PLUG-IN.
 	public function form()
 	{
-		global $Language, $pagesParents;
+		global $Language, $pages, $pagesParents;
 			
 		// Liste des pages ou afficher le formulaire
 		$_selectPageList = '';
