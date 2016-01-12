@@ -10,5 +10,5 @@ Versions
 
 0.2, 12. January 2016, implementation of CodeMirror editor.
 
-0.1, 4. December 2015.
+0.1, 6. January 2016.
 
