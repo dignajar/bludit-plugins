@@ -1,0 +1,10 @@
+{
+	"author": "TinyMCE",
+	"email": "",
+	"website": "https://www.tinymce.com",
+	"version": "4.3.3",
+	"releaseDate": "2016-01-13",
+	"license": "GPL v2",
+	"requires": "Bludit v1.0",
+	"notes": ""
+}
