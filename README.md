@@ -18,13 +18,6 @@ Snow in your site!
 - Website: 
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/SnowFlakes.zip?raw=true)
 
-### About
-Little description about your site or yourself.
-- Author: Bludit
-- Version: 0.7
-- Website: https://github.com/dignajar/bludit-plugins
-- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/about.zip?raw=true)
-
 ### AddToAny Social Sharing
 AddToAny is a set of social sharing buttons. 
 - Author: 320up
@@ -88,13 +81,6 @@ Add custom CSS to a theme.
 - Website: https://github.com/dignajar/bludit-plugins
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/customcss.zip?raw=true)
 
-### Disqus comment system
-Disqus is a blog comment hosting service for web sites. It's necesary to register on Disqus.com before using this plugin.
-- Author: Bludit
-- Version: 0.7
-- Website: https://github.com/dignajar/bludit-plugins
-- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/disqus.zip?raw=true)
-
 ### Gitter
 This plugin is a (mostly) code-free way of embedding Gitter into your website with a simple JavaScript snippet.It works out of the box with no customization, or you can control its behaviour with some basic configuration.
 - Author: Fred  K.
@@ -109,13 +95,6 @@ Plugin for adding a Google Custom Search Engine. To use it you need a Google acc
 - Website: https://www.clickwork.ch
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/googlecse.zip?raw=true)
 
-### Google Tools
-This plugin generate the meta tag to validate your site with Google Webmasters Tools and the JavaScript code to track your site with Google Analytics.
-- Author: Bludit
-- Version: 0.7
-- Website: https://github.com/dignajar/bludit-plugins
-- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/googletools.zip?raw=true)
-
 ### Gravatar
 Retrieves Gravatar full profile. Admin can choose from the configuration page where to load the plugin and which Gravatar profile field to display on each theme's position. The plugin use, per user, cache expire time to update it self with gravatar profile changes and a custom css file in plugins folder.
 - Author: SpecKtator
@@ -123,33 +102,12 @@ Retrieves Gravatar full profile. Admin can choose from the configuration page wh
 - Website: http://totallynoob.com
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/gravatar.zip?raw=true)
 
-### Maintenance mode
-Set your site on maintenance mode, you can access to admin area.
-- Author: Bludit
-- Version: 0.7
-- Website: https://github.com/dignajar/bludit-plugins
-- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/maintancemode.zip?raw=true)
-
 ### Minify
 Minifies HTML, JS, CSS and removes comments (except IE tags and comments within script tags). To disable compression of code portions, use <em>&lt;!--html-compression no compression--&gt;</em> tag.
 - Author: Fred
 - Version: 0.3
 - Website: 
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/minify.zip?raw=true)
-
-### Open Graph
-The Open Graph protocol enables any web page to become a rich object in a social graph.
-- Author: Bludit
-- Version: 0.7
-- Website: https://github.com/dignajar/bludit-plugins
-- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/opengraph.zip?raw=true)
-
-### Page list
-Shows the list of pages in order.
-- Author: Bludit
-- Version: 0.7
-- Website: https://github.com/dignajar/bludit-plugins
-- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/pages.zip?raw=true)
 
 ### Page with Posts
 Select a page to show posts.
@@ -193,27 +151,8 @@ Simple and fast rich text editor.
 - Website: 
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/simditor.zip?raw=true)
 
-### SimpleMDE
-A simple, beautiful, and embeddable JavaScript markdown editor by @WesCossick. Adapted by Diego Najar for Bludit.
-- Author: NextStepWebs
-- Version: 1.8.1
-- Website: https://github.com/NextStepWebs/simplemde-markdown-editor
-- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/simplemde.zip?raw=true)
-
-### Tags list
-Shows all tags.
-- Author: Bludit
-- Version: 0.7
-- Website: https://github.com/dignajar/bludit-plugins
-- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/tags.zip?raw=true)
-
 ### TinyMCE
 Tinymce is an easy HTML editor, with many plugins and very customizable.
-- Author: TinyMCE
-- Version: 4.3.1
-- Website: http://www.tinymce.com
-- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/tinymce.zip?raw=true)
-
 ### Trumbowyg
 Trumbowyg is a very small jQuery plugin for creating a powerful WYSIWYG editor.
 - Author: Fred
