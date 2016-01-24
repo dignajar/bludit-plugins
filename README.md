@@ -21,6 +21,26 @@ Little description about your site or yourself.
 - Requires: Bludit v1.0
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/zip-files/about.zip?raw=true)
 
+### AddToAny Social Sharing
+AddToAny is a set of social sharing buttons. 
+- Author: 320up
+- Version: 0.1
+- Website: http://320up.com.au
+- Release date: 2015-12-12
+- License: 
+- Requires: 
+- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/zip-files/addtoany.zip?raw=true)
+
+### Universal Analytics
+Universal Analytics is the next generation of Google Analytics. It is a series of technologies that helps businesses measure their digital world.
+- Author: Fred
+- Version: 0.8
+- Website: 
+- Release date: 2015-08-08
+- License: 
+- Requires: 
+- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/zip-files/analytics.zip?raw=true)
+
 ### Disqus comment system
 Disqus is a blog comment hosting service for web sites. It's necesary to register on Disqus.com before using this plugin.
 - Author: Bludit
