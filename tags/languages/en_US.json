@@ -2,11 +2,10 @@
 	"plugin-data":
 	{
 		"name": "Tags list",
-		"description": "Shows all tags.",
-		"author": "Bludit",
-		"email": "",
-		"website": "https://github.com/dignajar/bludit-plugins",
-		"version": "0.7",
-		"releaseDate": "2015-12-01"
-	}
+		"description": "Shows all tags."
+	},
+	"tag-sort-order": "Sort the tag list by",
+	"tag-sort-alphabetical": "Alphabetical order",
+	"tag-sort-count": "Number of times each tag has been used",
+	"tag-sort-date": "Date each tag was first used"
 }

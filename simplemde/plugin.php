@@ -50,7 +50,7 @@ class pluginsimpleMDE extends Plugin {
 			$html .= '<link rel="stylesheet" href="'.$pluginPath.'css/simplemde.min.css">';
 
 			// Font-awesome is a dependency of SimpleMDE
-			$html .= '<link rel="stylesheet" href="'.$pluginPath.'css/font-awesome.min.css">';
+			$html .= '<link rel="stylesheet" href="'.HTML_PATH_ADMIN_THEME_CSS.'font-awesome.min.css">';
 
 			// SimpleMDE js
 			$html .= '<script src="'.$pluginPath.'js/simplemde.min.js"></script>';
@@ -80,8 +80,16 @@ class pluginsimpleMDE extends Plugin {
 			$pluginPath = $this->htmlPath();
 
 			$html  = '<script>'.PHP_EOL;
+
+			$html .= 'var simplemde = null;'.PHP_EOL;
+
+			$html .= 'function addContentSimpleMDE(content) {
+					var text = simplemde.value();
+					simplemde.value(text + content + "\n");
+				}'.PHP_EOL;
+
 			$html .= '$(document).ready(function() { '.PHP_EOL;
-			$html .= 'var simplemde = new SimpleMDE({
+			$html .= 'simplemde = new SimpleMDE({
 					element: document.getElementById("jscontent"),
 					status: false,
 					toolbarTips: true,
@@ -95,13 +103,10 @@ class pluginsimpleMDE extends Plugin {
 					toolbar: ['.Sanitize::htmlDecode($this->getDbField('toolbar')).']
 			});';
 
-			$html .= '$("#jsaddImage").on("click", function() {
-					var filename = $("#jsimageList option:selected" ).text();
-					if(!filename.trim()) {
-						return false;
-					}
-					var text = simplemde.value();
-					simplemde.value(text + "![alt text]("+filename+")" + "\n");
+			// This is the event for Bludit images
+			$html .= '$("body").on("dblclick", "img.bludit-thumbnail", function() {
+					var filename = $(this).data("filename");
+					addContentSimpleMDE("![alt text]("+filename+")");
 			});';
 
 			$html .= '}); </script>';
