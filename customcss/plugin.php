@@ -5,7 +5,7 @@ class pluginCustomCSS extends Plugin {
 	public function init()
 	{
 		$this->dbFields = array(
-			'text'=>''
+			'ccss'=>''
 		);
 	}
 
@@ -13,18 +13,42 @@ class pluginCustomCSS extends Plugin {
 	{
 		global $Language;
 
-		$html = '<div>';
-		$html .= '<label>'.$Language->get('Custom CSS').'</label>';
-		$html .= '<textarea name="text" id="jstext">'.$this->getDbField('text').'</textarea>';
-		$html .= '</div>';
+?>
 
-		return $html;
+	<script src="/plugins/customcss/lib/codemirror.js"></script>
+	<link rel="stylesheet" href="/plugins/customcss/lib/codemirror.css">
+	<script src="/plugins/customcss/mode/javascript/javascript.js"></script>
+	<style>
+	    .CodeMirror {
+	        border: solid 1px black;
+	        width: 50%;
+	        margin-bottom: 20px !important;
+	    }
+		#jsformplugin div {
+			margin-bottom: 0;
+	    }
+	</style>
+	<div>
+	<label><?php $Language->get('Custom CSS') ?></label>
+	<textarea name="ccss" id="ccss"}><?php echo $this->getDbField('ccss') ?></textarea>
+	</div>
+
+	<script>
+	  var editor = CodeMirror.fromTextArea(document.getElementById("ccss"), {
+	    lineNumbers: true,
+	    styleActiveLine: true,
+	    matchBrackets: true
+	  });
+	</script>
+
+<?php
+
 	}
 
 	public function siteHead(){
 
 		$html  = '<style>';
-		$html  .= ($this->getDbField('text'));
+		$html  .= ($this->getDbField('ccss'));
 		$html  .= '</style>';
 		return $html;
 
