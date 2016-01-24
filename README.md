@@ -18,6 +18,8 @@ Snow in your site!
 - Website: 
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/SnowFlakes.zip?raw=true)
 
+### About
+Little description about your site or yourself.
 ### AddToAny Social Sharing
 AddToAny is a set of social sharing buttons. 
 - Author: 320up
@@ -77,10 +79,12 @@ Cover Image allow you to add a featured image for post and pages.
 ### Custom CSS
 Add custom CSS to a theme.
 - Author: Clickwork
-- Version: 0.1
+- Version: 0.2
 - Website: https://github.com/dignajar/bludit-plugins
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/customcss.zip?raw=true)
 
+### Disqus comment system
+Disqus is a blog comment hosting service for web sites. It's necesary to register on Disqus.com before using this plugin.
 ### Gitter
 This plugin is a (mostly) code-free way of embedding Gitter into your website with a simple JavaScript snippet.It works out of the box with no customization, or you can control its behaviour with some basic configuration.
 - Author: Fred  K.
@@ -95,6 +99,8 @@ Plugin for adding a Google Custom Search Engine. To use it you need a Google acc
 - Website: https://www.clickwork.ch
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/googlecse.zip?raw=true)
 
+### Google Tools
+This plugin generate the meta tag to validate your site with Google Webmasters Tools and the JavaScript code to track your site with Google Analytics.
 ### Gravatar
 Retrieves Gravatar full profile. Admin can choose from the configuration page where to load the plugin and which Gravatar profile field to display on each theme's position. The plugin use, per user, cache expire time to update it self with gravatar profile changes and a custom css file in plugins folder.
 - Author: SpecKtator
@@ -102,6 +108,10 @@ Retrieves Gravatar full profile. Admin can choose from the configuration page wh
 - Website: http://totallynoob.com
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/gravatar.zip?raw=true)
 
+### Latest posts
+Shows the latest posts published.
+### Maintenance mode
+Set your site on maintenance mode, you can access to admin area.
 ### Minify
 Minifies HTML, JS, CSS and removes comments (except IE tags and comments within script tags). To disable compression of code portions, use <em>&lt;!--html-compression no compression--&gt;</em> tag.
 - Author: Fred
@@ -109,6 +119,10 @@ Minifies HTML, JS, CSS and removes comments (except IE tags and comments within 
 - Website: 
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/minify.zip?raw=true)
 
+### Open Graph
+The Open Graph protocol enables any web page to become a rich object in a social graph.
+### Page list
+Shows the list of pages in order.
 ### Page with Posts
 Select a page to show posts.
 - Author: Clickwork
@@ -137,6 +151,8 @@ Ridiculously Responsive Social Sharing Buttons.
 - Website: 
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/rrssb.zip?raw=true)
 
+### RSS Feed
+This plugin generate a RSS Feed for your site.
 ### Shortcode API
 The Shortcode API is a simple set of functions for creating Bludit shortcodes for use in posts and pages.
 - Author: Fred K., Bludit & Sergey Romanenko
@@ -151,6 +167,17 @@ Simple and fast rich text editor.
 - Website: 
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/simditor.zip?raw=true)
 
+### SimpleMDE
+A simple, beautiful, and embeddable JavaScript markdown editor by @WesCossick. Adapted by Diego Najar for Bludit.
+- Author: NextStepWebs
+- Version: 1.8.1
+- Website: https://github.com/NextStepWebs/simplemde-markdown-editor
+- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/dist/simplemde.zip?raw=true)
+
+### Sitemap
+This plugin generate a file sitemap.xml where you can list the web pages of your site to tell to search engines about the organization of your site content.
+### Tags list
+Shows all tags.
 ### TinyMCE
 Tinymce is an easy HTML editor, with many plugins and very customizable.
 ### Trumbowyg
