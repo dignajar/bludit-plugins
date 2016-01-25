@@ -2,7 +2,7 @@
 	"author": "Frédéric K.",
 	"email": "stradfred@gmail.com",
 	"website": "http://flatboard.co.nf",
-	"version":"1.0.1",
+	"version":"1.0.7",
 	"releaseDate": "2016-01-25",
 	"license": "MIT",
 	"requires": "Bludit v1.0.1",
