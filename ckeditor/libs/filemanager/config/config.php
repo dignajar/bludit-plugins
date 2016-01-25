@@ -68,7 +68,7 @@ $config = array(
 	| with start and final /
 	|
 	*/
-	'upload_dir' => 'content/uploads/',
+	'upload_dir' => 'bl-content/uploads/',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -78,7 +78,7 @@ $config = array(
 	| with final /
 	|
 	*/
-	'current_path' => '../../../../content/uploads/',
+	'current_path' => '../../../../bl-content/uploads/',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -89,7 +89,7 @@ $config = array(
 	| DO NOT put inside upload folder
 	|
 	*/
-	'thumbs_base_path' => '../../../../content/uploads/thumbs/',
+	'thumbs_base_path' => '../../../../bl-content/uploads/thumbs/',
 
 	/*
 	|--------------------------------------------------------------------------
