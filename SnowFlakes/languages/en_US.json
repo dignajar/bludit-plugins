@@ -2,12 +2,7 @@
 	"plugin-data":
 	{
 		"name": "SnowFlakes",
-		"description": "Snow in your site!",
-		"author": "Frédéric K.",
-		"email": "stradfred@gmail.com",
-		"website": "",
-		"version": "0.1",
-		"releaseDate": "2015-12-09"
+		"description": "Snow in your site!"
 	},
 	"enable-plugin-(config-save)": "Enable plugin (Config save)",
 	"snowmax": "Number of snowflakes <em>(more than 30 / 40 not recommended)</em>",

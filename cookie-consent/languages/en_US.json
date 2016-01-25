@@ -2,12 +2,7 @@
 	"plugin-data":
 	{
 		"name": "Cookie Consent + Detect AdBlock",
-		"description": "The most popular solution to the EU Cookie Law, as well as a detector with AdBlock script customization..",
-		"author": "Fred",
-		"email": "stradfred@gmail.com",
-		"website": "",
-		"version": "1.1",
-		"releaseDate": "2015-11-24"
+		"description": "The most popular solution to the EU Cookie Law, as well as a detector with AdBlock script customization."
 	},
 	"enable-plugin-(config-save)": "Enable plugin (Config save)",
 	"this-website-uses-cookies-to-ensure-you-get-the-best-experience-on-our-website": "This website uses cookies to ensure you get the best experience on our website",

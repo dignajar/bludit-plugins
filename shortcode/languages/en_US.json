@@ -2,12 +2,7 @@
 	"plugin-data":
 	{
 		"name": "Shortcode API",
-		"description": "The Shortcode API is a simple set of functions for creating Bludit shortcodes for use in posts and pages.",
-		"author": "Fred K., Bludit & Sergey Romanenko",
-		"email": "stradfred@gmail.com",
-		"website": "",
-		"version": "0.4",
-		"releaseDate": "2015-12-07"
+		"description": "The Shortcode API is a simple set of functions for creating Bludit shortcodes for use in posts and pages."
 	},
 	"edit-shorcodes": "Edit Shorcodes",
 	"help": "Help",
