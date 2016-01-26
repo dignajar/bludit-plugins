@@ -68,7 +68,7 @@ $config = array(
 	| with start and final /
 	|
 	*/
-	'upload_dir' => 'bl-content/uploads/',
+	'upload_dir' => 'content/uploads/',
 
 	/*
 	|--------------------------------------------------------------------------
