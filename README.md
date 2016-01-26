@@ -94,9 +94,9 @@ Add a contact form to Bludit, with the ability to use a custom template.
 ### Cookie Consent + Detect AdBlock
 The most popular solution to the EU Cookie Law, as well as a detector with AdBlock script customization.
 - Author: Frédéric K.
-- Version: 1.0.1
+- Version: 2.0.9
 - Website: http://flatboard.co.nf
-- Release date: 2016-01-25
+- Release date: 2016-01-26
 - License: MIT
 - Requires: Bludit v1.0.1
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/zip-files/cookie-consent.zip?raw=true)
