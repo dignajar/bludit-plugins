@@ -151,26 +151,22 @@ class pluginRRSSB extends Plugin {
 	}
 	// Load css plugin in public theme
 	public function siteHead()
-	{ 
-			global $Site;
-			$PathPlugins = 'plugins/rrssb/libs/';
-			$config_url = $Site->url().$PathPlugins;	  
-			$html = '<link rel="stylesheet" href="'.$config_url.'css/rrssb.css" />'.PHP_EOL; 
+    {
+			$PathPlugins = $this->htmlPath().'libs/';	  
+			$html = '<link rel="stylesheet" href="'.$PathPlugins.'css/rrssb.css" />'.PHP_EOL; 
 			return $html;     
 	}
 	// Load js plugin in public theme
 	public function siteBodyEnd()
 	{ 
-			global $Site;
-			$PathPlugins = 'plugins/rrssb/libs/';
-			$config_url = $Site->url().$PathPlugins;	
+			$PathPlugins = $this->htmlPath().'libs/';	
 			
 			$html  = '<script>'.PHP_EOL;
 			$html .= '/* <![CDATA[ */'.PHP_EOL;
-			$html .= 'if(typeof(jQuery) === "undefined") document.write(\'<script src="'.$config_url.'js/vendor/jquery.1.10.2.min.js"><\/script>\');'.PHP_EOL;
+			$html .= 'if(typeof(jQuery) === "undefined") document.write(\'<script src="'.$PathPlugins.'js/vendor/jquery.1.10.2.min.js"><\/script>\');'.PHP_EOL;
 			$html .= '/* !]]> */'.PHP_EOL;
 			$html .= '</script>'.PHP_EOL;			  
-			$html .= '<script src="'.$config_url.'js/rrssb.min.js"></script>'.PHP_EOL;    
+			$html .= '<script src="'.$PathPlugins.'js/rrssb.min.js"></script>'.PHP_EOL;    
 			
 			return $html;   
 	}
