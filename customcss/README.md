@@ -7,6 +7,7 @@ Uses the CodeMirror editor (https://codemirror.net/).
 
 Versions
 --------
+
 0.3, January 27, 2016
 - Update for v1.0.1.
 
