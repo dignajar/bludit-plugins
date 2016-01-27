@@ -2,12 +2,7 @@
 	"plugin-data":
 	{
 		"name": "Google CSE",
-		"description": "Plugin for adding a Google Custom Search Engine. To use it you need a Google account and a search engine ID. For further instructions please see the README file and https://cse.google.com.",
-		"author": "Clickwork",
-		"email": "egoetschel@yabyum.ch",
-		"website": "https://www.clickwork.ch",
-		"version": "0.1",
-		"releaseDate": "2015-12-04"
+		"description": "Plugin for adding a Google Custom Search Engine. To use it you need a Google account and a search engine ID. For further instructions please see the README file and https://cse.google.com."
 	},
 	"google-search-engine-id": "Google Search Engine ID",
 	"complete-this-field-with-the-google-search-engine-id": "Complete this field with the Google search engine ID."	
