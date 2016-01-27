@@ -1,0 +1,10 @@
+{
+	"plugin-data":
+	{
+		"name": "Google CSE",
+		"description": "Plugin für die Ergänzung mit einer benutzerdefinierten Google-Suche. Um das Plugin verwenden zu können, wird ein Google-Konto und eine Suchmaschinen-ID benötigt. Weitere informationen sind in der Datei README.md und unter https://cse.google.com zu finden."
+
+	},
+	"google-search-engine-id": "Suchmaschinen-ID",
+	"complete-this-field-with-the-google-search-engine-id": "Bitte die Suchmaschinen-ID der benutzerdefinierten Google-Suche eingeben."	
+}
