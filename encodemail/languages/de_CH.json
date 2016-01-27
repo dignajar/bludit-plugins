@@ -1,0 +1,7 @@
+{
+	"plugin-data":
+	{
+		"name": "Mail Encoder",
+		"description": "Verschlüsselt alle in Seiten und Posts vorkommenden Emailadressen um SPAM Mails zu verhindern"
+	}
+}
