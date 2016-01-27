@@ -3,7 +3,7 @@ Google CSE
 
 Plugin for adding a Google Custom Search Engine
 
-The plugin works with themes with a sidebar.
+The plugin works with themes with a sidebar (Pulse etc.).
 
 To use the plugin you need a Google account and a search engine ID. You can optain an ID at https://cse.google.com.
 
@@ -16,4 +16,9 @@ For further explanation and configuration see https://cse.google.com.
 Versions
 --------
 
-Version 0.1, 4. December 2015
+0.2, January 27, 2016
+- Update for v1.0
+- Script moved to header from footer
+
+0.1, December 4, 2015
+- Release
