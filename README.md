@@ -111,6 +111,16 @@ Disqus is a blog comment hosting service for web sites. It's necesary to registe
 - Requires: Bludit v1.0
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/zip-files/disqus.zip?raw=true)
 
+### Google CSE
+Plugin for adding a Google Custom Search Engine. To use it you need a Google account and a search engine ID. For further instructions please see the README file and https://cse.google.com.
+- Author: Clickwork
+- Version: 0.2
+- Website: https://www.clickwork.ch
+- Release date: 2016-01-27
+- License: MIT
+- Requires: Bludit v1.0.1
+- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/zip-files/googlecse.zip?raw=true)
+
 ### Google Tools
 This plugin generate the meta tag to validate your site with Google Webmasters Tools and the JavaScript code to track your site with Google Analytics.
 - Author: Bludit
