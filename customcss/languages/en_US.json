@@ -2,11 +2,6 @@
 	"plugin-data":
 	{
 		"name": "Custom CSS",
-		"description": "Add custom CSS to a theme.",
-		"author": "Clickwork",
-		"email": "egoetschel@yabyum.ch",
-		"website": "https://github.com/dignajar/bludit-plugins",
-		"version": "0.2",
-		"releaseDate": "2016-01-12"
+		"description": "Add custom CSS to a theme."
 	}
 }

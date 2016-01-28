@@ -17,8 +17,8 @@ Versions
 --------
 
 0.2, January 27, 2016
-- Update for v1.0
-- Script moved to header from footer
+- Update for v1.0.1.
+- Script moved to header from footer.
 
 0.1, December 4, 2015
-- Release
+- Release.
