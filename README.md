@@ -121,6 +121,16 @@ Disqus is a blog comment hosting service for web sites. It's necesary to registe
 - Requires: Bludit v1.0
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/zip-files/disqus.zip?raw=true)
 
+### Mail Encoder
+Encodes all email addresses in pages and posts to prevent SPAM Mails
+- Author: Dominik Sust
+- Version: 1.0
+- Website: http://itwerkstatt.omdriebigs-gspann.de
+- Release date: 2016-01-27
+- License: MIT
+- Requires: Bludit v1.0
+- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/zip-files/encodemail.zip?raw=true)
+
 ### Google CSE
 Plugin for adding a Google Custom Search Engine. To use it you need a Google account and a search engine ID. For further instructions please see the README file and https://cse.google.com.
 - Author: Clickwork
@@ -190,6 +200,16 @@ Shows the list of pages in order.
 - License: MIT
 - Requires: Bludit v1.0
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/zip-files/pages.zip?raw=true)
+
+### Pinterest Verfication
+Plugin to add the verification meta tag for Pinterest. See http://business.pinterest.com/verify/.
+- Author: Clickwork
+- Version: 0.2
+- Website: https://github.com/dignajar/bludit-plugins
+- Release date: 2016-01-28
+- License: MIT
+- Requires: Bludit v1.0.1
+- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/zip-files/pinterest.zip?raw=true)
 
 ### Ribbon
 Add a ribbon in the corner of your site or information fully customizable bar.
