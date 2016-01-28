@@ -101,6 +101,16 @@ The most popular solution to the EU Cookie Law, as well as a detector with AdBlo
 - Requires: Bludit v1.0.1
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/zip-files/cookie-consent.zip?raw=true)
 
+### Custom CSS
+Add custom CSS to a theme.
+- Author: Clickwork
+- Version: 0.3
+- Website: https://github.com/dignajar/bludit-plugins
+- Release date: 2016-01-27
+- License: MIT
+- Requires: Bludit v1.0.1
+- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/zip-files/customcss.zip?raw=true)
+
 ### Disqus comment system
 Disqus is a blog comment hosting service for web sites. It's necesary to register on Disqus.com before using this plugin.
 - Author: Bludit
