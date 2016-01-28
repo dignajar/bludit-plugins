@@ -1,0 +1,16 @@
+{
+	"plugin-data":
+	{
+		"name": "Schneeflocken",
+		"description": "Schnee auf der Website!"
+	},
+	"enable-plugin-(config-save)": "Plugin aktivieren (Config save)",
+	"snowmax": "Anzahl Schneeflocken <em>(mehr als 30 bis 40 sind nicht empfehlenswert)</em>.",
+	"snowcolor": "Farben des Schnees. Du kannst beliebig viele Farben hinzufügen.",
+	"snowtype": "Font, der für die Schneeflocken verwendet wird.",
+	"snowletter": "Zeichen, das für die Schneeflocken verwendet wird <em>(*, ❄, ❅, ❆)</em>.",
+	"sinkspeed": "Geschwindigkeit, mit der die Schneeflocken fallen <em>(empfohlen wird ein Wert zwischen 0.3 bis 2)</em>.",
+	"snowmaxsize": "Grösse der grössten Schneeflocke",
+	"snowminsize": "Grösse der kleinsten Schneeflocke",
+	"snowingzone": "Verwende 1 für Schnee auf der ganzen Website, 2 auf der linken Seite, 3 in der Mitte oder 4 auf der rechten Seite der Website."
+}
