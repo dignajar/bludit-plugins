@@ -2,12 +2,7 @@
 	"plugin-data":
 	{
 		"name": "Pinterest Verfication",
-		"description": "Plugin to add the verification meta tag for Pinterest. See http://business.pinterest.com/verify/.",
-		"author": "Edi Goetschel",
-		"email": "",
-		"website": "https://github.com/dignajar/bludit-plugins",
-		"version": "0.1",
-		"releaseDate": "2015-10-26"
+		"description": "Plugin to add the verification meta tag for Pinterest. See http://business.pinterest.com/verify/."
 	},
 	"pinterest-verification": "Pinterest Verification",
 	"pinterest-verification-code": "Pinterest Verification Code",
