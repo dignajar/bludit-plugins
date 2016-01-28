@@ -1,0 +1,10 @@
+{
+	"author": "Clickwork",
+	"email": "egoetschel@clickwork.ch",
+	"website": "https://github.com/dignajar/bludit-plugins",
+	"version": "0.2",
+	"releaseDate": "2016-01-28",
+	"license": "MIT",
+	"requires": "Bludit v1.0.1",
+	"notes": ""
+}
