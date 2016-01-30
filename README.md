@@ -272,11 +272,11 @@ A simple, beautiful, and embeddable JavaScript markdown editor by @WesCossick. A
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/zip-files/simplemde.zip?raw=true)
 
 ### Sitemap
-This plugin generate a file sitemap.xml where you can list the web pages of your site to tell to search engines about the organization of your site content.
+This plugin generates a file sitemap.xml where you can list the web pages of your site to tell search engines about the organization of your site content.
 - Author: Bludit
-- Version: 1.0
+- Version: 1.0.2
 - Website: https://github.com/dignajar/bludit-plugins
-- Release date: 2016-01-15
+- Release date: 2016-01-30
 - License: MIT
 - Requires: Bludit v1.0
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/zip-files/sitemap.zip?raw=true)
