@@ -1,0 +1,21 @@
+{
+	"plugin-data":
+	{
+		"name": "Contact",
+		"description": "Fügt Bludit ein Kontaktformular mit der Möglichkeit für ein angepasstes Template hinzu."
+	},
+	"contact": "Kontakt",
+	"select-a-page-to-add-the-contact-form": "Wähle eine Seite für das Kontaktformular.",
+	"new-contact-from": "Neues Kontaktformular",
+	"name": "Name",
+	"email": "Email",
+	"message": "Nachricht",
+	"send": "Senden",
+	"reset": "Zurücksetzen",
+	"please-enter-your-name": "Bitte geben Sie Ihren Namen ein.",
+	"please-enter-a-valid-email-address": "Eine gültige Email-Adresse ist erforderlich.",
+	"please-enter-the-content-of-your-message": "Bitte geben Sie einen Nachrichtentext ein.",
+	"oh-my-god-a-bot!": "Grundgütiger! Ein Bot!",
+	"thank-you-for-having-contacted-me.-i-will-reply-you-as-soon-as-possible.": "Vielen Dank für Ihre Nachricht. Ich werde Sie so umgehend kontaktieren.",
+	"oops!-an-error-occurred-while-sending-your-message,-thank-you-to-try-again-later.": "Ein Fehler ist beim Versenden der Nachricht aufgetreten. Bitte versuchen Sie es später noch einmal."
+}
