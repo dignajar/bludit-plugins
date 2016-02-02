@@ -81,7 +81,6 @@ class pluginTinymce extends Plugin {
 				element_format : "html",
 				entity_encoding : "raw",
 				schema: "html5",
-				extended_valid_elements : "a[class|name|href|target|title|onclick|rel],script[type|src],iframe[src|style|width|height|scrolling|marginwidth|marginheight|frameborder],img[class|src|border=0|alt|title|hspace|vspace|width|height|align|onmouseover|onmouseout|name]",
 				plugins: "'.$this->getDbField('plugins').'",
 				toolbar: "'.$this->getDbField('toolbar').'",
 				content_css: "'.$pluginPath.'css/editor.css",
