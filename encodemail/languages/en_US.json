@@ -1,0 +1,7 @@
+{
+	"plugin-data":
+	{
+		"name": "Mail Encoder",
+		"description": "Encodes all email addresses in pages and posts to prevent SPAM Mails"
+	}
+}
