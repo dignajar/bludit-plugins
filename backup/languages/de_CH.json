@@ -1,0 +1,23 @@
+{
+	"plugin-data":
+	{
+		"name": "Backup",
+		"description": "Backup erlaubt es, die Daten einer Website zu sichern, herunterzuladen, wiederherzustellen und Backups vom Server löschen."
+	},
+	"download": "Herunterladen",
+	"delete": "Löschen",
+	"restore": "Wiedherstellen",
+	"archives": "Archiv",
+	"file-size": "Dateigrösse",
+	"date": "Datum",
+	"actions": "Aktionen",
+	"make-a-backup": "Backup erstellen",
+	"delete-this-backup?": "Dieses Backup löschen?",
+	"do-you-want-to-restore-this-backup?": "Dieses Backup wiederherstellen?",
+	"there-was-a-problem-writing-the-zip-archive.": "Das ZIP-Archiv konnte nicht angelegt werden.",
+	"successfully-created-the-zip-archive!": "Das ZIP-Archiv wurde erfolgreich angelegt!",
+	"successfully-deleted-file!": "Die Datei wurde erfolgreich gelöscht!",
+	"an-error-occurred-while-deleting-the-file.": "Die Datei konnte nicht gelöscht werden.",
+	"archive-is-restored!": "Das Backup wurde wiederhergestellt!",
+	"there-was-a-problem-to-restore-the-zip-archive": "Das Backup konnte nicht wiederhergestellt werden."
+}
