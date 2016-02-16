@@ -12,10 +12,10 @@
 	"message": "Nachricht",
 	"send": "Senden",
 	"reset": "Zurücksetzen",
-	"please-enter-your-name": "Bitte geben Sie Ihren Namen ein.",
+	"please-enter-your-name": "Bitte gib deinen Namen ein.",
 	"please-enter-a-valid-email-address": "Eine gültige Email-Adresse ist erforderlich.",
-	"please-enter-the-content-of-your-message": "Bitte geben Sie einen Nachrichtentext ein.",
+	"please-enter-the-content-of-your-message": "Bitte gib einen Nachrichtentext ein.",
 	"oh-my-god-a-bot!": "Grundgütiger! Ein Bot!",
-	"thank-you-for-having-contacted-me.-i-will-reply-you-as-soon-as-possible.": "Vielen Dank für Ihre Nachricht. Ich werde Sie so umgehend kontaktieren.",
-	"oops!-an-error-occurred-while-sending-your-message,-thank-you-to-try-again-later.": "Ein Fehler ist beim Versenden der Nachricht aufgetreten. Bitte versuchen Sie es später noch einmal."
+	"thank-you-for-having-contacted-me.-i-will-reply-you-as-soon-as-possible.": "Vielen Dank für deine Nachricht. Ich werde dich umgehend kontaktieren.",
+	"oops!-an-error-occurred-while-sending-your-message,-thank-you-to-try-again-later.": "Ein Fehler ist beim Versenden der Nachricht aufgetreten. Bitte versuche es später noch einmal."
 }
