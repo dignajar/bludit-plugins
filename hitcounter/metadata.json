@@ -1,0 +1,10 @@
+{
+	"author": "Dominik Sust",
+	"email": "dominik.sust@gmail.com",
+	"website": "http://itwerkstatt.omdriebigs-gspann.de",
+	"version": "1.0",
+	"releaseDate": "2016-02-17",
+	"license": "MIT",
+	"requires": "Bludit v1.0",
+	"notes": ""
+}
