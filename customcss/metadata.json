@@ -1,0 +1,13 @@
+{
+    "author": "Clickwork",
+    "email": "egoetschel@yabyum.ch",
+    "website": "https://www.clickwork.ch",
+    "author": "Clickwork",
+    "email": "egoetschel@yabyum.ch",
+    "website": "https://github.com/dignajar/bludit-plugins",
+    "version": "0.3",
+    "releaseDate": "2016-01-27",
+    "license": "MIT",
+    "requires": "Bludit v1.0.1",
+    "notes": ""
+}

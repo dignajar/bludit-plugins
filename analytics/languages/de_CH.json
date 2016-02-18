@@ -1,0 +1,8 @@
+{
+	"plugin-data":
+	{
+		"name": "Google Analytics",
+		"description": "Plugin zur Einbindung des Codes für die Verwendung von Google Analytics."
+	},
+	"your-google-analytics-id": "Google Analytics ID"
+}

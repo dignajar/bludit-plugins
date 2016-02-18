@@ -101,6 +101,16 @@ The most popular solution to the EU Cookie Law, as well as a detector with AdBlo
 - Requires: Bludit v1.0.1
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/zip-files/cookie-consent.zip?raw=true)
 
+### Custom CSS
+Add custom CSS to a theme.
+- Author: Clickwork
+- Version: 0.3
+- Website: https://github.com/dignajar/bludit-plugins
+- Release date: 2016-01-27
+- License: MIT
+- Requires: Bludit v1.0.1
+- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/zip-files/customcss.zip?raw=true)
+
 ### Disqus comment system
 Disqus is a blog comment hosting service for web sites. It's necesary to register on Disqus.com before using this plugin.
 - Author: Bludit
@@ -110,6 +120,16 @@ Disqus is a blog comment hosting service for web sites. It's necesary to registe
 - License: MIT
 - Requires: Bludit v1.0
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/zip-files/disqus.zip?raw=true)
+
+### Mail Encoder
+Encodes all email addresses in pages and posts to prevent SPAM Mails
+- Author: Dominik Sust
+- Version: 1.0
+- Website: http://itwerkstatt.omdriebigs-gspann.de
+- Release date: 2016-01-27
+- License: MIT
+- Requires: Bludit v1.0
+- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/zip-files/encodemail.zip?raw=true)
 
 ### Google CSE
 Plugin for adding a Google Custom Search Engine. To use it you need a Google account and a search engine ID. For further instructions please see the README file and https://cse.google.com.
@@ -181,6 +201,16 @@ Shows the list of pages in order.
 - Requires: Bludit v1.0
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/zip-files/pages.zip?raw=true)
 
+### Pinterest Verfication
+Plugin to add the verification meta tag for Pinterest. See http://business.pinterest.com/verify/.
+- Author: Clickwork
+- Version: 0.2
+- Website: https://github.com/dignajar/bludit-plugins
+- Release date: 2016-01-28
+- License: MIT
+- Requires: Bludit v1.0.1
+- [Download now](https://github.com/dignajar/bludit-plugins/blob/master/zip-files/pinterest.zip?raw=true)
+
 ### Ribbon
 Add a ribbon in the corner of your site or information fully customizable bar.
 - Author: Frédéric K.
@@ -242,11 +272,11 @@ A simple, beautiful, and embeddable JavaScript markdown editor by @WesCossick. A
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/zip-files/simplemde.zip?raw=true)
 
 ### Sitemap
-This plugin generate a file sitemap.xml where you can list the web pages of your site to tell to search engines about the organization of your site content.
+This plugin generates a file sitemap.xml where you can list the web pages of your site to tell search engines about the organization of your site content.
 - Author: Bludit
-- Version: 1.0
+- Version: 1.0.2
 - Website: https://github.com/dignajar/bludit-plugins
-- Release date: 2016-01-15
+- Release date: 2016-01-30
 - License: MIT
 - Requires: Bludit v1.0
 - [Download now](https://github.com/dignajar/bludit-plugins/blob/master/zip-files/sitemap.zip?raw=true)

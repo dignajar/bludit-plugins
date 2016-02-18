@@ -1,0 +1,9 @@
+{
+	"plugin-data":
+	{
+		"name": "Simple CSS Menu",
+		"description": "Simple accordion menu with CSS using code by @yorozuna (http://codepen.io/yorozuna/)."
+	},
+    "home": "Home",
+    "show-home-link": "Show home link"
+}
