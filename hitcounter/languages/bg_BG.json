@@ -1,0 +1,13 @@
+{
+	"plugin-data":
+	{
+		"name": "Hitcounter",
+		"description": "Показва на броя посещенията "
+	},
+
+    "text": "Текст над брояча",
+    "positions": "Брой цифри",
+    "current-value": "Текуща стойност:",
+    "display-counter-as-chars": "0123456789 - Покажи текущата стойност, като цифри",
+    "display-counter-as-images": "Покажи текущата стойност, като снимки на номера"
+}
