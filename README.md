@@ -7,6 +7,8 @@ The zip files are created automatically.
 
 The web site is refreshes every 24hs.
 
+Here is a link to how to contribute to a repository: https://varlogdiego.com/post/how-to-contribute-to-a-github-project
+
 ## How to install a plugin
 - Download the plugin.
 - Unzip if necessary.
