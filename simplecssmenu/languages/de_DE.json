@@ -1,0 +1,9 @@
+{
+	"plugin-data":
+	{
+		"name": "Simple CSS Menu",
+		"description": "Einfaches Akkordeon-Menu mit CSS, das Code von @yorozuna verwendet (http://codepen.io/yorozuna/)."
+	},
+    "home": "Hauptseite",
+    "show-home-link": "Hauptseite zeigen"
+}

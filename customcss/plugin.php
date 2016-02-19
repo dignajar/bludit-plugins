@@ -15,9 +15,9 @@ class pluginCustomCSS extends Plugin {
 
 ?>
 
-	<script src="/plugins/customcss/lib/codemirror.js"></script>
-	<link rel="stylesheet" href="/plugins/customcss/lib/codemirror.css">
-	<script src="/plugins/customcss/mode/javascript/javascript.js"></script>
+	<script src="/bl-plugins/customcss/lib/codemirror.js"></script>
+	<link rel="stylesheet" href="/bl-plugins/customcss/lib/codemirror.css">
+	<script src="/bl-plugins/customcss/mode/javascript/javascript.js"></script>
 	<style>
 	    .CodeMirror {
 	        border: solid 1px black;

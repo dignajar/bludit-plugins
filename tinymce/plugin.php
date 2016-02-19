@@ -74,7 +74,14 @@ class pluginTinymce extends Plugin {
 				}
 			}
 
-			$html  = '<script>$(document).ready(function() { ';
+			$html  = '<script>';
+
+			// This function is necesary on each Editor, it is used by Bludit Images v8.
+			$html .= 'function editorAddImage(filename) {
+					tinymce.activeEditor.insertContent("<img src=\""+filename+"\" alt=\"'.$Language->get('Image description').'\">" + "\n");
+				}'.PHP_EOL;
+
+			$html .= '$(document).ready(function() { ';
 			$html .= 'tinymce.init({
 				selector: "#jscontent",
 				cache_suffix: "?v='.$this->version().'",
@@ -95,11 +102,6 @@ class pluginTinymce extends Plugin {
 				pagebreak_separator: "'.PAGE_BREAK.'",
 				paste_as_text: true,
     				document_base_url: "'.HTML_PATH_UPLOADS.'"
-			});';
-
-			$html .= '$("body").on("dblclick", "img.bludit-thumbnail", function() {
-					var filename = $(this).data("filename");
-					tinymce.activeEditor.insertContent("<img src=\""+filename+"\" alt=\"\">" + "\n");
 			});';
 
 			$html .= '}); </script>';

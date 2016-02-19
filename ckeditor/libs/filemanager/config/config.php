@@ -3,7 +3,7 @@ session_start();
 mb_internal_encoding('UTF-8');
 date_default_timezone_set('Europe/Rome');
 
-$base = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] && ! in_array(strtolower($_SERVER['HTTPS']), array( 'off', 'no' ))) ? 'https' : 'http') . '://' .$_SERVER["SERVER_NAME"].str_replace('plugins/ckeditor/libs/filemanager/dialog.php','',$_SERVER['PHP_SELF']);
+$base = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] && ! in_array(strtolower($_SERVER['HTTPS']), array( 'off', 'no' ))) ? 'https' : 'http') . '://' .$_SERVER["SERVER_NAME"].str_replace('bl-plugins/ckeditor/libs/filemanager/dialog.php','',$_SERVER['PHP_SELF']);
  
 /*
 |--------------------------------------------------------------------------
@@ -68,7 +68,7 @@ $config = array(
 	| with start and final /
 	|
 	*/
-	'upload_dir' => 'content/uploads/',
+	'upload_dir' => 'bl-content/uploads/',  // Why content/ folder? i don't but work...
 
 	/*
 	|--------------------------------------------------------------------------
@@ -78,7 +78,7 @@ $config = array(
 	| with final /
 	|
 	*/
-	'current_path' => '../../../../content/uploads/',
+	'current_path' => '../../../../bl-content/uploads/',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -89,7 +89,7 @@ $config = array(
 	| DO NOT put inside upload folder
 	|
 	*/
-	'thumbs_base_path' => '../../../../content/uploads/thumbs/',
+	'thumbs_base_path' => '../../../../bl-content/uploads/thumbs/',
 
 	/*
 	|--------------------------------------------------------------------------
