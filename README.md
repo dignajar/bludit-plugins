@@ -1,4 +1,5 @@
-# Bludit Plugins
+[Bludit Plugins](https://plugins.bludit.com)
+================================
 This repository is open for the Bludit community, you can develop and push your plugin in this repository.
 
 The web site https://plugins.bludit.com is generated from this repository.
