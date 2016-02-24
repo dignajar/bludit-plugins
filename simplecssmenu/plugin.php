@@ -68,7 +68,7 @@ class pluginSimpleCSSMenu extends Plugin {
 			{
 				// Print the parent
 				$html .= '<li>';
-				$html .= '<a href="'.$parent->permalink().'">'.$parent->title().'</a>';
+				$html .= '<a class="'.( ($parent->key()==$Url->slug())?' active':'').'" href="'.$parent->permalink().'">'.$parent->title().'</a>';
 
 				// Check if the parent has children
 				if(isset($pagesParents[$parent->key()]))
