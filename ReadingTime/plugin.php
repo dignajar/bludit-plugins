@@ -19,6 +19,26 @@ class pluginReadingTime extends Plugin {
 		);
 	}
 
+	function __construct()
+	{
+		parent::__construct();
+
+		global $Url;
+
+		$this->enable = false;
+
+		if( ($Url->whereAmI()=='post') ) {
+			$this->enable = true;
+		}
+		elseif( ($Url->whereAmI()=='page') ) {
+			$this->enable = true;
+		}
+		elseif( ($Url->whereAmI()=='home') )
+		{
+			$this->enable = true;
+		}
+	}
+	
 	public function form()
 	{
 		global $Language;
@@ -74,8 +94,10 @@ class pluginReadingTime extends Plugin {
 	# Css
 	public function siteHead()
 	{
-		$html = '<style type="text/css" media="screen">.reading_duration{ opacity: 0.5; font-style: italic; font-size: small}</style>'.PHP_EOL;	     
-	    return $html;   
+		if( $this->enable ) {
+			return '<style type="text/css" media="screen">.reading_duration{ opacity: 0.5; font-style: italic; font-size: small}</style>'.PHP_EOL;
+		}
+		return false;
 	}
 		
 	# Display in homepage and post
@@ -83,36 +105,41 @@ class pluginReadingTime extends Plugin {
 	{
 		global $Post, $Url, $posts; 
 		$content = '';
-		// Filter then build it!
-		switch($Url->whereAmI())
-		{
-			case 'post':
-				$content = $Post->content();				
-		        // Parse Shortcodes
-		        $content = pluginReadingTime::readingTime( $content );
-				break;
-				
-			default:
-				foreach($posts as $key=>$Post)
-				{
-					// Full content parsed by Parsedown
-					$content = $Post->content();
-					// Parse with Shortcode
-					$content = pluginReadingTime::readingTime( $content );
-				}    
+		if( $this->enable ) {
+			// Filter then build it!
+			switch($Url->whereAmI())
+			{
+				case 'post':
+					$content = $Post->content();				
+			        $content = pluginReadingTime::readingTime( $content );
+			        return '<span class="reading_duration">'.$content.'</span>';
+					break;
+					
+				default:
+					foreach($posts as $key=>$Post)
+					{
+						$content = $Post->content();
+						$content = pluginReadingTime::readingTime( $content );
+						return '<span class="reading_duration">'.$content.'</span>';
+					}    
+			}
 		}
-		return '<span class="reading_duration">'.$content.'</span>';
-	     
+
+		return false;	     
 	}
 	
 	# Display on Pages
 	public function pageEnd()
 	{
-		global $Page; 
-		
-		$content = $Page->content();		
-		$content = pluginReadingTime::readingTime( $content );		
-		return '<span class="reading_duration">'.$content.'</span>';
+		global $Url, $Page;
+
+		if( $this->enable && !$Url->notFound()) {
+			$content = $Page->content();		
+			$content = pluginReadingTime::readingTime( $content );		
+			return '<span class="reading_duration">'.$content.'</span>';
+		}
+
+		return false;		
 	     
 	}
 			
