@@ -18,7 +18,7 @@ class pluginContact extends Plugin {
 	{
 		$this->dbFields = array(
 			'email'=>'',	// <= Your contact email
-			'slug'=>''		// <= Slug url of contact page
+			'page'=>''		// <= Slug url of contact page
 			);
 	}
 	# ADMINISTRATION DU PLUG-IN.
