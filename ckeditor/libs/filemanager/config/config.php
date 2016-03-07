@@ -68,7 +68,7 @@ $config = array(
 	| with start and final /
 	|
 	*/
-	'upload_dir' => 'bl-content/uploads/',  // Why content/ folder? i don't but work...
+	'upload_dir' => 'bl-content/uploads/',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -129,7 +129,7 @@ $config = array(
 	| default language file name
 	|--------------------------------------------------------------------------
 	*/
-	'default_language' => 'en_EN',
+	'default_language' => "en_EN",
 
 	/*
 	|--------------------------------------------------------------------------
@@ -153,6 +153,8 @@ $config = array(
 	'convert_spaces'                          => false,
 	//convert all spaces on files name and folders name this value
 	'replace_with'                            => "_",
+	//convert to lowercase the files and folders name
+	'lower_case'                              => false,
 
 	// -1: There is no lazy loading at all, 0: Always lazy-load images, 0+: The minimum number of the files in a directory
 	// when lazy loading should be turned on.
@@ -215,8 +217,8 @@ $config = array(
 	'duplicate_files'                         => true,
 	'copy_cut_files'                          => true, // for copy/cut files
 	'copy_cut_dirs'                           => true, // for copy/cut directories
-	'chmod_files'                             => false, // change file permissions
-	'chmod_dirs'                              => false, // change folder permissions
+	'chmod_files'                             => true, // change file permissions
+	'chmod_dirs'                              => true, // change folder permissions
 	'preview_text_files'                      => true, // eg.: txt, log etc.
 	'edit_text_files'                         => true, // eg.: txt, log etc.
 	'create_text_files'                       => true, // only create files with exts. defined in $editable_text_file_exts

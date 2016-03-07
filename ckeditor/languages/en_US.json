@@ -2,10 +2,8 @@
 	"plugin-data":
 	{
 		"name": "Ckeditor + filemanager",
-		"description": "Add Ckeditor 4.5.4 + RESPONSIVE filemanager v.9.9.6 to Bludit"
+		"description": "Add Ckeditor 4.5.7 + RESPONSIVE filemanager v.9.9.7 to Bludit"
 	},
-    "activate-markdown-plugin": "Activate Markdown Plugin",
-    "activate-toolbar-plugin": "Activate Toolbar Plugin",
     "select-toolbar": "Select toolbar",
     "basic": "Basic",
     "standard": "Standard",
