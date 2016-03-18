@@ -1,10 +1,35 @@
 <?php
-session_start();
+#session_start();
 mb_internal_encoding('UTF-8');
 date_default_timezone_set('Europe/Rome');
 
 $base = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] && ! in_array(strtolower($_SERVER['HTTPS']), array( 'off', 'no' ))) ? 'https' : 'http') . '://' .$_SERVER["SERVER_NAME"].str_replace('bl-plugins/ckeditor/libs/filemanager/dialog.php','',$_SERVER['PHP_SELF']);
- 
+
+// Security constant
+define('BLUDIT', true);
+// Directory separator
+define('DS', DIRECTORY_SEPARATOR);
+// PHP paths for init
+define('PATH_ROOT', 	'../../../../');
+define('PATH_KERNEL',	PATH_ROOT.'bl-kernel'.DS);
+define('PATH_ABSTRACT',	PATH_KERNEL.'abstract'.DS);
+define('PATH_HELPERS',	PATH_KERNEL.'helpers'.DS);
+define('PATH_CONTENT',	PATH_ROOT.'bl-content'.DS);
+define('PATH_UPLOADS',	PATH_CONTENT.'uploads'.DS);
+
+// Inclde Abstract Classes
+include(PATH_ABSTRACT.'dbjson.class.php');
+
+// Inclde Classes
+include(PATH_KERNEL.'security.class.php');
+$Security	= new Security();
+// Include Helpers Classes
+include(PATH_HELPERS.'text.class.php');
+include(PATH_HELPERS.'log.class.php');
+include(PATH_HELPERS.'session.class.php');
+
+$token = $Security->printTokenCSRF();
+
 /*
 |--------------------------------------------------------------------------
 | Optional security
@@ -23,7 +48,7 @@ $base = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] && ! in_array(strtolower
 |
 */
 
-define('USE_ACCESS_KEYS', false); // TRUE or FALSE
+define('USE_ACCESS_KEYS', true); // TRUE or FALSE
 
 /*
 |--------------------------------------------------------------------------
@@ -78,7 +103,7 @@ $config = array(
 	| with final /
 	|
 	*/
-	'current_path' => '../../../../bl-content/uploads/',
+	'current_path' => PATH_UPLOADS,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -89,7 +114,7 @@ $config = array(
 	| DO NOT put inside upload folder
 	|
 	*/
-	'thumbs_base_path' => '../../../../bl-content/uploads/thumbs/',
+	'thumbs_base_path' => PATH_UPLOADS. 'thumbs'. DS,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -107,7 +132,7 @@ $config = array(
 	|
 	*/
 
-	'access_keys' => array(),
+	'access_keys' => array($token),
 
 	//--------------------------------------------------------------------------------------------------------
 	// YOU CAN COPY AND CHANGE THESE VARIABLES INTO FOLDERS config.php FILES TO CUSTOMIZE EACH FOLDER OPTIONS
@@ -129,7 +154,7 @@ $config = array(
 	| default language file name
 	|--------------------------------------------------------------------------
 	*/
-	'default_language' => "en_EN",
+	'default_language' => "en",
 
 	/*
 	|--------------------------------------------------------------------------

@@ -52,8 +52,8 @@ class pluginCKeditor extends Plugin {
 	
 	public function adminBodyEnd()
 	{
-		global $Site;
-		global $layout;
+		global $Site, $Security, $layout;
+		
 		$pluginPath = $this->htmlPath(). 'libs' .DS. 'filemanager' .DS;
 		$html = '';
 
@@ -68,9 +68,9 @@ class pluginCKeditor extends Plugin {
 			language: \''.$language.'\',
 			fullPage: false,
 			allowedContent: false,
-			filebrowserBrowseUrl : \''.$pluginPath.'dialog.php?type=2&editor=ckeditor&fldr=\',
-			filebrowserImageBrowseUrl : \''.$pluginPath.'dialog.php?type=1&editor=ckeditor&fldr=\',
-			filebrowserUploadUrl : \''.$pluginPath.'dialog.php?type=2&editor=ckeditor&fldr=\'
+			filebrowserBrowseUrl : \''.$pluginPath.'dialog.php?type=2&editor=ckeditor&akey='.$Security->generateTokenCSRF().'&fldr=\',
+			filebrowserImageBrowseUrl : \''.$pluginPath.'dialog.php?type=1&editor=ckeditor&akey='.$Security->generateTokenCSRF().'&fldr=\',
+			filebrowserUploadUrl : \''.$pluginPath.'dialog.php?type=2&editor=ckeditor&akey='.$Security->generateTokenCSRF().'&fldr=\'
 		});
 			CKEDITOR.config.entities = false; // pour faciliter la lecture du code source, les accents ne sont pas transformés en entités HTML (inutiles avec le codage utf-8 des pages)
 			    
