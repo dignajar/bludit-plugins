@@ -9,5 +9,7 @@
     "standard": "Standard",
     "advanced": "Avancée",
     "advanced-is-the-full-package-of-ckeditor": "« Avancée », utilise toutes les options de CKEditor.",
-    "select-skin": "Sélectionner un skin"    
+    "select-skin": "Sélectionner un skin",
+    "filemanager-access-key": "Clé d’accès au gestionnaire de fichiers",
+    "generate-key-(refresh-for-new):": "Clé générée (rafraîchir pour une nouvelle) :"    
 }

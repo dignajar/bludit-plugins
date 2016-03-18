@@ -23,7 +23,8 @@ class pluginCKeditor extends Plugin {
 	{	
 		$this->dbFields = array(
 			'toolbar' => 'basic',
-			'skin' => 'bludit'
+			'skin' => 'bludit',
+			'akey' => pluginCKeditor::randomString()
 			);
 	}
 
@@ -52,7 +53,7 @@ class pluginCKeditor extends Plugin {
 	
 	public function adminBodyEnd()
 	{
-		global $Site, $Security, $layout;
+		global $Security, $Site, $layout;
 		
 		$pluginPath = $this->htmlPath(). 'libs' .DS. 'filemanager' .DS;
 		$html = '';
@@ -68,9 +69,9 @@ class pluginCKeditor extends Plugin {
 			language: \''.$language.'\',
 			fullPage: false,
 			allowedContent: false,
-			filebrowserBrowseUrl : \''.$pluginPath.'dialog.php?type=2&editor=ckeditor&akey='.$Security->generateTokenCSRF().'&fldr=\',
-			filebrowserImageBrowseUrl : \''.$pluginPath.'dialog.php?type=1&editor=ckeditor&akey='.$Security->generateTokenCSRF().'&fldr=\',
-			filebrowserUploadUrl : \''.$pluginPath.'dialog.php?type=2&editor=ckeditor&akey='.$Security->generateTokenCSRF().'&fldr=\'
+			filebrowserBrowseUrl : \''.$pluginPath.'dialog.php?type=2&editor=ckeditor&akey='.$this->getDbField('akey').'&fldr=\',
+			filebrowserImageBrowseUrl : \''.$pluginPath.'dialog.php?type=1&editor=ckeditor&akey='.$this->getDbField('akey').'&fldr=\',
+			filebrowserUploadUrl : \''.$pluginPath.'dialog.php?type=2&editor=ckeditor&akey='.$this->getDbField('akey').'&fldr=\'
 		});
 			CKEDITOR.config.entities = false; // pour faciliter la lecture du code source, les accents ne sont pas transformés en entités HTML (inutiles avec le codage utf-8 des pages)
 			    
@@ -98,8 +99,8 @@ class pluginCKeditor extends Plugin {
 
 	public function form()
 	{
-		global $Language;
-		
+		global $Language;			
+			
 		$html = '<div class="uk-form-select" data-uk-form-select>
     <span></span>';	
 		$html .= '<label for="toolbar">'.$Language->get('Select toolbar').'</label>';
@@ -111,6 +112,15 @@ class pluginCKeditor extends Plugin {
         $html .= '<div class="uk-form-help-block">'.$Language->get('Advanced is the full package of CKEditor').'</div>';
 		$html .= '</div>';		
 
+		$html .= '<div>';
+		$html .= '<label for="jsakey">'.$Language->get('Filemanager Access Key').'</label>';
+	    $html .= '<div class="uk-form-icon">';
+		$html .= '<i class="uk-icon-key"></i>';
+		$html .= '<input class="uk-form-width-large" name="akey" id="jsakey" type="text" value="'.$this->getDbField('akey').'">';
+		$html .= '</div>';
+		$html .= '<div class="uk-form-help-block">'.$Language->get('Generate key (refresh for new):'). ' <b>'.pluginCKeditor::randomString().'</b></div>';
+		$html .= '</div>';
+		
 		$html .= '<div class="uk-form-select" data-uk-form-select>
     <span></span>';	
 		$html .= '<label for="skin">'.$Language->get('Select skin').'</label>';
@@ -123,5 +133,21 @@ class pluginCKeditor extends Plugin {
 				
 		return $html;
 	}
-		
+
+	/*
+	 * Create a random string
+	 * @author	XEWeb <>
+	 * @param $length the length of the string to create
+	 * @return $str the string
+	 */
+	public function randomString($length = 12) {
+		$str = "";
+		$characters = array_merge(range('A','Z'), range('a','z'), range('0','9'));
+		$max = count($characters) - 1;
+		for ($i = 0; $i < $length; $i++) {
+			$rand = mt_rand(0, $max);
+			$str .= $characters[$rand];
+		}
+		return $str;
+	}		
 }

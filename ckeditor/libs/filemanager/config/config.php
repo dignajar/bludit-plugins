@@ -3,6 +3,11 @@
 mb_internal_encoding('UTF-8');
 date_default_timezone_set('Europe/Rome');
 
+/*
+|--------------------------------------------------------------------------
+| BLUDIT CONFIG
+|--------------------------------------------------------------------------
+*/
 $base = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] && ! in_array(strtolower($_SERVER['HTTPS']), array( 'off', 'no' ))) ? 'https' : 'http') . '://' .$_SERVER["SERVER_NAME"].str_replace('bl-plugins/ckeditor/libs/filemanager/dialog.php','',$_SERVER['PHP_SELF']);
 
 // Security constant
@@ -10,25 +15,33 @@ define('BLUDIT', true);
 // Directory separator
 define('DS', DIRECTORY_SEPARATOR);
 // PHP paths for init
-define('PATH_ROOT', 	'../../../../');
-define('PATH_KERNEL',	PATH_ROOT.'bl-kernel'.DS);
-define('PATH_ABSTRACT',	PATH_KERNEL.'abstract'.DS);
-define('PATH_HELPERS',	PATH_KERNEL.'helpers'.DS);
-define('PATH_CONTENT',	PATH_ROOT.'bl-content'.DS);
-define('PATH_UPLOADS',	PATH_CONTENT.'uploads'.DS);
+define('PATH_ROOT', 			'../../../../');
+define('PATH_CONTENT',			PATH_ROOT.'bl-content'.DS);
+define('PATH_UPLOADS',			PATH_CONTENT.'uploads'.DS);
+define('PATH_THUMBS',			PATH_UPLOADS.'thumbs'.DS);
+define('PATH_PLUGINS_DATABASES',PATH_CONTENT.'databases'.DS.'plugins'.DS);
 
-// Inclde Abstract Classes
-include(PATH_ABSTRACT.'dbjson.class.php');
+$file = PATH_PLUGINS_DATABASES.'ckeditor'.DS.'db.php';
+if(file_exists($file))
+{
+	// Read JSON file.
+	$lines = file($file);
 
-// Inclde Classes
-include(PATH_KERNEL.'security.class.php');
-$Security	= new Security();
-// Include Helpers Classes
-include(PATH_HELPERS.'text.class.php');
-include(PATH_HELPERS.'log.class.php');
-include(PATH_HELPERS.'session.class.php');
+	// Remove the first line, the first line is for security reasons.
+	unset($lines[0]);
+			
+	// Regenerate the JSON file.
+	$implode = implode($lines);
 
-$token = $Security->printTokenCSRF();
+	// Unserialize, JSON to Array.
+	$json = json_decode($implode,TRUE);
+	$akey = $json['akey'];
+}
+/*
+|--------------------------------------------------------------------------
+| ./ BLUDIT CONFIG END
+|--------------------------------------------------------------------------
+*/
 
 /*
 |--------------------------------------------------------------------------
@@ -114,7 +127,7 @@ $config = array(
 	| DO NOT put inside upload folder
 	|
 	*/
-	'thumbs_base_path' => PATH_UPLOADS. 'thumbs'. DS,
+	'thumbs_base_path' => PATH_THUMBS,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -132,7 +145,7 @@ $config = array(
 	|
 	*/
 
-	'access_keys' => array($token),
+	'access_keys' => array($akey),
 
 	//--------------------------------------------------------------------------------------------------------
 	// YOU CAN COPY AND CHANGE THESE VARIABLES INTO FOLDERS config.php FILES TO CUSTOMIZE EACH FOLDER OPTIONS
