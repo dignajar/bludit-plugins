@@ -1,0 +1,7 @@
+album;The above album contains images from local folder and videos from Youtube and Vimeo. This description and captions for images and videos are located in descriptions.txt file in this album's directory.;
+utube-sBmlLKzMA_s.jpg;This is a sample youtube video. Description added from text file located in this album's folder;
+vimeo-50522981.jpg;This is a sample vimeo video;
+smallcar.jpg;This is a yellow small car;
+cutepuppy.jpg;This is a cute puppy;
+brave_person.jpg;Brave person walking out on the glacier point ledge;
+edge.jpg;Mountain biker on edge;

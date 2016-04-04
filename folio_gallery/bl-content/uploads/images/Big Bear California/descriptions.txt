@@ -1,0 +1,2 @@
+PICT2314.jpg;this caption can be changed in descriptions.txt file located in the album's directory.;
+PICT2531.JPG;this image caption is from text file.;

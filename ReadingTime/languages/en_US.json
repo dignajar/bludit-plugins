@@ -1,0 +1,12 @@
+{
+	"plugin-data":
+	{
+		"name": "Reading Time",
+		"description": "This is a plugin for Bludit that estimates the reading time for your content."
+	},
+	"format-alt-enable": "Format Alt Enable",
+	"minute": "Minute",
+	"minutes": "Minutes",
+	"second": "Second",
+	"seconds": "Seconds"
+}
