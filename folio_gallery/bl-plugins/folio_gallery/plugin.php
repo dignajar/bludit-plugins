@@ -168,7 +168,7 @@
 		if($Url->whereAmI()==='page' && $Page->slug()==$this->getDbField('page'))
 		{
 			$html .= '<script src="' .$pluginPath. 'foliogallery' .DS. 'jquery.1.11.js"></script>'.PHP_EOL;
-			$html .= '<script src="' .$pluginPath. 'colorbox' .DS. 'jquery.colorbox-min.js"></script>'.PHP_EOL;	
+			$html .= '<script src="' .$pluginPath. 'colorbox' .DS. 'jquery.colorbox-min.js" charset="'.CHARSET.'"></script>'.PHP_EOL;	
 			$html .= '<script src="' .$pluginPath. 'colorbox' .DS. 'i18n' .DS. 'jquery.colorbox-'.$language.'.js"></script>'.PHP_EOL;		
 			$html .= '<script type="text/javascript">
 			$(document).ready(function(){
@@ -186,7 +186,7 @@
      */		
 	public function encodeto($string)
 	{
-		$string = mb_convert_encoding(trim($string), CHARSET, 'HTML-ENTITIES');
+		$string = mb_convert_encoding(trim($string), CHARSET, 'auto');
 		return $string;
 	} 
     /**
