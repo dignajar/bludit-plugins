@@ -86,8 +86,8 @@ class pluginReadingTime extends Plugin {
 	 *
 	 * For the full copyright and license information, please view the LICENSE
 	 * file that was distributed with this source code.
-	 */		
-	public function readingTime($content, array $params = [])
+	 */	
+	public function readingTime($content, $params = array() ) 	
 	{
 		global $Language;
 	    $defaults = [
