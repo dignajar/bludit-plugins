@@ -6,7 +6,7 @@ The web site https://plugins.bludit.com is generated from this repository.
 
 The zip files are created automatically.
 
-The web site refreshes itself every 24hs.
+The web site refreshes itself every 1 hour.
 
 Here is a link to how to contribute to a any repository: https://varlogdiego.com/post/how-to-contribute-to-a-github-project
 
