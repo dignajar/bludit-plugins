@@ -1,0 +1,12 @@
+{
+	"plugin-data":
+	{
+		"name": "Yandex Tools",
+		"description": "This plugin generate the meta tag to validate your site with Yandex Webmasters Tools and the JavaScript code to track with Yandex.Metrika."
+	},
+
+	"yandex-webmasters-tools": "Yandex.Webmaster",
+	"yametrika-id": "Yandex.Metrika Counter ID",
+	"complete-this-field-with-the-yandex-verification": "Complete this field with the Yandex Site verification code to verify the site owner.",
+	"complete-this-field-with-the-yametrika-id": "Complete this field with the Counter ID to generate the Javascript tracking code for Yandex.Metrika."
+}
