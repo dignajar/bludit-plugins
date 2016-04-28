@@ -1,0 +1,11 @@
+{
+	"plugin-data":
+	{
+		"name": "Yandex Tools",
+		"description": "Этот плагин генерирует мета теги для проверки вашего сайта в Яндекс.Вебмастер и код JavaScript для отслеживания в Яндекс.Метрика."
+	},
+	"yandex-webmasters-tools": "Yandex.Webmaster",
+	"yametrika-id": "Yandex.Metrika Counter ID",
+	"complete-this-field-with-the-yandex-verification": "Заполните это поле кодом Яндекс.Вебмастер для проверки владельца сайта.",
+	"complete-this-field-with-the-yametrika-id": "Заполните это поле с номером счётчика чтобы сгенерировать код Javascript для отслеживания в Яндекс.Метрика."
+}
