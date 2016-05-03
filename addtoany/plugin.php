@@ -1,108 +1,135 @@
 <?php
 
-class pluginRSS extends Plugin {
+class pluginAddToAny extends Plugin {
 
-	private function createXML()
+	private $disable;
+	
+	private function a2acode()
 	{
-		global $Site;
-		global $dbPages;
-		global $dbPosts;
+		$ret  = '<!-- AddToAny BEGIN -->
+			<div class="a2a-social" style="margin:20px 0px;">
+				<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+					<a class="a2a_button_facebook"></a>
+					<a class="a2a_button_twitter"></a>
+					<a class="a2a_button_google_plus"></a>
+					<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+				</div>
+			</div>
+			<!-- AddToAny END -->';
+	
+		if ( $this->getDbField('enableMinifyURL') ) {
+			$ret .='<script type="text/javascript">
+				var a2a_config = a2a_config || {};
+				a2a_config.track_links = "googl";
+				</script>';
+		};
+	
+		return $ret;
+	}
+	
+	public function init()
+	{
+		$this->dbFields = array(
+			'enablePages'=>false,
+			'enablePosts'=>true,
+			'enableDefaultHomePage'=>false,
+			'enableMinifyURL'=>false
+		);
+	}
+
+	function __construct()
+	{
+		parent::__construct();
+
 		global $Url;
 
-		$xml = '<?xml version="1.0" encoding="UTF-8" ?>';
-		$xml .= '<rss version="2.0">';
-		$xml .= '<channel>';
-		$xml .= '<title>'.$Site->title().'</title>';
-		$xml .= '<link>'.$Site->url().'</link>';
-		$xml .= '<description>'.$Site->description().'</description>';
+		// Disable the plugin IF ...
+		$this->disable = false;
 
-		$posts = buildPostsForPage(0, 10, true);
-		foreach($posts as $Post)
-		{
-			$xml .= '<item>';
-			$xml .= '<title>'.$Post->title().'</title>';
-			$xml .= '<link>'.$Post->permalink(true).'</link>';
-			$xml .= '<description>'.$Post->description().'</description>';
-			$xml .= '</item>';
+		if( (!$this->getDbField('enablePosts')) && ($Url->whereAmI()=='post') ) {
+			$this->disable = true;
 		}
-
-		$xml .= '</channel></rss>';
-
-		// New DOM document
-		$doc = new DOMDocument();
-
-		// Friendly XML code
-		$doc->formatOutput = true;
-
-		$doc->loadXML($xml);
-
-		$doc->save(PATH_PLUGINS_DATABASES.$this->directoryName.DS.'rss.xml');
+		elseif( (!$this->getDbField('enablePages')) && ($Url->whereAmI()=='page') ) {
+			$this->disable = true;
+		}
+		elseif( !$this->getDbField('enableDefaultHomePage') && ($Url->whereAmI()=='page') )
+		{
+			global $Page;
+			global $Site;
+			if( $Site->homePage()==$Page->key() ) {
+				$this->disable = true;
+			}
+		}
+		elseif( ($Url->whereAmI()!='post') && ($Url->whereAmI()!='page') ) {
+			$this->disable = true;
+		}
 	}
 
-	public function install($position = 0)
+	public function form()
 	{
-		parent::install($position);
+		global $Language;
 
-		$this->createXML();
-	}
+		$html  = '<div>';
+		$html .= '<input name="enablePages" id="jsenablePages" type="checkbox" value="true" '.($this->getDbField('enablePages')?'checked':'').'>';
+		$html .= '<label class="forCheckbox" for="jsenablePages">'.$Language->get('enable-addtoany-on-pages').'</label>';
+		$html .= '</div>';
 
-	public function afterPostCreate()
-	{
-		$this->createXML();
-	}
+		$html .= '<div>';
+		$html .= '<input name="enablePosts" id="jsenablePosts" type="checkbox" value="true" '.($this->getDbField('enablePosts')?'checked':'').'>';
+		$html .= '<label class="forCheckbox" for="jsenablePosts">'.$Language->get('enable-addtoany-on-posts').'</label>';
+		$html .= '</div>';
 
-	public function afterPageCreate()
-	{
-		$this->createXML();
-	}
+		$html .= '<div>';
+		$html .= '<input name="enableDefaultHomePage" id="jsenableDefaultHomePage" type="checkbox" value="true" '.($this->getDbField('enableDefaultHomePage')?'checked':'').'>';
+		$html .= '<label class="forCheckbox" for="jsenableDefaultHomePage">'.$Language->get('enable-addtoany-on-default-home-page').'</label>';
+		$html .= '</div>';
+		
+		$html .= '<div>';
+		$html .= '<input name="enableMinifyURL" id="jsenableMinifyURL" type="checkbox" value="true" '.($this->getDbField('enableMinifyURL')?'checked':'').'>';
+		$html .= '<label class="forCheckbox" for="jsenableMinifyURL">'.$Language->get('enable-google-url-shortener').'</label>';
+		$html .= '</div>';
 
-	public function afterPostModify()
-	{
-		$this->createXML();
-	}
-
-	public function afterPageModify()
-	{
-		$this->createXML();
-	}
-
-	public function afterPostDelete()
-	{
-		$this->createXML();
-	}
-
-	public function afterPageDelete()
-	{
-		$this->createXML();
-	}
-
-	public function siteHead()
-	{
-		$html = '<link rel="alternate" type="application/rss+xml" href="'.DOMAIN_BASE.'rss.xml" title="RSS Feed">'.PHP_EOL;
 		return $html;
 	}
-
-	public function beforeRulesLoad()
+	
+	public function postEnd()
 	{
-		global $Url;
-
-		if( $Url->uri() === HTML_PATH_ROOT.'rss.xml' )
-		{
-			// Send XML header
-			header('Content-type: text/xml');
-
-			// New DOM document
-			$doc = new DOMDocument();
-
-			// Load XML
-			$doc->load(PATH_PLUGINS_DATABASES.$this->directoryName.DS.'rss.xml');
-
-			// Print the XML
-			echo $doc->saveXML();
-
-			// Stop Bludit running
-			exit;
+		if( $this->disable ) {
+			return false;
 		}
+		return $this->a2acode();
 	}
 
+	public function pageEnd()
+	{
+		if( $this->disable ) {
+			return false;
+		}
+		return $this->a2acode();
+	}
+  
+	public function siteHead()
+	{
+		if( $this->disable ) {
+			return false;
+		}
+
+    $html = '<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>';
+    
+		return $html;
+	}
+	
+
+  // Some themes don't like it in siteBodyEnd
+  
+  /* public function siteBodyEnd()
+	{
+		if( $this->disable ) {
+			return false;
+		}
+
+		$html = '<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>';
+
+		return $html;
+	} */
 }
