@@ -2,9 +2,10 @@
 	"plugin-data":
 	{
 		"name": "AddToAny Social Sharing",
-		"description": "AddToAny is a set of social sharing buttons. "
+		"description": "AddToAny is a set of social sharing buttons."
 	},
 	"enable-addtoany-on-pages": "Enable AddToAny on pages",
 	"enable-addtoany-on-posts": "Enable AddToAny on posts",
-	"enable-addtoany-on-default-home-page": "Enable AddToAny on default home page"
+	"enable-addtoany-on-default-home-page": "Enable AddToAny on default home page",
+	"enable-google-url-shortener": "Enable Google URL shortener"
 }

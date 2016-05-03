@@ -6,5 +6,6 @@
 	},
 	"enable-addtoany-on-pages": "AddToAny auf Seiten",
 	"enable-addtoany-on-posts": "AddToAny bei Beiträgen",
-	"enable-addtoany-on-default-home-page": "AddToAny auf der Hauptseite"
+	"enable-addtoany-on-default-home-page": "AddToAny auf der Hauptseite",
+	"enable-google-url-shortener": "Google URL shortener"
 }
