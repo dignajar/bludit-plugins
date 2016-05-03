@@ -9,7 +9,8 @@ class pluginAddToAny extends Plugin {
 		$this->dbFields = array(
 			'enablePages'=>false,
 			'enablePosts'=>true,
-			'enableDefaultHomePage'=>false
+			'enableDefaultHomePage'=>false,
+			'enableMinifyURL'=>false
 		);
 	}
 
@@ -47,17 +48,22 @@ class pluginAddToAny extends Plugin {
 
 		$html  = '<div>';
 		$html .= '<input name="enablePages" id="jsenablePages" type="checkbox" value="true" '.($this->getDbField('enablePages')?'checked':'').'>';
-		$html .= '<label class="forCheckbox" for="jsenablePages">'.$Language->get('Enable AddToAny on pages').'</label>';
+		$html .= '<label class="forCheckbox" for="jsenablePages">'.$Language->get('enable-addtoany-on-pages').'</label>';
 		$html .= '</div>';
 
 		$html .= '<div>';
 		$html .= '<input name="enablePosts" id="jsenablePosts" type="checkbox" value="true" '.($this->getDbField('enablePosts')?'checked':'').'>';
-		$html .= '<label class="forCheckbox" for="jsenablePosts">'.$Language->get('Enable AddToAny on posts').'</label>';
+		$html .= '<label class="forCheckbox" for="jsenablePosts">'.$Language->get('enable-addtoany-on-posts').'</label>';
 		$html .= '</div>';
 
 		$html .= '<div>';
 		$html .= '<input name="enableDefaultHomePage" id="jsenableDefaultHomePage" type="checkbox" value="true" '.($this->getDbField('enableDefaultHomePage')?'checked':'').'>';
-		$html .= '<label class="forCheckbox" for="jsenableDefaultHomePage">'.$Language->get('Enable AddToAny on default home page').'</label>';
+		$html .= '<label class="forCheckbox" for="jsenableDefaultHomePage">'.$Language->get('enable-addtoany-on-default-home-page').'</label>';
+		$html .= '</div>';
+		
+		$html .= '<div>';
+		$html .= '<input name="enableMinifyURL" id="jsenableMinifyURL" type="checkbox" value="true" '.($this->getDbField('enableMinifyURL')?'checked':'').'>';
+		$html .= '<label class="forCheckbox" for="jsenableMinifyURL">'.$Language->get('enable-google-url-shortener').'</label>';
 		$html .= '</div>';
 
 		return $html;
@@ -79,6 +85,14 @@ class pluginAddToAny extends Plugin {
     </div>
     </div>
     <!-- AddToAny END -->';
+	
+	if ( $this->getDbField('enableMinifyURL') ) {
+		$html .='<script type="text/javascript">
+			var a2a_config = a2a_config || {};
+			a2a_config.track_links = "googl";
+			</script>';
+	}
+	
 		return $html;
 	}
 
@@ -98,6 +112,14 @@ class pluginAddToAny extends Plugin {
     </div>
     </div>
     <!-- AddToAny END -->';
+
+	if ( $this->getDbField('enableMinifyURL') ) {
+		$html .='<script type="text/javascript">
+			var a2a_config = a2a_config || {};
+			a2a_config.track_links = "googl";
+			</script>';
+	}
+	
 		return $html;
 	}
   
