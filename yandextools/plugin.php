@@ -31,14 +31,15 @@ class pluginYandexTools extends Plugin {
 
 	public function siteHead()
 	{
-		$html  = PHP_EOL.'<!-- Yandex.Webmaster counter -->'.PHP_EOL;
-		$html  .= '<meta name="yandex-verification" content="'.$this->getDbField('yandex-verification').'" />'.PHP_EOL;
+                global $Url;
 
-		if(Text::isEmpty($this->getDbField('yandex-verification'))) {
-			return false;
-		}
+                if(Text::isEmpty($this->getDbField('yandex-verification')) || !($Url->whereAmI()=='home')) {
+                        return false;
+                }
 
-		return $html;
+                $html  = PHP_EOL.'<!-- Yandex.Webmaster counter -->'.PHP_EOL;
+                $html  .= '<meta name="yandex-verification" content="'.$this->getDbField('yandex-verification').'" />'.PHP_EOL;
+                return $html;
 	}
 
 	public function siteBodyEnd()
