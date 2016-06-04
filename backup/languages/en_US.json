@@ -2,12 +2,7 @@
 	"plugin-data":
 	{
 		"name": "Backup",
-		"description": "Backup lets you back up your data, download, restore and delete them from your server.",
-		"author": "Fred",
-		"email": "stradfred@gmail.com",
-		"website": "",
-		"version": "0.5.1",
-		"releaseDate": "2015-11-27"
+		"description": "Backup lets you back up your data, download, restore and delete them from your server."
 	},
 	"download": "Download",
 	"delete": "Delete",

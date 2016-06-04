@@ -2,14 +2,10 @@
 	"plugin-data":
 	{
 		"name": "AddToAny Social Sharing",
-		"description": "AddToAny is a set of social sharing buttons. ",
-		"author": "320up",
-		"email": "ian@320up.com.au",
-		"website": "http://320up.com.au",
-		"version": "0.1",
-		"releaseDate": "2015-12-12"
+		"description": "AddToAny is a set of social sharing buttons."
 	},
 	"enable-addtoany-on-pages": "Enable AddToAny on pages",
 	"enable-addtoany-on-posts": "Enable AddToAny on posts",
-	"enable-addtoany-on-default-home-page": "Enable AddToAny on default home page"
+	"enable-addtoany-on-default-home-page": "Enable AddToAny on default home page",
+	"enable-google-url-shortener": "Enable Google URL shortener"
 }

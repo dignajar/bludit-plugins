@@ -1,5 +1,5 @@
 ﻿/**
- * @license Copyright (c) 2003-2015, CKSource - Frederico Knabben. All rights reserved.
+ * @license Copyright (c) 2003-2016, CKSource - Frederico Knabben. All rights reserved.
  * For licensing, see LICENSE.md or http://ckeditor.com/license
  */
 
@@ -13,10 +13,10 @@
  * (1) http://ckeditor.com/builder
  *     Visit online builder to build CKEditor from scratch.
  *
- * (2) http://ckeditor.com/builder/8bd2174e5293e03591c296c1cf883bda
+ * (2) http://ckeditor.com/builder/9112f95de78a7f2c3576c61a29c8fc5b
  *     Visit online builder to build CKEditor, starting with the same setup as before.
  *
- * (3) http://ckeditor.com/builder/download/8bd2174e5293e03591c296c1cf883bda
+ * (3) http://ckeditor.com/builder/download/9112f95de78a7f2c3576c61a29c8fc5b
  *     Straight download link to the latest version of CKEditor (Optimized) with the same setup as before.
  *
  * NOTE:
@@ -25,7 +25,7 @@
  */
 
 var CKBUILDER_CONFIG = {
-	skin: 'minimalist',
+	skin: 'moono',
 	preset: 'full',
 	ignore: [
 		'.bender',
@@ -83,11 +83,9 @@ var CKBUILDER_CONFIG = {
 		'list' : 1,
 		'liststyle' : 1,
 		'magicline' : 1,
-		'markdown' : 1,
-		'mathedit' : 1,
-		'mathjax' : 1,
 		'maximize' : 1,
 		'newpage' : 1,
+		'pagebreak' : 1,
 		'pastefromword' : 1,
 		'pastetext' : 1,
 		'preview' : 1,
@@ -102,7 +100,6 @@ var CKBUILDER_CONFIG = {
 		'smiley' : 1,
 		'sourcearea' : 1,
 		'specialchar' : 1,
-		'spoiler' : 1,
 		'stylescombo' : 1,
 		'tab' : 1,
 		'table' : 1,
@@ -124,6 +121,7 @@ var CKBUILDER_CONFIG = {
 		'cy' : 1,
 		'da' : 1,
 		'de' : 1,
+		'de-ch' : 1,
 		'el' : 1,
 		'en' : 1,
 		'en-au' : 1,

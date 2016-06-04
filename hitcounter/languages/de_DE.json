@@ -1,0 +1,13 @@
+{
+	"plugin-data":
+	{
+		"name": "Besucherzähler",
+		"description": "Anzeige eines Besucherzählers"
+	},
+
+    "text": "Text über Zähler",
+    "positions": "Anzahl an Ziffern",
+    "current-value": "Aktueller Wert:",
+    "display-counter-as-chars": "0123456789 - Darstellung des Besucherzählers als Zeichen",
+    "display-counter-as-images": "Darstellung des Besucherzählers als Bilddateien"
+}

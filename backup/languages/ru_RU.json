@@ -1,0 +1,23 @@
+{
+	"plugin-data":
+	{
+		"name": "Резервная копия",
+		"description": "Резервная копия позволяет восстанавливать данные - загружать, восстанавливать и удалять их с вашего сервера."
+	},
+	"download": "Загрузить",
+	"delete": "Удалить",
+	"restore": "Восстановить",
+	"archives": "Архивы",
+	"file-size": "Размер файла",
+	"date": "Дата",
+	"actions": "Действия",
+	"make-a-backup": "Создать резервную копию",
+	"delete-this-backup?": "Удалить эту резервную копию?",
+	"do-you-want-to-restore-this-backup?": "Желаете вы восстановить данные из этой резервной копии?",
+	"there-was-a-problem-writing-the-zip-archive.": "Ошибка при записи ZIP архива.",
+	"successfully-created-the-zip-archive!": "ZIP успешно создан!",
+	"successfully-deleted-file!": "Файл успешно удалён!",
+	"an-error-occurred-while-deleting-the-file.": "При удалении файла произошла ошибка.",
+	"archive-is-restored!": "Данные из архива восстановлены!",
+	"there-was-a-problem-to-restore-the-zip-archive": "Ошибка при восстановлении из ZIP архива."
+}

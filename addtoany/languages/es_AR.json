@@ -1,0 +1,11 @@
+{
+	"plugin-data":
+	{
+		"name": "AddToAny Social Sharing",
+		"description": "Agrega a tus posts y paginas botones para compartir en las diferentes redes sociales."
+	},
+	"enable-addtoany-on-pages": "Habilitar en paginas",
+	"enable-addtoany-on-posts": "Habilitar en entradas",
+	"enable-addtoany-on-default-home-page": "Habilitar en la pagina principal",
+	"enable-google-url-shortener": "Habilitar Google URL shortener"
+}

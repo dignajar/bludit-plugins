@@ -1,0 +1,7 @@
+{
+	"plugin-data":
+	{
+		"name": "Minify",
+		"description": "Minifiziert HTML, JS, CSS und entfernt Kommentare (ausser IE-Tags und -Kommentare innerhalb von Skript-Tags). Um Code-Teile von der Kompression auszuschliessen, kann der Tag <em>&lt;!--html-compression no compression--&gt;</em> verwendet werden."
+	}
+}

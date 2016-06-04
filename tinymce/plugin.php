@@ -12,7 +12,7 @@ class pluginTinymce extends Plugin {
 	public function init()
 	{
 		$this->dbFields = array(
-			'plugins'=>'autoresize, fullscreen, pagebreak, link, textcolor, code, image',
+			'plugins'=>'autoresize, fullscreen, pagebreak, link, textcolor, code, image, paste',
 			'toolbar'=>'bold italic underline strikethrough | alignleft aligncenter alignright | bullist numlist | styleselect | link forecolor backcolor removeformat image | pagebreak code fullscreen'
 		);
 	}
@@ -74,12 +74,24 @@ class pluginTinymce extends Plugin {
 				}
 			}
 
-			$html  = '<script>$(document).ready(function() { ';
+			$html  = '<script>';
+
+			// This function is necesary on each Editor, it is used by Bludit Images v8.
+			$html .= 'function editorAddImage(filename) {
+					tinymce.activeEditor.insertContent("<img src=\""+filename+"\" alt=\"'.$Language->get('Image description').'\">" + "\n");
+				}'.PHP_EOL;
+
+			$html .= '$(document).ready(function() { ';
 			$html .= 'tinymce.init({
 				selector: "#jscontent",
+				cache_suffix: "?v='.$this->version().'",
+				element_format : "html",
+				entity_encoding : "raw",
+				schema: "html5",
+				extended_valid_elements : "a[class|name|href|target|title|onclick|rel],script[type|src],iframe[src|style|width|height|scrolling|marginwidth|marginheight|frameborder],img[class|src|border=0|alt|title|hspace|vspace|width|height|align|onmouseover|onmouseout|name]",
 				plugins: "'.$this->getDbField('plugins').'",
 				toolbar: "'.$this->getDbField('toolbar').'",
-				content_css: "'.$pluginPath.'css/editor.css?version='.$this->version().'",
+				content_css: "'.$pluginPath.'css/editor.css",
 				theme: "modern",
 				height:"400px",
 				width:"100%",
@@ -91,17 +103,6 @@ class pluginTinymce extends Plugin {
 				pagebreak_separator: "'.PAGE_BREAK.'",
 				paste_as_text: true,
     				document_base_url: "'.HTML_PATH_UPLOADS.'"
-			});';
-
-			$html .= '$("#jsaddImage").on("click", function() {
-
-					var filename = $("#jsimageList option:selected" ).text();
-
-					if(!filename.trim()) {
-						return false;
-					}
-
-					tinymce.activeEditor.insertContent("<img src=\""+filename+"\" alt=\"\">" + "\n");
 			});';
 
 			$html .= '}); </script>';

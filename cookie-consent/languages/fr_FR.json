@@ -2,12 +2,7 @@
 	"plugin-data":
 	{
 		"name": "Cookie Consent + détection AdBlock",
-		"description": "La solution la plus populaire pour le droit des Cookies en Europe, ainsi qu’un détecteur du script AdBlock avec personnalisation.",
-		"author": "Fred",
-		"email": "stradfred@gmail.com",
-		"website": "",
-		"version": "1.1",
-		"releaseDate": "2015-11-24"
+		"description": "La solution la plus populaire pour le droit des Cookies en Europe, ainsi qu’un détecteur du script AdBlock avec personnalisation."
 	},
 	"enable-plugin-(config-save)": "Activer le plugin (Configuration sauvegardée)",
 	"this-website-uses-cookies-to-ensure-you-get-the-best-experience-on-our-website": "Ce site utilise des cookies, notamment pour les statistiques de visites. Le fait de continuer à naviguer implique votre accord tacite.",

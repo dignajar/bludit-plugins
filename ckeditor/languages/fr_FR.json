@@ -2,14 +2,14 @@
 	"plugin-data":
 	{
 		"name": "Ckeditor + gestionnaire de fichier",
-		"description": "Ajoute Ckeditor 4.5.4 + RESPONSIVE filemanager v.9.9.6 à Bludit"
+		"description": "Ajoute Ckeditor 4.5.7 + RESPONSIVE filemanager v.9.10.1 à Bludit"
 	},
-    "activate-markdown-plugin": "Activater le plugin Markdown",
-    "activate-toolbar-plugin": "Activater le plugin Toolbar",
     "select-toolbar": "Sélectionnez le type de barre d’outils",
     "basic": "Basique",
     "standard": "Standard",
     "advanced": "Avancée",
     "advanced-is-the-full-package-of-ckeditor": "« Avancée », utilise toutes les options de CKEditor.",
-    "select-skin": "Sélectionner un skin"    
+    "select-skin": "Sélectionner un skin",
+    "filemanager-access-key": "Clé d’accès au gestionnaire de fichiers",
+    "generate-key-(refresh-for-new):": "Clé générée (rafraîchir pour une nouvelle) :"    
 }

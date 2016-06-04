@@ -1,0 +1,13 @@
+{
+	"plugin-data":
+	{
+		"name": "Hitcounter",
+		"description": "Displays a hitcounter"
+	},
+
+    "text": "Text above counter",
+    "positions": "Number of digits",
+    "current-value": "Current value:",
+    "display-counter-as-chars": "0123456789 - Display current value as characters",
+    "display-counter-as-images": "Display current value as image numbers"
+}

@@ -1,0 +1,17 @@
+{
+	"plugin-data":
+	{
+		"name": "Reading Time",
+		"description": "This is a plugin for Bludit that estimates the reading time for your content."
+	},
+	"format-alt-enable": "Format Alt Enable",
+	"enable-reading-time-on-pages": "Enable Reading Time on pages",
+	"enable-reading-time-on-posts": "Enable Reading Time on posts",
+	"enable-reading-time-on-default-home-page": "Enable Reading Time on default home page",	
+	"minute": "Minute",
+	"minutes": "Minutes",
+	"second": "Second",
+	"seconds": "Seconds",
+	"pages-where-do-not-display-the-reading-time": "Pages where do not display the reading time",
+	"write-the-pages-separated-by-commas": "Write the pages separated by commas."
+}

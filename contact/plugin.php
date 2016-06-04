@@ -5,10 +5,10 @@
  *  @package Bludit
  *  @subpackage Plugins
  *  @author Frédéric K.
- *  @copyright 2015 Frédéric K.
- *	@version 0.5
+ *  @copyright 2015-2016 Frédéric K.
+ *	@version 1.1.2
  *  @release 2015-08-10
- *  @update 2015-12-07
+ *  @update 2016-04-19
  *
  */
 class pluginContact extends Plugin {
@@ -18,13 +18,13 @@ class pluginContact extends Plugin {
 	{
 		$this->dbFields = array(
 			'email'=>'',	// <= Your contact email
-			'slug'=>''		// <= Slug url of contact page
+			'page'=>''		// <= Slug url of contact page
 			);
 	}
 	# ADMINISTRATION DU PLUG-IN.
 	public function form()
 	{
-		global $Language, $pagesParents;
+		global $Language, $pages, $pagesParents;
 			
 		// Liste des pages ou afficher le formulaire
 		$_selectPageList = '';
@@ -47,19 +47,22 @@ class pluginContact extends Plugin {
 		
 		$html  = '<div>';
 		$html .= '<label for="jsemail">'.$Language->get('Email').'</label>';
-		$html .= '<input name="email" id="jsemail" type="email" value="'.$this->getDbField('email').'">';
+	    $html .= '<div class="uk-form-icon">';
+		$html .= '<i class="uk-icon-envelope"></i>';
+		$html .= '<input class="uk-form-width-large" name="email" id="jsemail" type="email" value="'.$this->getDbField('email').'">';
+		$html .= '</div>';
 		$html .= '</div>';
 		
 		$html .= '<div class="uk-form-select" data-uk-form-select>
     <span></span>';		
 		$html .= '<label for="jspage">' .$Language->get('Select a page to add the contact form').'</label>';
-		$html .= '<select name="page" class="width-50">';
+		$html .= '<select name="page" class="uk-form-width-medium">';
         foreach($_selectPageList as $value=>$text) {
                 $html .= '<option value="'.$value.'"'.( ($this->getDbField('page')===$value)?' selected="selected"':'').'>'.$text.'</option>';
         }
 		$html .= '</select>';	
 		$html .= '</div>';	
-	
+			
 		return $html;
 	}
     /**
@@ -71,7 +74,7 @@ class pluginContact extends Plugin {
 		global $Page, $Url;
 		$html = '';
 		
-		if($Url->whereAmI()==='page' && $Page->slug()==$this->getDbField('page'))
+		if($Url->whereAmI()=='page' && $Page->slug()==$this->getDbField('page'))
 		{
 			$pluginPath = $this->htmlPath();
 			/** 
@@ -79,9 +82,10 @@ class pluginContact extends Plugin {
 			 */
 		    $css = PATH_THEME_CSS. 'contact.css';
 		    if(file_exists($css))
-			    $html .= Theme::css('contact.css');
+			    $html .= Theme::css('contact.css', HTML_PATH_THEME_CSS, false);
 		    else 
-			    $html .= '<link rel="stylesheet" href="'.$pluginPath.'layout/contact.css">';				
+		    	$html .= Theme::css('contact.css', $pluginPath . 'layout' .DS, false);
+			    #$html .= '<link rel="stylesheet" href="'.$pluginPath.'layout/contact.css">'.PHP_EOL;	    				
 		}
 		return $html;
 	}  
@@ -93,19 +97,19 @@ class pluginContact extends Plugin {
 	{
 		global $Page, $Url, $Site, $Language, $Security;
 		# On charge le script uniquement sur la page en paramètre
-		if($Url->whereAmI()==='page' && $Page->slug()==$this->getDbField('page'))
+		if( $Url->whereAmI()=='page' && $Page->slug()==$this->getDbField('page') )
 		{ 
 		   $error = false;
 		   $success = false;
 		   
 		   # $_POST
-		   $name       = isset($_POST['name']) ? $_POST['name'] : '';
-		   $email      = isset($_POST['email']) ? $_POST['email'] : '';
-		   $message    = isset($_POST['message']) ? $_POST['message'] : '';
-		   $interested = isset($_POST['interested']) ? $_POST['interested'] : '';			            		           
+		   $name       	= isset($_POST['name']) ? $_POST['name'] : '';
+		   $email      	= isset($_POST['email']) ? $_POST['email'] : '';
+		   $message    	= isset($_POST['message']) ? $_POST['message'] : '';
+		   $interested 	= isset($_POST['interested']) ? $_POST['interested'] : '';			            		           
 		   $contentType = 'text'; // Type de mail (text/html)
 		             
-		   if(isset($_POST['submit'])){	
+		    if(isset($_POST['submit'])){	
 
 					// Renew the token. This token will be the same inside the session for multiple forms.
 					$Security->generateTokenCSRF();
@@ -163,12 +167,12 @@ class pluginContact extends Plugin {
 			/** 
 			 * VERSION 0.3
 			 * ON INCLUT LE TEMPLATE PAR DÉFAUT DU PLUG-IN OU LE TEMPLATE PERSONNALISÉ STOCKER DANS NOTRE THÈME 
-			 */
+			 */ 
 		    $template = PATH_THEME_PHP. 'contact.php';
 		    if(file_exists($template))
-			    include_once($template);
+			    include($template);
 		    else 
-			    include(dirname(__FILE__). DS .'layout/contact.php');	    			
+			    include(dirname(__FILE__) . DS . 'layout' . DS . 'contact.php');	    			
 		    
 		}
 	}   

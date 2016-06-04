@@ -1,0 +1,86 @@
+.menu {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 100%;
+}
+
+.menu li { list-style: none !important; }
+
+.menu li a {
+  display: table;
+  margin-top: 1px;
+  padding: 14px 10px;
+  width: 100%;
+  background: #337D88;
+  text-decoration: none;
+  text-align: left;
+  vertical-align: middle;
+  color: #fff;
+  overflow: hidden;
+  -webkit-transition-property: background;
+  -webkit-transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease-out;
+  transition-property: background;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
+}
+
+.menu > li:first-child a { margin-top: 0; }
+
+.menu li a:hover {
+  background: #4AADBB;
+  -webkit-transition-property: background;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  transition-property: background;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+a.active {
+    background: #4AADBB !important;
+}
+
+.menu li ul {
+  margin: 0;
+  padding: 0;
+}
+
+.menu li li a {
+  display: block;
+  margin-top: 0;
+  padding: 0 10px;
+  height: 0;
+  background: #C6DDD9;
+  color: #1F3D39;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.menu > li:hover li a {
+  display: table;
+  margin-top: 1px;
+  padding: 10px;
+  width: 100%;
+  height: 1em;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.menu > li:hover li a:hover {
+  background: #A4CAC8;
+  -webkit-transition-property: background;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  transition-property: background;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}

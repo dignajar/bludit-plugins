@@ -1,0 +1,10 @@
+{
+	"author": "Frédéric K.",
+	"email": "stradfred@gmail.com",
+	"website": "http://flatboard.co.nf",
+	"version":"2.0.9",
+	"releaseDate": "2016-01-26",
+	"license": "MIT",
+	"requires": "Bludit v1.0.1",
+	"notes": ""
+}

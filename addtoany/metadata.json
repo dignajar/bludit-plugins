@@ -1,0 +1,10 @@
+{
+	"author": "320up",
+	"email": "ian@320up.com.au",
+	"website": "http://320up.com.au",
+	"version": "0.2",
+	"releaseDate": "2016-03-05",
+	"license": "MIT",
+	"requires": "Bludit v1.1",
+	"notes": ""
+}
