@@ -1,0 +1,10 @@
+{
+	"author": "SpecKtator",
+	"email": "specktator@totallynoob.com",
+	"website": "http://totallynoob.com",
+	"version":"0.1",
+	"releaseDate": "2015-12-22",
+	"license": "MIT",
+	"requires": "Bludit v1.1.2",
+	"notes": ""
+}
