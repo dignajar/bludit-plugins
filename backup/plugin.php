@@ -110,24 +110,24 @@ class pluginBackup extends Plugin {
 			$filesize = pluginBackup::getFilesize(PATH_BACKUP.$file);
 			$date = filemtime(PATH_BACKUP.$file);
 			clearstatcache();
-		/* Files list */	
+			/* Files list */	
 			$html .= '<tr>';
-		if ($extension == 'zip') {
-			$html .= '<td><strong>' .$file. '</strong></td>';
-			$html .= '<td><span class="label label-outline label-black">' .$filesize. '</span></td>';
-			$html .= '<td><em>' .date($Site->dateFormat(), $date). '</em></td>';
-			$html .= '<td><div class="uk-button-group">';	
-			$html .= '<a class="uk-button uk-button-small uk-button-success" href="' .$Site->url().BACKUP_FOLDER.'/'.$file. '"><i class="uk-icon-cloud-download"></i> ' .$Language->get("Download"). '</a>';
-			$html .= '<a class="uk-button uk-button-small uk-button-primary" href="' .pluginBackup::full_path(). '?restore=' .PATH_BACKUP.$file. '" onclick = "if(!confirm(\'' .$Language->get("Do you want to restore this backup?"). '\')) return false;"><i class="uk-icon-undo"></i></i> ' .$Language->get("restore"). '</a>';
-			$html .= '<a class="uk-button uk-button-small uk-button-danger" href="' .pluginBackup::full_path(). '?delete=' .PATH_BACKUP.$file. '" onclick = "if(!confirm(\'' .$Language->get("Delete this backup?"). '\')) return false;"><i class="uk-icon-trash-o"></i> ' .$Language->get("Delete"). '</a>';
-			$html .= '</div><td>';
-		}
+			if ($extension == 'zip') {
+				$html .= '<td><strong>' .$file. '</strong></td>';
+				$html .= '<td><span class="label label-outline label-black">' .$filesize. '</span></td>';
+				$html .= '<td><em>' .date($Site->dateFormat(), $date). '</em></td>';
+				$html .= '<td><div class="uk-button-group">';	
+				$html .= '<a class="uk-button uk-button-small uk-button-success" href="' .$Site->url().BACKUP_FOLDER.'/'.$file. '"><i class="uk-icon-cloud-download"></i> ' .$Language->get("Download"). '</a>';
+				$html .= '<a class="uk-button uk-button-small uk-button-primary" href="' .pluginBackup::full_path(). '?restore=' .PATH_BACKUP.$file. '" onclick = "if(!confirm(\'' .$Language->get("Do you want to restore this backup?"). '\')) return false;"><i class="uk-icon-undo"></i></i> ' .$Language->get("restore"). '</a>';
+				$html .= '<a class="uk-button uk-button-small uk-button-danger" href="' .pluginBackup::full_path(). '?delete=' .PATH_BACKUP.$file. '" onclick = "if(!confirm(\'' .$Language->get("Delete this backup?"). '\')) return false;"><i class="uk-icon-trash-o"></i> ' .$Language->get("Delete"). '</a>';
+				$html .= '</div><td>';
+			}
 			$html .= '</tr>';	
 		}
 		$html .= '	</tbody>
 		</table>';
 
-			/* Action files */
+		/* Actions files */
 		if (isset($_GET['delete'])) pluginBackup::del($_GET['delete']);	
 		if (isset($_GET['restore'])) pluginBackup::restore($_GET['restore']);
 			
