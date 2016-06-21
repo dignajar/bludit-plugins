@@ -16,6 +16,9 @@ For further explanation and configuration see https://cse.google.com.
 Versions
 --------
 
+0.3, June 20, 2016
+- Addition of the field "compatible" (since v1.4).
+
 0.2, January 27, 2016
 - Update for v1.0.1.
 - Script moved to header from footer.
