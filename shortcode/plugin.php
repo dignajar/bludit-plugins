@@ -20,8 +20,11 @@ class pluginShorcode extends Plugin {
 	# PARSE SHORTCODES IN THEME (DON'T WORK FOR THE MOMENT!)
 	private function addons_shortcode_themes() {
 		global $Site;
+		ob_start();
 		$template = PATH_THEMES.$Site->theme().DS.'index.php';
 		Shortcode::parse( $template );
+		$template = ob_get_contents();
+		ob_end_clean();	
 	}
 	
 	# ADD EDITOR IN PLUGIN CONFIGURATION
@@ -72,7 +75,7 @@ class pluginShorcode extends Plugin {
 		include_once(dirname(__FILE__). DS .'shortcodes.php');		
 
 		# include shortcodes in themes		
-		# $this->addons_shortcode_themes(); // FEATURES
+		pluginShorcode::addons_shortcode_themes(); // FEATURES
 								     
 		// Filter then build it!
 		switch($Url->whereAmI())
@@ -91,7 +94,7 @@ class pluginShorcode extends Plugin {
 				break;
 				
 			default:
-				// Homepage (Thx Diego for this tip)
+				// Homepage (Thx Diego for this tip)			
 				foreach($posts as $key=>$Post)
 				{
 					// Full content parsed by Parsedown
@@ -107,7 +110,7 @@ class pluginShorcode extends Plugin {
 					$explode = explode(PAGE_BREAK, $content);
 					$Post->setField('breakContent', $explode[0], true);
 					$Post->setField('readMore', !empty($explode[1]), true);
-				}    
+				}  
 		}
 	     
 	}

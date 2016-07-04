@@ -1,0 +1,26 @@
+{
+	"plugin-data":
+	{
+		"name": "FolioGallery",
+		"description": "FOLIOGALLERY is a simple and lightweight gallery. It can be used to easily embed complete or individual albums into existing pages."
+	},
+	"photo-gallery": "Photo Gallery",
+	"select-a-page-to-add-the-gallery": "Select a page to add the gallery",
+	"select-a-folder-for-the-gallery": "Select a folder for the gallery",
+	"the-directory-must-contain-other-subdirectories-that-must-contain-the-images.": "The directory must contain other subdirectories that must contain the images.",
+	"items-per-page": "Items Per Page",
+	"thumb-width": "Thumb Width",
+	"max-pictures-width": "Max pictures width",
+	"number-of-characters-displayed-in-album-and-thumb-captions": "Number of characters displayed in album and thumb captions",
+	"add-images":  "Add images",
+	"index": "Index",
+	"images": "images",
+	"no-albums-posted": "No albums posted",
+	"albums": "albums",
+	"there-are-no-images-in-this-album.": "There are no images in this album.",
+	"sort_albums_by_date": "Sort albums by creation date (most recent first), not checked will sort albums by name", 
+	"sort_images_by_date": "Sort thumbs by creation date (most recent first), not checked will sort images by name", 
+	"random_thumbs": "Display random thumbnails, FALSE will display the first image from thumbs folders",
+	"show_captions": "Display file names as captions on thumbs inside albums, not checked will display no captions",
+	"folio-gallery-help" : "This plugin is delivered with images of illustrations<br/>to show you how work this gallery.<br/>To manage your folders and picture items,<br/>I suggest the ckeditor plugin that uses a file manager."		
+}

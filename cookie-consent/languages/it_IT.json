@@ -1,0 +1,28 @@
+{
+	"plugin-data":
+	{
+		"name": "Cookie Consent + Detect AdBlock",
+		"description": "The most popular solution to the EU Cookie Law, as well as a detector with AdBlock script customization."
+	},
+	"enable-plugin-(config-save)": "Enable plugin (Config save)",
+	"this-website-uses-cookies-to-ensure-you-get-the-best-experience-on-our-website": "Questo sito web utilizza i cookie per essere sicuri di ottenere la migliore esperienza sul nostro sito",
+	"dismiss": "Fatto!",
+	"learnmore": "Ulteriori informazioni",
+	"choose-theme": "Scegli tema",
+	"dark-bottom": "Scuro sotto",
+	"dark-floating": "Floating scuro",
+	"dark-top": "Scuro sopra",
+	"light-bottom": "Chiaro sotto",
+	"light-floating": "Chiaro Floating",
+	"light-top": "Chiaro sopra",
+	"headline-text": "testo del titolo",
+	"accept-button-text": "Accetta il testo del pulsante",
+	"read-more-button-text": "Per saperne di più pulsante di testo",
+	"your-cookie-policy": "La nostra politica dei cookie",
+	"if-you-already-have-a-cookie-policy,-link-to-it-here.": "Se si dispone già di una politica dei cookie, link ad esso qui.",
+	"adblock-config": "AdBlock config",
+	"adblock-message": "<H4> Sembra che si utilizza Adblock, o altri software progettato per bloccare la pubblicità. </ H4> Quando si fa clic su un banner, è anche ringraziare l'autore del sito per gli articoli letti. <br /> Se si pensa che ogni lavoro merita premio, quindi sentitevi liberi di fare qualcosa di buono con un clic. Grazie.",
+	"ad-blocker-detection-plugin": "Attiva rilevamento AdBlock",
+	"adblock_message": "messaggio di annuncio",
+	"adblock_background_color": "colore di sfondo Avviso"	
+}

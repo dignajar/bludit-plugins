@@ -51,6 +51,7 @@ div.spoiler div.spoiler-title div.show-icon {
 }
 
 div.spoiler div.spoiler-content {
+	display: none;
 	font-size: 13px;
 	border: 1px solid #bbbbbb;
 	border-top: 0px;

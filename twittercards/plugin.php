@@ -8,11 +8,12 @@ class pluginTwitterCards extends Plugin {
 		$dom->loadHTML('<meta http-equiv="content-type" content="text/html; charset=utf-8">'.$content);
 		$finder = new DomXPath($dom);
 
-		$images = $finder->query("//img[contains(@class, 'bludit-img-opengraph')]");
+		// $images = $finder->query("//img[contains(@class, 'bludit-img-opengraph')]");
 
-		if($images->length==0) {
+		// if($images->length==0) {
+		// 	$images = $finder->query("//img");
+		// }
 			$images = $finder->query("//img");
-		}
 
 		if($images->length>0)
 		{
@@ -85,6 +86,7 @@ class pluginTwitterCards extends Plugin {
 				$twcd['title']		= mb_substr($Post->title(), 0, 70, "UTF-8").' | '.$twcd['title'];
 				$twcd['description']	= mb_substr($Post->description(), 0, 200, "UTF-8");
 				$twcd['url']		= $Post->permalink(true);
+				$twcd['image'] 		= $Post->coverImage(false);
 
 				$content = $Post->content();
 				break;
@@ -96,6 +98,7 @@ class pluginTwitterCards extends Plugin {
 				$twcd['title']		= mb_substr($Page->title(), 0, 70, "UTF-8").' | '.$twcd['title'];
 				$twcd['description']	= mb_substr($Page->description(), 0, 200, "UTF-8");
 				$twcd['url']		= $Page->permalink(true);
+				$twcd['image'] 		= $Page->coverImage(false);
 
 				$content = $Page->content();
 				break;
@@ -112,11 +115,20 @@ class pluginTwitterCards extends Plugin {
 		$html .= '<meta property="twitter:title" content="'.$twcd['title'].'">'.PHP_EOL;
 		$html .= '<meta property="twitter:description" content="'.$twcd['description'].'">'.PHP_EOL;
 
-		// Get the image from the content
-		$src = $this->getImage( $content );
-		if($src!==false) {
-			$twcd['image'] = $Site->domain().$src;
-			$html .= '<meta property="twitter:image" content="'.$twcd['image'].'">'.PHP_EOL;
+		$domain = trim($Site->domain(),'/');
+		$urlImage = $domain.HTML_PATH_UPLOADS;
+
+		if($twcd['image']===false)
+		{
+			// Get the image from the content
+			$src = $this->getImage( $content );
+			if($src!==false) {
+				$html .= '<meta property="twitter:image" content="'.$urlImage.str_replace(HTML_PATH_UPLOADS,'',$src).'">'.PHP_EOL;
+			}
+		}
+		else
+		{
+			$html .= '<meta property="twitter:image" content="'.$urlImage.$twcd['image'].'">'.PHP_EOL;
 		}
 
 		return $html;

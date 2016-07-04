@@ -512,7 +512,7 @@ class pluginGravatar extends Plugin
 	public function siteHead()
 	{ 
 			global $Site;
-			$PathPlugins = 'plugins/gravatar/css/';
+			$PathPlugins = 'bl-plugins/gravatar/css/';
 			$url = $Site->url().$PathPlugins;	  
 			$html = '<link rel="stylesheet" href="'.$url.'gravatar.css" />'.PHP_EOL; 
 			return $html;     

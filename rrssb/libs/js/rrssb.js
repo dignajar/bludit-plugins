@@ -67,6 +67,8 @@
 			$(this).find('.rrssb-pinterest a').attr('href', 'http://pinterest.com/pin/create/button/?url=' + settings.url + ((settings.image !== undefined) ? '&amp;media=' + settings.image : '') + (settings.description !== undefined ? '&description=' + settings.description : ''));
 			$(this).find('.rrssb-pocket a').attr('href', 'https://getpocket.com/save?url=' + settings.url);
 			$(this).find('.rrssb-github a').attr('href', settings.url);
+			$(this).find('.rrssb-print a').attr('href', 'javascript:window.print()');
+			$(this).find('.rrssb-whatsapp a').attr('href', 'whatsapp://send?text=' + (settings.description !== undefined ? settings.description + '%20' : (settings.title !== undefined ? settings.title + '%20' : '')) + settings.url);
 		}
 
 		if (settings.emailAddress !== undefined || settings.emailSubject) {
@@ -132,15 +134,19 @@
 			//get button width
 			var containerWidth = self.width();
 			var buttonWidth = $('li', self).not('.small').eq(0).width();
+			var buttonCountSmall = $('li.small', self).length;
 
 			// enlarge buttons if they get wide enough
-			if (buttonWidth > 170 && $('li.small', self).length < 1) {
+			if (buttonWidth > 170 && buttonCountSmall < 1) {
 				self.addClass('large-format');
+				var fontSize = buttonWidth / 12 + 'px';
+				self.css('font-size', fontSize);
 			} else {
 				self.removeClass('large-format');
+				self.css('font-size', '');
 			}
 
-			if (containerWidth < 200) {
+			if (containerWidth < buttonCountSmall * 25) {
 				self.removeClass('small-format').addClass('tiny-format');
 			} else {
 				self.removeClass('tiny-format');
