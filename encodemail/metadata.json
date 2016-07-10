@@ -2,9 +2,9 @@
 	"author": "Dominik Sust",
 	"email": "dominik.sust@gmail.com",
 	"website": "http://itwerkstatt.omdriebigs-gspann.de",
-	"version": "1.0",
-	"releaseDate": "2016-01-27",
+	"version": "1.1",
+	"releaseDate": "2016-07-04",
 	"license": "MIT",
-	"requires": "Bludit v1.0",
+	"compatible": "1.0,1.4",
 	"notes": ""
 }
