@@ -10,7 +10,7 @@
 	"name": "Nom",
 	"email": "Email",
 	"message": "Message",
-	"send": "Envoyer",
+	"send": "Envoyer mon message",
 	"reset": "Réinitialiser",
 	"please-enter-your-name": "Veuillez saisir votre nom",
 	"please-enter-a-valid-email-address": "Veuillez saisir une adresse email valide",

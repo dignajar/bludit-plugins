@@ -6,5 +6,6 @@
 	},
 	"enable-addtoany-on-pages": "Habilitar en paginas",
 	"enable-addtoany-on-posts": "Habilitar en entradas",
-	"enable-addtoany-on-default-home-page": "Habilitar en la pagina principal"
+	"enable-addtoany-on-default-home-page": "Habilitar en la pagina principal",
+	"enable-google-url-shortener": "Habilitar Google URL shortener"
 }

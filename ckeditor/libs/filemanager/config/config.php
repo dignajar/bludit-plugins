@@ -1,10 +1,48 @@
 <?php
-session_start();
+#session_start();
 mb_internal_encoding('UTF-8');
 date_default_timezone_set('Europe/Rome');
 
+/*
+|--------------------------------------------------------------------------
+| BLUDIT CONFIG
+|--------------------------------------------------------------------------
+*/
 $base = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] && ! in_array(strtolower($_SERVER['HTTPS']), array( 'off', 'no' ))) ? 'https' : 'http') . '://' .$_SERVER["SERVER_NAME"].str_replace('bl-plugins/ckeditor/libs/filemanager/dialog.php','',$_SERVER['PHP_SELF']);
- 
+
+// Security constant
+define('BLUDIT', true);
+// Directory separator
+define('DS', DIRECTORY_SEPARATOR);
+// PHP paths for init
+define('PATH_ROOT', 			'../../../../');
+define('PATH_CONTENT',			PATH_ROOT.'bl-content'.DS);
+define('PATH_UPLOADS',			PATH_CONTENT.'uploads'.DS);
+define('PATH_THUMBS',			PATH_UPLOADS.'thumbs'.DS);
+define('PATH_PLUGINS_DATABASES',PATH_CONTENT.'databases'.DS.'plugins'.DS);
+
+$file = PATH_PLUGINS_DATABASES.'ckeditor'.DS.'db.php';
+if(file_exists($file))
+{
+	// Read JSON file.
+	$lines = file($file);
+
+	// Remove the first line, the first line is for security reasons.
+	unset($lines[0]);
+			
+	// Regenerate the JSON file.
+	$implode = implode($lines);
+
+	// Unserialize, JSON to Array.
+	$json = json_decode($implode,TRUE);
+	$akey = $json['akey'];
+}
+/*
+|--------------------------------------------------------------------------
+| ./ BLUDIT CONFIG END
+|--------------------------------------------------------------------------
+*/
+
 /*
 |--------------------------------------------------------------------------
 | Optional security
@@ -23,7 +61,7 @@ $base = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] && ! in_array(strtolower
 |
 */
 
-define('USE_ACCESS_KEYS', false); // TRUE or FALSE
+define('USE_ACCESS_KEYS', true); // TRUE or FALSE
 
 /*
 |--------------------------------------------------------------------------
@@ -68,7 +106,7 @@ $config = array(
 	| with start and final /
 	|
 	*/
-	'upload_dir' => 'bl-content/uploads/',  // Why content/ folder? i don't but work...
+	'upload_dir' => 'bl-content/uploads/',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -78,7 +116,7 @@ $config = array(
 	| with final /
 	|
 	*/
-	'current_path' => '../../../../bl-content/uploads/',
+	'current_path' => PATH_UPLOADS,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -89,7 +127,7 @@ $config = array(
 	| DO NOT put inside upload folder
 	|
 	*/
-	'thumbs_base_path' => '../../../../bl-content/uploads/thumbs/',
+	'thumbs_base_path' => PATH_THUMBS,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -107,7 +145,7 @@ $config = array(
 	|
 	*/
 
-	'access_keys' => array(),
+	'access_keys' => array($akey),
 
 	//--------------------------------------------------------------------------------------------------------
 	// YOU CAN COPY AND CHANGE THESE VARIABLES INTO FOLDERS config.php FILES TO CUSTOMIZE EACH FOLDER OPTIONS
@@ -129,7 +167,7 @@ $config = array(
 	| default language file name
 	|--------------------------------------------------------------------------
 	*/
-	'default_language' => 'en_EN',
+	'default_language' => "en",
 
 	/*
 	|--------------------------------------------------------------------------
@@ -153,6 +191,8 @@ $config = array(
 	'convert_spaces'                          => false,
 	//convert all spaces on files name and folders name this value
 	'replace_with'                            => "_",
+	//convert to lowercase the files and folders name
+	'lower_case'                              => false,
 
 	// -1: There is no lazy loading at all, 0: Always lazy-load images, 0+: The minimum number of the files in a directory
 	// when lazy loading should be turned on.
@@ -215,8 +255,8 @@ $config = array(
 	'duplicate_files'                         => true,
 	'copy_cut_files'                          => true, // for copy/cut files
 	'copy_cut_dirs'                           => true, // for copy/cut directories
-	'chmod_files'                             => false, // change file permissions
-	'chmod_dirs'                              => false, // change folder permissions
+	'chmod_files'                             => true, // change file permissions
+	'chmod_dirs'                              => true, // change folder permissions
 	'preview_text_files'                      => true, // eg.: txt, log etc.
 	'edit_text_files'                         => true, // eg.: txt, log etc.
 	'create_text_files'                       => true, // only create files with exts. defined in $editable_text_file_exts

@@ -1,0 +1,11 @@
+{
+	"plugin-data":
+	{
+		"name": "AddToAny Social Sharing",
+		"description": "AddToAny набор кнопок для добавления в социальные сети."
+	},
+	"enable-addtoany-on-pages": "Включить AddToAny для страниц",
+	"enable-addtoany-on-posts": "Включить AddToAny для записей",
+	"enable-addtoany-on-default-home-page": "Включить AddToAny на главной странице",
+	"enable-google-url-shortener": "Включить сокращение ссылок Google"
+}

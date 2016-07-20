@@ -6,6 +6,11 @@
 	    return $Site->url();
 	}); 
 
+	// Add Shortcode {template}
+	Shortcode::add('template', function () {
+	    return HTML_PATH_THEME;
+	}); 
+	
 	// Add Shortcode {cut}
 	Shortcode::add('cut', function () {
 	    return PAGE_BREAK;
@@ -85,6 +90,38 @@
 	    if (isset($src)) $src = $src; else $src = '';
 	    // return
 	    return '<iframe width="'.$width.'" height="'.$height.'" src="//player.vimeo.com/video/'.$src.'" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+	});
+
+	// Add Shortcode {Field label='My Field' value='Value field'}
+	Shortcode::add('Field', function($attributes) {
+	    // Extract attributes
+	    extract($attributes);
+	    // src
+	    if (isset($label)) $label = $label; else $label = 'My field';
+	    if (isset($value)) $value = $value; else $value = 'Value field';
+	    // return
+	    return $label.': '.$value;
+	});
+	
+	// Add Shortcode: {Tiny url='http://www.bludit.com'}
+	Shortcode::add('Tiny', function ($attributes) {	
+	    // Extract
+	    extract($attributes);
+	    $url = (isset($url)) ? file_get_contents('http://tinyurl.com/api-create.php?url='.$url) : '';
+	    // return
+	    return $url;
+	});
+
+	// Add Shortcode {Spoiler title='Spoiler' content='Spoiler content'}
+	Shortcode::add('Spoiler', function($attributes) {
+		// Extract attributes
+		extract($attributes);
+		// text
+		if (isset($title)) $title = $title; else $title='Toggle content';
+		if (isset($content)) $content = $content; else $content = 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.';
+		// return
+		return '<style>.spoiler-box{padding:5px;box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);;margin-top:5px;margin-bottom:5px;}.spoiler-close{background-color:#ddd;padding:0px 5px;float:right;}.spoiler-content2{width:100%;padding:5px;}.spoiler-title{background-color:#777;color:#fff;width:100%;display:block;padding:5px;position:relative;}.spoiler-close,.spoiler-content2{display:none}.spoiler-box:focus .spoiler-content2{display:block}.spoiler-box:focus .spoiler-close{display:block}</style>
+<div class="spoiler-box" tabindex="1"><div class="spoiler-title">' .$title. '<div class="spoiler-close" tabindex="2">close</div></div><div class="spoiler-content2">' .$content. '</div></div>';
 	});
 
 ?>

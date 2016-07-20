@@ -37,6 +37,10 @@
   transition-timing-function: ease-out;
 }
 
+a.active {
+    background: #4AADBB !important;
+}
+
 .menu li ul {
   margin: 0;
   padding: 0;
