@@ -29,8 +29,9 @@ class pluginCustomFields extends Plugin
 
 		// Remove empty fields, which are not in use by templates
 		foreach ($this->fields as $key => $value) {
-			if (!in_array($key, $this->addedFields))
+			if (!in_array($key, $this->addedFields)) {
 				unset($this->fields->$key);
+			}
 		}
 
 		$fieldsJson = json_encode($this->fields);
@@ -83,24 +84,29 @@ class pluginCustomFields extends Plugin
 			$this->load();
 
 		if (!isset($this->fields->$key))
-			$this->add($key);
+			throw new Exception("Template Parameter $key is not declared");
 
 		return $this->fields->$key;
 	}
 
-	public function add($key, $defaultValue = '')
+	public function add($keys)
 	{
 		if (!$this->installed())
 			return false;
 
-		array_push($this->addedFields, $key);
 
 		if (!isset($this->fields))
 			$this->load();
 
-		if (!isset($this->fields->$key)) {
-			$this->fields->$key = $defaultValue;
-			$this->save();
+		foreach ($keys as $key => $defaultValue) {
+			if (!isset($this->fields->$key)) {
+				$this->fields->$key = $defaultValue;
+			}
+			array_push($this->addedFields, $key);
 		}
+
+		$this->save();
+
+
 	}
 }
