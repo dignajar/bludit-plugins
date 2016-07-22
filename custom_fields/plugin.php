@@ -6,6 +6,7 @@ class pluginCustomFields extends Plugin
 	const FIELD_KEY = 'customFields';
 
 	private $addedFields = array();
+	private $isDefined = false;
 
 	public function init()
 	{
@@ -89,10 +90,13 @@ class pluginCustomFields extends Plugin
 		return $this->fields->$key;
 	}
 
-	public function add($keys)
+	public function define($keys)
 	{
 		if (!$this->installed())
 			return false;
+
+		if ($this->isDefined)
+			throw new Exception('You can only define custom fields once in your template');
 
 
 		if (!isset($this->fields))
@@ -107,6 +111,6 @@ class pluginCustomFields extends Plugin
 
 		$this->save();
 
-
+		$this->isDefined = true;
 	}
 }
