@@ -1,0 +1,7 @@
+{
+	"plugin-data":
+	{
+		"name": "Benutzerdefinierte Template-Einstellungen",
+		"description": "Setze eigene Einstellungen in deinem Template. Das verwendete Template muss dieses Plugin unterstützen, oder du kannst es selbst anpassen. Anleitung: Einen Parameter kannst du in deinem Template mit dem folgenden Code einbinden: <em>$customFields->get('myParameter')</em>"
+	}
+}
