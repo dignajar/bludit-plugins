@@ -19,11 +19,11 @@ Add a data-title attribute if you want to show a caption.
     
 If you have a group of related images that you would like to combine into a set, use the same data-lightbox attribute value for all of the images. For example:
 
-`<a href="/bl-content/uploads/image-2.jpg" data-lightbox="gallery"><img src="image-2.jpg"></a>
+`<a href="/bl-content/uploads/image-2.jpg" data-lightbox="gallery"><img src="image-2.jpg"></a>`
 
-<a href="/bl-content/uploads/image-3.jpg" data-lightbox="gallery"><img src="image-3.jpg"></a>
+`<a href="/bl-content/uploads/image-3.jpg" data-lightbox="gallery"><img src="image-3.jpg"></a>`
 
-<a href="/bl-content/uploads/image-4.jpg" data-lightbox="gallery"><img src="image-4.jpg"></a>`
+`<a href="/bl-content/uploads/image-4.jpg" data-lightbox="gallery"><img src="image-4.jpg"></a>`
 
 Important: The link to the image must contain the path to the directory (/bl-content/uploads/).
 
