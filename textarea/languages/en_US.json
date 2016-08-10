@@ -1,0 +1,7 @@
+{
+	"plugin-data":
+	{
+		"name": "Textarea",
+		"description": "Textarea allows to show text in the sidebar using HTML code."
+	}
+}
