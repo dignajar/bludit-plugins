@@ -3,8 +3,8 @@
 	"email": "stradfred@gmail.com",
 	"website": "http://flatboard.free.fr",
 	"version":"1.5",
-	"releaseDate": "2016-07-30",
+	"releaseDate": "2016-08-12",
 	"license": "MIT",
-	"compatible": "1.5beta",
+	"compatible": "1.4,1.5beta",
 	"notes": ""
 }
