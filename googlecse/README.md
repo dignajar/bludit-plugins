@@ -1,7 +1,7 @@
 Google CSE
 ==========
 
-__ A plugin for adding a Google Custom Search Engine box in the sidebar__
+_A plugin for adding a Google Custom Search Engine box in the sidebar_
 
 This plugin works only with themes with a sidebar (Pulse, Default (Log), etc).
 
