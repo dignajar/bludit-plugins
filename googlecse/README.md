@@ -1,20 +1,25 @@
 Google CSE
 ==========
 
-Plugin for adding a Google Custom Search Engine
+_A plugin for adding a Google Custom Search Engine box in the sidebar_
 
-The plugin works with themes with a sidebar (Pulse etc.).
+This plugin works only with themes with a sidebar (Pulse, Default (Log), etc).
 
 To use the plugin you need a Google account and a search engine ID. You can optain an ID at https://cse.google.com.
 
-At the moment the plugin works only with http:// (not SSL certificates with https://).
-
-To show the search button please choose in "Look and feel" > "Design" a theme except the theme "Default".
+Please choose in "Look and feel" > "Design" (at CSE dashboard) a theme except the theme "Default".
 
 For further explanation and configuration see https://cse.google.com.
 
 Versions
 --------
+
+0.4, August 23, 2016
+- Fixed the "label" setting on the dashboard;
+- Fixed search box style;
+- Results now uses the modal CSE option;
+- Plugin now works with HTTPS.
+
 
 0.3, June 20, 2016
 - Addition of the field "compatible" (since v1.4).
