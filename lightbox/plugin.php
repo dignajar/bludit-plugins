@@ -25,7 +25,7 @@ class pluginLightbox extends Plugin {
  		global $Site;
  		global $layout;
 
- 		$html  = '<script src="'.HTML_PATH_PLUGINS.'lightbox/js/lightbox.js">';
+ 		$html  = '<script src="'.HTML_PATH_PLUGINS.'lightbox/js/lightbox.js"></script>';
  		return $html;
 	}
 
