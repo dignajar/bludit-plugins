@@ -11,6 +11,11 @@ Please choose in "Look and feel" > "Design" (at CSE dashboard) a theme except th
 
 For further explanation and configuration see https://cse.google.com.
 
+Credits
+-------
+
+The original version was contributed by Edi Goetschel, clickwork.ch. It is fixed and extended by Alexandre Teles, alexteles.com.
+
 Versions
 --------
 
