@@ -4,6 +4,15 @@ class pluginAds4U extends Plugin {
 
 	private $enable;
 	
+        private function ads4u()
+        {
+                $ret  = '<!-- Ads4U BEGIN -->'.PHP_EOL;
+		$ret .= Sanitize::htmlDecode($this->getDbField('ads4uCode')).PHP_EOL;
+		$ret .= '<!-- Ads4U END -->'.PHP_EOL;
+
+                return $ret;
+        }
+
 	public function init()
 	{
 		$this->dbFields = array(
@@ -59,7 +68,7 @@ class pluginAds4U extends Plugin {
 	public function postEnd()
 	{
 		if( $this->enable ) {
-			return Sanitize::htmlDecode($this->getDbField('ads4uCode'));
+			return $this->ads4u();
 		}
 		return false;
 	}
@@ -67,7 +76,7 @@ class pluginAds4U extends Plugin {
 	public function pageEnd()
 	{
                 if( $this->enable ) {
-                        return Sanitize::htmlDecode($this->getDbField('ads4uCode'));
+                        return $this->ads4u();
                 }
                 return false;
         }
