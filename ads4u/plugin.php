@@ -58,7 +58,7 @@ class pluginAds4U extends Plugin {
 
 		$html .= '<div>';
 		$html .= '<label for="jsads4uCode">'.$Language->get('ads4u-html-code').'</label>';
-		$html .= '<input id="jsads4uCode" type="text" name="ads4uCode" value="'.$this->getDbField('ads4uCode').'">';
+		$html .= '<textarea id="jsads4uCode" type="text" name="ads4uCode">'.$this->getDbField('ads4uCode').'</textarea>';
 		$html .= '<div class="tip">'.$Language->get('complete-this-field-with-html-code').'</div>';
 		$html .= '</div>';
 
