@@ -1,8 +1,0 @@
-{
-	"plugin-data":
-	{
-		"name": "Universal Analytics",
-		"description": " Universal Analytics, c’est une nouvelle version du code de suivi Google Analytics, une simplification de la configuration des paramètres de suivi et surtout c’est une nouvelle manière de regarder la façon dont nous suivons et analysons les utilisateurs plutôt que les visiteurs."
-	},
-	"your-google-analytics-id": "Votre code de suivi Google Analytics"
-}

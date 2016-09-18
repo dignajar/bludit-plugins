@@ -32,12 +32,14 @@ class pluginHitcounter extends Plugin {
 		$html .= '</div>';
 
 		$html .= '<div>';
-		$html .= '<input name="displayaschars" id="jsdisplayaschars" type="checkbox" value="true" '.($this->getDbField('displayaschars')?'checked':'').'>';
+		$html .= '<input type="hidden" name="displayaschars" value="0">';
+		$html .= '<input name="displayaschars" id="jsdisplayaschars" type="checkbox" value="1" '.($this->getDbField('displayaschars')?'checked':'').'>';
 		$html .= '<label class="forCheckbox" for="jsdisplayaschars">'.$Language->get('display counter as chars').'</label>';
 		$html .= '</div>';
 
 		$html .= '<div>';
-		$html .= '<input name="displayasimages" id="jsdisplayasimages" type="checkbox" value="true" '.($this->getDbField('displayasimages')?'checked':'').'>';
+		$html .= '<input type="hidden" name="displayasimages" value="0">';
+		$html .= '<input name="displayasimages" id="jsdisplayasimages" type="checkbox" value="1" '.($this->getDbField('displayasimages')?'checked':'').'>';
 		$html .= '<label class="forCheckbox" for="jsdisplayasimages">'.$this->showAllImages().' - '.$Language->get('display counter as images').'</label>';
 		$html .= '</div>';
 

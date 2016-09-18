@@ -1,0 +1,7 @@
+{
+	"plugin-data":
+	{
+		"name": "Custom Image Dimensions",
+		"description": "This plugin allow you to set custom dimensions for your images directly on your markdown"
+	}
+}

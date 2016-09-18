@@ -1,0 +1,7 @@
+{
+	"plugin-data":
+	{
+		"name": "Custom Template Parameters",
+		"description": "Add custom settings to your template. Your template has to support this plugin, or you can edit it to fit your needs. To add a parameter to your template, use the following code: <em>$customFields->get('myparameter')</em>"
+	}
+}
