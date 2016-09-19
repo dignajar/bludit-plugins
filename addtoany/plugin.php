@@ -28,7 +28,6 @@ class pluginAddToAny extends Plugin {
                 return $ret;
         }
 
-
         public function init()
         {
                 $this->dbFields = array(
