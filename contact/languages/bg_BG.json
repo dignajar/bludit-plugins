@@ -1,0 +1,21 @@
+{
+	"plugin-data":
+	{
+		"name": "Форма за контакт",
+		"description": "Добавя форма за контакт в Bludit, с възможност за използване на потребителски шаблон."
+	},
+	"contact": "Форма за контакт",
+	"select-a-page-to-add-the-contact-form": "Изберете страница за добавяне на формата за контакт",
+	"new-contact-from": "Нова форма за контакт",
+	"name": "Име:",
+	"email": "Емайл:",
+	"message": "Съобщение:",
+	"send": "Изпрати",
+	"reset": "Изчисти",
+	"please-enter-your-name": "Моля, въведете вашето име!",
+	"please-enter-a-valid-email-address": "Моля, въведете валиден емайл адрес! ",
+	"please-enter-the-content-of-your-message": "Моля, въведете съдържанието на съобщението Ви",
+	"oh-my-god-a-bot!": "О, Боже мой бот!",
+	"thank-you-for-having-contacted-me.-i-will-reply-you-as-soon-as-possible.": "Благодаря Ви, че се свързахте с мен. Ще ви отговория възможно най-скоро.",
+	"oops!-an-error-occurred-while-sending-your-message,-thank-you-to-try-again-later.": "Ами сега! Възникна грешка при изпращането на съобщението. Благодаря Ви моля опитате отново по-късно."		
+}
