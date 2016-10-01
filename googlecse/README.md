@@ -20,9 +20,9 @@ Versions
 --------
 
 0.4, August 23, 2016
-- Fixed the "label" setting on the dashboard;
-- Fixed search box style;
-- Results now uses the modal CSE option;
+- Fixed the "label" setting on the dashboard.
+- Fixed search box style.
+- Results now uses the modal CSE option.
 - Plugin now works with HTTPS.
 
 
