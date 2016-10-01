@@ -6,6 +6,9 @@ Simple accordion menu with CSS using code by @yorozuna (http://codepen.io/yorozu
 Versions
 --------
 
+0.3, October 1, 2016
+- Addition of the field "compatible" (since v1.4).
+
 0.2, February 24, 2016
 - Active link for parents.
 
