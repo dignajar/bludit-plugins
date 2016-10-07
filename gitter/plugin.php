@@ -19,20 +19,6 @@ class pluginGitter extends Plugin {
 		$html .= '<label for="jsroom">'.$Language->get('Room').'</label>';
 		$html .= '<input id="jsroom" type="text" name="room" value="'.$this->getDbField('room').'">';
 		$html .= '</div>';
-
-/*
-		$html .= '<div>';
-		$html .= '<label for="jsactivationElement">'.$Language->get('Activation Element').'</label>';
-		$html .= '<input type="checkbox" id="activationElement" name="activationElement" value="false" '.($this->getDbField('activationElement')?'checked':'').' />';
-		$html .= '<div class="tip">'.$Language->get('optionnel').'</div>';
-		$html .= '</div>';
-
-		$html .= '<div>';
-		$html .= '<label for="jstargetElement">'.$Language->get('Target Element').'</label>';
-		$html .= '<input id="jstargetElement" type="text" name="targetElement" value="'.$this->getDbField('targetElement').'">';
-		$html .= '<div class="tip">'.$Language->get('optionnel').'</div>';
-		$html .= '</div>';
-*/
 		
 		return $html;
 	}

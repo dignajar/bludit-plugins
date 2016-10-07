@@ -44,12 +44,20 @@ SimditorMarkdown = (function(superClass) {
         return _this.editor.el.removeClass('focus');
       };
     })(this));
+    this.editor.on('valuechanged', (function(_this) {
+      return function(e) {
+        if (!_this.editor.markdownMode) {
+          return;
+        }
+        return _this._initMarkdownValue();
+      };
+    })(this));
     this.markdownChange = this.editor.util.throttle((function(_this) {
       return function() {
         _this._autosizeTextarea();
         return _this._convert();
       };
-    })(this), 300);
+    })(this), 200);
     if (this.editor.util.support.oninput) {
       this.textarea.on('input', (function(_this) {
         return function(e) {
@@ -72,9 +80,7 @@ SimditorMarkdown = (function(superClass) {
     }
   };
 
-  SimditorMarkdown.prototype.status = function($node) {
-    return true;
-  };
+  SimditorMarkdown.prototype.status = function() {};
 
   SimditorMarkdown.prototype.command = function() {
     var button, i, len, ref;
@@ -82,13 +88,10 @@ SimditorMarkdown = (function(superClass) {
     this.editor.el.toggleClass('simditor-markdown');
     this.editor.markdownMode = this.editor.el.hasClass('simditor-markdown');
     if (this.editor.markdownMode) {
+      this.editor.inputManager.lastCaretPosition = null;
       this.editor.hidePopover();
-      this._fileterUnsupportedTags();
-      this.textarea.val(toMarkdown(this.editor.getValue(), {
-        gfm: true
-      }));
-      this._autosizeTextarea();
       this.editor.body.removeAttr('contenteditable');
+      this._initMarkdownValue();
     } else {
       this.textarea.val('');
       this.editor.body.attr('contenteditable', 'true');
@@ -105,19 +108,31 @@ SimditorMarkdown = (function(superClass) {
     return null;
   };
 
+  SimditorMarkdown.prototype._initMarkdownValue = function() {
+    this._fileterUnsupportedTags();
+    this.textarea.val(toMarkdown(this.editor.getValue(), {
+      gfm: true
+    }));
+    return this._autosizeTextarea();
+  };
+
   SimditorMarkdown.prototype._autosizeTextarea = function() {
     this._textareaPadding || (this._textareaPadding = this.textarea.innerHeight() - this.textarea.height());
-    return this.textarea.height(0).height(this.textarea[0].scrollHeight - this._textareaPadding);
+    return this.textarea.height(this.textarea[0].scrollHeight - this._textareaPadding);
   };
 
   SimditorMarkdown.prototype._convert = function() {
-    var text;
+    var markdownText, text;
     text = this.textarea.val();
-    return this.editor.setValue(marked(text));
+    markdownText = marked(text);
+    this.editor.textarea.val(markdownText);
+    this.editor.body.html(markdownText);
+    this.editor.formatter.format();
+    return this.editor.formatter.decorate();
   };
 
   SimditorMarkdown.prototype._fileterUnsupportedTags = function() {
-    return this.editor.body.find('table colgroup').remove();
+    return this.editor.body.find('colgroup').remove();
   };
 
   return SimditorMarkdown;

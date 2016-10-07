@@ -1,0 +1,10 @@
+{
+	"author": "janxb",
+	"email": "bludit@janbrodda.de",
+	"website": "https://github.com/janxb",
+	"version": "1.0",
+	"releaseDate": "2016-07-22",
+	"license": "MIT",
+	"compatible": "1.4",
+	"notes": "For using this plugin, your template has to support custom template parameters"
+}
