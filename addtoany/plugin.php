@@ -12,18 +12,20 @@ class pluginAddToAny extends Plugin {
                                         <a class="a2a_button_facebook"></a>
                                         <a class="a2a_button_twitter"></a>
                                         <a class="a2a_button_google_plus"></a>
-                                        <a class="a2a_button_vk"></a>
+                                        <a class="a2a_button_linkedin"></a>
                                         <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
                                 </div>
                         </div>
-                        <!-- AddToAny END -->';
+                        <script type="text/javascript">
+                        var a2a_config = a2a_config || {};
+                        a2a_config.icon_color = "unset";';
 
                 if ( $this->getDbField('enableMinifyURL') ) {
-                        $ret .='<script type="text/javascript">
-                                var a2a_config = a2a_config || {};
-                                a2a_config.track_links = "googl";
-                                </script>';
+                        $ret .='a2a_config.track_links = "googl";';
                 };
+
+                $ret .= '</script>
+                        <!-- AddToAny END -->';
 
                 return $ret;
         }
