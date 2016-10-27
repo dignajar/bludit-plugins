@@ -14,3 +14,6 @@ Here is a link to how to contribute to a any repository: https://varlogdiego.com
 - Copy the plugin folder with all the files inside `/bl-plugins/` folder.
 - Log into your Bludit panel administrator, go to **Settings->Plugins**, and activate your new plugin.
 
+## Support
+- Forum: https://forum.bludit.com
+- Gitter Chat: https://gitter.im/dignajar/bludit
