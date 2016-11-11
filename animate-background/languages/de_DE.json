@@ -1,0 +1,14 @@
+{
+	"plugin-data":
+	{
+		"name": "Hintergrund-Effekte",
+		"description: "Verschiedene Bewegungseffekte."
+	},
+	
+	"choose-animation": "Wahl des Effekts",	
+	"triangles,-squares-and-crosses": "Dreiecke, Quadrate und Kreuze",	
+	"floating-dots": "Punkte",
+	"multicolored-hexagons": "Mehrfarbige Sechsecke (dunkler Hintergrund)",
+	"discrete-bubbles": "Blasen",
+	"snowflake": "Schneeflocken"
+}
