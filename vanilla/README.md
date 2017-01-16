@@ -1,7 +1,7 @@
 Vanilla Forums
 ==============
 
-Integration of Vanilla Forums as comment sytsem.
+Integration of Vanilla Forums as comment system.
 
 
 Versions
