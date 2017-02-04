@@ -1,0 +1,17 @@
+{
+	"plugin-data":
+	{
+		"name": "Reading Time",
+		"description": "Reading Time zeigt die geschätzte Lesedauer für einen Inhalt."
+	},
+	"format-alt-enable": "Format Alt Enable",
+	"enable-reading-time-on-pages": "Lesedauer von Seiten zeigen.",
+	"enable-reading-time-on-posts": "Lesedauer von Beiträgen zeigen.",
+	"enable-reading-time-on-default-home-page": "Lesedauer der Hauptseite zeigen.",	
+	"minute": "Minute",
+	"minutes": "Minuten",
+	"second": "Sekunde",
+	"seconds": "Sekunden",
+	"pages-where-do-not-display-the-reading-time": "Pages where do not display the reading time",
+	"write-the-pages-separated-by-commas": "Write the pages separated by commas."
+}
