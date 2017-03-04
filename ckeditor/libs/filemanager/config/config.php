@@ -11,6 +11,46 @@ date_default_timezone_set('Europe/Rome');
 
 /*
 |--------------------------------------------------------------------------
+| BLUDIT CONFIG
+|--------------------------------------------------------------------------
+*/
+$base = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] && ! in_array(strtolower($_SERVER['HTTPS']), array( 'off', 'no' ))) ? 'https' : 'http') . '://' .$_SERVER["SERVER_NAME"].str_replace('bl-plugins/ckeditor/libs/filemanager/dialog.php','',$_SERVER['PHP_SELF']);
+
+// Security constant
+define('BLUDIT', true);
+// Directory separator
+define('DS', DIRECTORY_SEPARATOR);
+// PHP paths for init
+define('PATH_ROOT', 			'../../../../');
+define('PATH_CONTENT',			PATH_ROOT.'bl-content'.DS);
+define('PATH_UPLOADS',			PATH_CONTENT.'uploads'.DS);
+define('PATH_THUMBS',			PATH_CONTENT.'thumbs'.DS);
+define('PATH_PLUGINS_DATABASES',PATH_CONTENT.'databases'.DS.'plugins'.DS);
+
+$file = PATH_PLUGINS_DATABASES.'ckeditor'.DS.'db.php';
+if(file_exists($file))
+{
+	// Read JSON file.
+	$lines = file($file);
+
+	// Remove the first line, the first line is for security reasons.
+	unset($lines[0]);
+			
+	// Regenerate the JSON file.
+	$implode = implode($lines);
+
+	// Unserialize, JSON to Array.
+	$json = json_decode($implode,TRUE);
+	$akey = $json['akey'];
+}
+/*
+|--------------------------------------------------------------------------
+| ./ BLUDIT CONFIG END
+|--------------------------------------------------------------------------
+*/
+
+/*
+|--------------------------------------------------------------------------
 | Optional security
 |--------------------------------------------------------------------------
 |
@@ -57,23 +97,14 @@ $config = array(
 
 	/*
 	|--------------------------------------------------------------------------
-	| DON'T TOUCH (base url (only domain) of site).
-	|--------------------------------------------------------------------------
-	|
-	| without final / (DON'T TOUCH)
-	|
-	*/
-	'base_url' => ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] && ! in_array(strtolower($_SERVER['HTTPS']), array( 'off', 'no' ))) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'],
-
-	/*
-	|--------------------------------------------------------------------------
 	| path from base_url to base of upload folder
 	|--------------------------------------------------------------------------
 	|
 	| with start and final /
 	|
 	*/
-	'upload_dir' => '/bl-content/uploads/',
+	'upload_dir' => 'bl-content/uploads/',
+
 	/*
 	|--------------------------------------------------------------------------
 	| relative path from filemanager folder to upload folder
@@ -82,7 +113,7 @@ $config = array(
 	| with final /
 	|
 	*/
-	'current_path' => '../../../../bl-content/uploads/',
+	'current_path' => PATH_UPLOADS,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -93,8 +124,7 @@ $config = array(
 	| DO NOT put inside upload folder
 	|
 	*/
-	'thumbs_base_path' => '../../../../bl-content/thumbs/',
-
+	'thumbs_base_path' => PATH_THUMBS,
 
 	/*
 	|--------------------------------------------------------------------------
