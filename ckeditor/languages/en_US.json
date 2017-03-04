@@ -1,8 +1,8 @@
 {
 	"plugin-data":
 	{
-		"name": "CKEditor + Responsive Filemanager",
-		"description": "CKEditor is a WISIWYG editor. It is bundled with Responsive Filemanager for uploading."
+		"name": "CKEditor with RESPONSIVE Filemanager",
+		"description": "CKEditor is a WISIWYG editor. It is bundled with the RESPONSIVE Filemanager for uploading."
 	},
     "select-toolbar": "Select package and toolbar",
     "basic": "Basic",
