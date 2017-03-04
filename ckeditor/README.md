@@ -9,4 +9,4 @@ Versions
 1.6., March 4, 2017
 - Update from CKEditor 4.5.7 to 4.6.2.
 - Update from RESPONSIVE Filemanager 9.10.1 to 9.11.0.
-- Changes in 
+- Fix of path in filemanager/config/config.php.
