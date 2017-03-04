@@ -73,7 +73,7 @@ $config = array(
 	| with start and final /
 	|
 	*/
-	'upload_dir' => '/uploads/',
+	'upload_dir' => '/bl-content/uploads/',
 	/*
 	|--------------------------------------------------------------------------
 	| relative path from filemanager folder to upload folder
@@ -82,7 +82,7 @@ $config = array(
 	| with final /
 	|
 	*/
-	'current_path' => '../../../../uploads/',
+	'current_path' => '../../../../bl-content/uploads/',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ $config = array(
 	| DO NOT put inside upload folder
 	|
 	*/
-	'thumbs_base_path' => '../../../../tumbs/',
+	'thumbs_base_path' => '../../../../bl-content/thumbs/',
 
 
 	/*
