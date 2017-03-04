@@ -1,7 +1,7 @@
 CKEditor and RESPONSIVE Filemanger 
 ==================================
 
-The plugin was initially contributed by Frédéric K., and his now maintained for Bludit by by Edi Goetschel.
+The plugin was initially contributed by Frédéric K., and is now maintained for Bludit by Edi Goetschel.
 
 Versions
 --------
