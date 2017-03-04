@@ -1,4 +1,4 @@
-CKEditor and RESPONSIVE Filemanger 
+CKEditor with RESPONSIVE Filemanger 
 ==================================
 
 The plugin was initially contributed by Frédéric K., and is now maintained for Bludit by Edi Goetschel.
