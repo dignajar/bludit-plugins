@@ -40,5 +40,5 @@ Versions
 0.2, August 23, 2016
 - Fixed "Lightbox script end tag missing" at line 28.
 
-0.1, July 30, 2011
+0.1, July 30, 2016
 - Release.
