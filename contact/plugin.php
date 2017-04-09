@@ -27,7 +27,7 @@ class pluginContact extends Plugin {
 		global $Language, $pages, $pagesParents;
 			
 		// Liste des pages ou afficher le formulaire
-		$_selectPageList = '';
+		$_selectPageList = array(''=>'---------------------');
 		foreach($pagesParents as $parentKey=>$pageList)
 		{
 			foreach($pageList as $Page)
@@ -43,7 +43,7 @@ class pluginContact extends Plugin {
 					$_selectPageList[$Page->key()] = $Language->g('Page').': '.$parentTitle.$Page->title();
 				}
 			}
-		}		
+		}			
 		
 		$html  = '<div>';
 		$html .= '<label for="jsemail">'.$Language->get('Email').'</label>';
