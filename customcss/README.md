@@ -8,6 +8,10 @@ Uses the CodeMirror editor (https://codemirror.net/).
 Versions
 --------
 
+0.4.1, May 5, 2017
+- Renaming of the German "Benutzerdefiniertes CSS" to "Custom CSS" (integrity of names).
+- Modification of the description.
+
 0.4, June 20, 2016
 - Addition of the field "compatible" (since v1.4).
 
