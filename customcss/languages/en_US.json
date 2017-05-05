@@ -2,6 +2,6 @@
 	"plugin-data":
 	{
 		"name": "Custom CSS",
-		"description": "Add custom CSS to a theme."
+		"description": "Plugin to modify a theme with own CSS."
 	}
 }
