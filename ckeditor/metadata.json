@@ -2,9 +2,9 @@
 	"author": "Frédéric K.",
 	"email": "stradfred@gmail.com",
 	"website": "http://flatboard.free.fr",
-	"version":"1.6",
-	"releaseDate": "2017-03-04",
+	"version":"1.6.1",
+	"releaseDate": "2017-05-14",
 	"license": "MIT",
-	"compatible": "1.4,1.5.2",
+	"compatible": "1.4,1.5.2,1.6",
 	"notes": ""
 }
