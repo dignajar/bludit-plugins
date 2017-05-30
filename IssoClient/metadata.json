@@ -1,0 +1,10 @@
+{
+	"author": "Max mal Richtig",
+	"email": "max@mal-richtig.de",
+	"website": "https://git.mal-richtig.de/maxmalrichtig/bludit-isso-client",
+	"version": "0.2",
+	"releaseDate": "2017-05-20",
+	"license": "MIT",
+	"compatible": "1.4,1.5.2,1.6,1.6.1,1.6.2",
+	"notes": ""
+}

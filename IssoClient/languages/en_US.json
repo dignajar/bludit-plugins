@@ -1,0 +1,22 @@
+{
+	"plugin-data":
+	{
+		"name": "Isso client",
+		"description": "Use Isso comments in your bludit blog. (This is only a client implementation. You still need an Isso server! Visit posativ.org/isso for more info.) "
+	},
+	"intro-header": "-- See the project page for more info about Isso: https://posativ.org/isso/ --",
+	"enable-on-page": "Enable Isso on pages",
+	"enable-on-post": "Enable Isso on posts",
+	"enable-on-default-page": "Enable Isso on default home page",
+	"path-to-data": "Path to Isso data (e.g. your fcgi script)",
+	"path-to-script": "Path to script source for Isso (e.g. embed.js)",
+	"path-to-css": "Path to custom CSS file",
+	"required-settings": "Required settings",
+	"optional-settings": "Optional settings",
+	"true": "true",
+	"false": "false",
+	"color-code": "colorcode (e.g. \"#2277aa\")",
+	"language-code": "language code (e.g. \"en\")",
+	"number": "number",
+	"no-script-msg": "The comment section powered by Isso can not be shown without javascript!"
+}
