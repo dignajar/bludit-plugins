@@ -11,5 +11,5 @@ At the moment the plugin works only with posts.
 Versions
 --------
 
-1.0, January 16, 2015
+1.0, January 16, 2017
 - Release.
