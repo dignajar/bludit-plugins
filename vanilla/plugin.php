@@ -25,11 +25,14 @@ class pluginVanilla extends Plugin {
 	public function postEnd()
 	{
 		global $Post;
+		global $Url;
 
         $key = $Post->key();
 
+        if ($Url->whereAmI() != 'home') {
+
 		$html = '<div id="vanilla-comments"></div>
-		        <script type="text/javascript">
+		<script type="text/javascript">
 
                 var vanilla_forum_url = "'.$this->getDbField('vanilla-url').'";
                 var vanilla_identifier = "'.$key.'";
@@ -50,5 +53,8 @@ class pluginVanilla extends Plugin {
 
 		return $html;
 
+        	}
+
 	}
+
 }
