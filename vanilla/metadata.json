@@ -5,6 +5,6 @@
 	"version": "1.0",
 	"releaseDate": "2017-01-16",
 	"license": "MIT",
-	"compatible": "1.5.2",
+	"compatible": "1.5.2,1.6",
 	"notes": ""
 }
