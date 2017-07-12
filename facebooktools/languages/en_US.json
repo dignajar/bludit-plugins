@@ -8,5 +8,6 @@
 	"complete-this-field-with-the-facebook-app-id": "Enter your Facebook app ID.",
 	
 	"facebook-share-image": "Standard share image",
-	"complete-this-field-with-the-facebook-share-image": "Upload your standard image that should be displayed when linking your site."
+	"complete-this-field-with-the-facebook-share-image": "Upload your standard image that should be displayed when linking your site.",
+	"enable-facebook-social-comments": "Enable Facebook comments below your articles."
 }

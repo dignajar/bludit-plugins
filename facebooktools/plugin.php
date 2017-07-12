@@ -9,6 +9,7 @@ class pluginFacebookTools extends Plugin {
 			'facebook-app-id'=>'',
 			'facebook-site-url'=>'',
 			'coverImage' => '',
+			'facebook-social-comments' => false,
 		);
 	}
 	
@@ -22,13 +23,10 @@ class pluginFacebookTools extends Plugin {
 		$html .= '<input id="facebook-app-id" type="text" name="facebook-app-id" value="'.$this->getDbField('facebook-app-id').'">';
 		$html .= '<div class="tip">'.$Language->get('complete-this-field-with-the-facebook-app-id').'</div>';
 		$html .= '</div>';
-		
-		$html  = '<div>';
-		$html .= '<label for="facebook-app-id">'.$Language->get('Facebook App ID').'</label>';
-		$html .= '<input id="facebook-app-id" type="text" name="facebook-app-id" value="'.$this->getDbField('facebook-app-id').'">';
-		$html .= '<div class="tip">'.$Language->get('complete-this-field-with-the-facebook-app-id').'</div>';
+		$html .= '<div>';		
+		$html .= '<input name="facebook-social-comments" id="facebook-social-comments" type="checkbox" value="'.$this->getDbField('facebook-social-comments').'" '.($this->getDbField('facebook-social-comments')?'checked':'').'>';
+		$html .= '<label class="forCheckbox" for="facebook-social-comments">'.$Language->get('enable-facebook-social-comments').'</label>';
 		$html .= '</div>';
-
 		
 		echo '<div class="tip">'.$Language->get('complete-this-field-with-the-facebook-share-image').'</div>';
 		echo '<div style="width:200px;" >';
@@ -64,26 +62,42 @@ class pluginFacebookTools extends Plugin {
 			echo '<meta property="og:image" content="'.DOMAIN.HTML_PATH_UPLOADS.$this->getDbField('coverImage').'" />';
 		}
     }
-	
+
 	public function siteBodyBegin() {
 		global $Url;
 		
-		if(Text::isEmpty($this->getDbField('facebook-app-id')) || !($Url->whereAmI()=='home')) {
+		if(Text::isEmpty($this->getDbField('facebook-app-id'))) {
 			return false;
 		}
 		
-		echo '<div id="fb-root"></div>
+		$html = PHP_EOL.'<div id="fb-root"></div>
 		<script>(function(d, s, id) {
 		  var js, fjs = d.getElementsByTagName(s)[0];
 		  if (d.getElementById(id)) return;
 		  js = d.createElement(s); js.id = id;
 		  js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.9&appId='.$this->getDbField('facebook-app-id').'";
 		  fjs.parentNode.insertBefore(js, fjs);
-		}(document, "script", "facebook-jssdk"));</script>';
+		}(document, "script", "facebook-jssdk"));</script>'.PHP_EOL;
+		
+		return $html;
 	}
 	
 	public function siteSidebar() {
 		
+	}
+	
+	/*
+		Adding Facebook Social Plugin Comments to the end of a post
+	*/
+	public function postEnd() {
+		global $Url;
+		
+		if(!($this->getDbField('facebook-social-comments')) || !($Url->whereAmI()=='post')) {
+			return false;
+		}
+		
+		$html = '<div class="fb-comments" data-href="'.DOMAIN.$Url->uri().'" data-numposts="5"></div>';
+		return $html;
 	}
 }
 
