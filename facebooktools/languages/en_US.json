@@ -1,0 +1,13 @@
+{
+	"plugin-data":
+	{
+		"name": "Facebook-Tools",
+		"description": "This tool creates the og meta-tags for your site, allows you to upload an image as standard"
+	},
+	"facebook-app-id": "Facebook app ID",
+	"complete-this-field-with-the-facebook-app-id": "Enter your Facebook app ID.",
+	
+	"facebook-share-image": "Standard share image",
+	"complete-this-field-with-the-facebook-share-image": "Upload your standard image that should be displayed when linking your site.",
+	"enable-facebook-social-comments": "Enable Facebook comments below your articles."
+}
