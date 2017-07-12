@@ -23,7 +23,6 @@ class pluginFacebookTools extends Plugin {
 		$html .= '<input id="facebook-app-id" type="text" name="facebook-app-id" value="'.$this->getDbField('facebook-app-id').'">';
 		$html .= '<div class="tip">'.$Language->get('complete-this-field-with-the-facebook-app-id').'</div>';
 		$html .= '</div>';
-		
 		$html .= '<div>';		
 		$html .= '<input name="facebook-social-comments" id="facebook-social-comments" type="checkbox" value="'.$this->getDbField('facebook-social-comments').'" '.($this->getDbField('facebook-social-comments')?'checked':'').'>';
 		$html .= '<label class="forCheckbox" for="facebook-social-comments">'.$Language->get('enable-facebook-social-comments').'</label>';
@@ -63,11 +62,11 @@ class pluginFacebookTools extends Plugin {
 			echo '<meta property="og:image" content="'.DOMAIN.HTML_PATH_UPLOADS.$this->getDbField('coverImage').'" />';
 		}
     }
-	
+
 	public function siteBodyBegin() {
 		global $Url;
 		
-		if(Text::isEmpty($this->getDbField('facebook-app-id')) || !($Url->whereAmI()=='post')) {
+		if(Text::isEmpty($this->getDbField('facebook-app-id'))) {
 			return false;
 		}
 		
@@ -92,6 +91,11 @@ class pluginFacebookTools extends Plugin {
 	*/
 	public function postEnd() {
 		global $Url;
+		
+		if(!($this->getDbField('facebook-social-comments')) || !($Url->whereAmI()=='post')) {
+			return false;
+		}
+		
 		$html = '<div class="fb-comments" data-href="'.DOMAIN.$Url->uri().'" data-numposts="5"></div>';
 		return $html;
 	}
