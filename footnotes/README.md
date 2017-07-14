@@ -9,8 +9,8 @@ The plugin uses Footnoted from Jacob Heftmann:
 
 https://github.com/jheftmann/footnoted
 
-Use
----
+Usage
+-----
 
 To insert the number of the footnote add ```<sup class="footnoted"></sup>``` to the text.
 
