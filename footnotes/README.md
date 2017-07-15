@@ -1,7 +1,7 @@
 Footnotes
 =========
 
-The plugin allows to add in an easy way footnotes to a text. There is no need for numbering the footnotes.
+The plugin allows to add footnotes in an easy way to a text. There is no need for numbering the footnotes.
 
 The footnotes have a link to go back to the previous reading position.
 
@@ -33,5 +33,5 @@ Add the footnote as element of an ordered list at the end of the text. Give the 
 Versions
 --------
 
-0.1, July, 2017
+0.1, July 15th, 2017
 - Release.
