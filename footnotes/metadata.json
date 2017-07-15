@@ -1,0 +1,10 @@
+{
+	"author": "Clickwork",
+	"email": "egoetschel@clickwork.ch",
+	"website": "https://clickwork.ch",
+	"version": "0.1",
+	"releaseDate": "2017-07-15",
+	"license": "MIT",
+	"compatible": "1.6.2,2.0",
+	"notes": ""
+}
