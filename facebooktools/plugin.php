@@ -1,5 +1,6 @@
 <?php
 
+
 class pluginFacebookTools extends Plugin {
 
 
@@ -24,12 +25,13 @@ class pluginFacebookTools extends Plugin {
 		$html .= '<div class="tip">'.$Language->get('complete-this-field-with-the-facebook-app-id').'</div>';
 		$html .= '</div>';
 		$html .= '<div>';		
-		$html .= '<input name="facebook-social-comments" id="facebook-social-comments" type="checkbox" value="'.$this->getDbField('facebook-social-comments').'" '.($this->getDbField('facebook-social-comments')?'checked':'').'>';
+		$html .= '<input name="facebook-social-comments" id="facebook-social-comments" type="checkbox" value="'.($this->getDbField('facebook-social-comments') ? 'true' : 'false').'" '.($this->getDbField('facebook-social-comments')?'checked':'').'>';
 		$html .= '<label class="forCheckbox" for="facebook-social-comments">'.$Language->get('enable-facebook-social-comments').'</label>';
 		$html .= '</div>';
 		
 		echo '<div class="tip">'.$Language->get('complete-this-field-with-the-facebook-share-image').'</div>';
-		echo '<div style="width:200px;" >';
+		echo '<style>#cover-image-thumbnail {height:249px;background-size:contain;} </style>';
+		echo '<div style="width:476px; height:249px;" >';
 		HTML::bluditCoverImage($this->getDbField('coverImage'));
 		echo '</div >';
 		
@@ -62,7 +64,7 @@ class pluginFacebookTools extends Plugin {
 			echo '<meta property="og:image" content="'.DOMAIN.HTML_PATH_UPLOADS.$this->getDbField('coverImage').'" />';
 		}
     }
-
+	
 	public function siteBodyBegin() {
 		global $Url;
 		
@@ -96,7 +98,7 @@ class pluginFacebookTools extends Plugin {
 			return false;
 		}
 		
-		$html = '<div class="fb-comments" data-href="'.DOMAIN.$Url->uri().'" data-numposts="5"></div>';
+		$html = PHP_EOL.'<div class="fb-comments" data-href="'.DOMAIN.$Url->uri().'" data-numposts="5"></div>'.PHP_EOL;
 		return $html;
 	}
 }
