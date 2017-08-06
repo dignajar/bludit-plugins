@@ -2,6 +2,6 @@
 	"plugin-data":
 	{
 		"name": "fancyBox",
-		"description": "jQuery lightbox script for displaying images, videos and more. (http://fancyapps.com/fancybox/3/)"
+		"description": "jQuery lightbox script for displaying images, videos and more. (http://fancyapps.com/fancybox/)"
 	}
 }
