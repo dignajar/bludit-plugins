@@ -1,0 +1,10 @@
+{
+    "author": "LHenriksson",
+    "email": "contact@lhenriksson.s",
+    "website": "https://lhenriksson.se",
+    "version": "1.0",
+    "releaseDate": "2017-08-01",
+    "license": "MIT",
+	"compatible": "1.5.2,1.6,1.6.1,1.6.2",
+    "notes": ""
+}
