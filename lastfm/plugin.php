@@ -35,11 +35,10 @@ class pluginLastFM extends Plugin {
     }
 
     public function siteHead() {
-    		$head = '<link rel="stylesheet" href="'.$this->htmlPath().'css/main.css">';
+    		$head = '<link rel="stylesheet" href="'.$this->htmlPath().'css/lastfm.css">'.PHP_EOL;
     		
     		if($this->getDbField('autoupdate')) {
-    		$head .= "\n";
-    		$head .= '<script src="'.$this->htmlPath().'js/lastfm.js" id="lastFmUpdate" data-t="'.$this->getDbField('plugintext').'" data-k="'.$this->getDbField('apikey').'" data-u="'.$this->getDbField('username').'"></script>';
+    			$head .= '<script src="'.$this->htmlPath().'js/lastfm.js"></script>';
     		}
     		return $head;
     }
@@ -147,6 +146,16 @@ class pluginLastFM extends Plugin {
 		return $html;
 	}
 
+		public function afterFormSave() {
+		
+			$fp = fopen(__DIR__.'/config.php', 'w'); 
+			fwrite($fp, '<?php'.PHP_EOL.'$config = '.var_export($_POST, TRUE).';'); 
+			fclose($fp);
+		
+		}
+	
+	
+	
 }
 
 ?>

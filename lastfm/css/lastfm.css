@@ -1,0 +1,16 @@
+.LastFmNowPlaying:after {
+    content: '.';
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+.LastFmNowPlaying {
+    max-width: 1040px;
+    padding: 10px 20px;
+    margin: 0 auto -30px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

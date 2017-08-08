@@ -1,8 +1,9 @@
 <?php
-
-	$user = $_POST['u'];
-	$key = $_POST['k'];
-	$text = $_POST['t'];
+	include __DIR__.'/config.php';
+	
+	$user = $config['username'];
+	$key = $config['apikey'];
+	$text = $config['plugintext'];
 
         if(empty($user) | empty($key)) return false;
     		$track = getTrackInfo($user, $key);
