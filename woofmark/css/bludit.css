@@ -1,0 +1,29 @@
+.parent {
+	background-color: #a469bc;
+	margin: 50px 0;
+	padding: 20px;
+}
+
+.wk-container {
+	
+}
+
+.wk-wysiwyg {
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	padding: 10px;
+	overflow-y: scroll;
+	max-height: 600px;
+}
+
+
+.wk-commands,
+.wk-switchboard {
+	display: inline-block;
+}
+
+.wk-command,
+.wk-mode {
+	margin-right: 4px;
+	margin-top: 10px;
+}
