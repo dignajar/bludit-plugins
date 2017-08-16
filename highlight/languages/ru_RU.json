@@ -1,0 +1,8 @@
+{
+	"plugin-data":
+	{
+		"name": "Highlight Bludit",
+		"description": "Подсвети свой код"
+	},
+  "choose-theme": "Выбери тему подсветки кода"
+}
