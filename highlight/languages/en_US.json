@@ -1,8 +1,9 @@
 {
 	"plugin-data":
 	{
-		"name": "Highlight Bludit",
+		"name": "Highlight",
 		"description": "Highlight your code"
 	},
-  "choose-theme": "Choose highlight code theme"
+  "choose-theme": "Choose highlight code theme",
+  "highlight example": "Highlight example"
 }

@@ -36,12 +36,10 @@ The plugin automatically formats the content.
 Versions
 --------
 
-Versions
---------
-
-1.0, August 16, 2017
+1.1, August 17, 2017
 - Add README.md
 - Add several themes
+- Add auto-reloading styles in plug-in settings
 
-1.0, August 16, 2017
+1.0, August 15, 2017
 - Release.
