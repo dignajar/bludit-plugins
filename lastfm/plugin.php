@@ -2,45 +2,49 @@
 
 class pluginLastFM extends Plugin {
 
-		public function siteBodyBegin() {
-			if($this->getDbField('position') == 'bodyBegin') {
-				return $this->createPlugin();
-			}
+	public function siteBodyBegin() {
+		if($this->getDbField('position') == 'bodyBegin') {
+			return $this->createPlugin();
 		}
+	}
 		
-		public function siteBodyEnd() {
-			if($this->getDbField('position') == 'bodyEnd') {
-				return $this->createPlugin();
-			}
+	public function siteBodyEnd() {
+		if($this->getDbField('position') == 'bodyEnd') {
+			return $this->createPlugin();
 		}
+	}
 		
-		public function siteSidebar() {
-			if($this->getDbField('position') == 'sidebar') {
-				return $this->createPlugin();
-			}
+	public function siteSidebar() {
+		if($this->getDbField('position') == 'sidebar') {
+			return $this->createPlugin();
 		}
+	}
 		
-		protected function createPlugin() {
+	protected function createPlugin() {
 
-        if(empty($this->getDbField('username')) | empty($this->getDbField('apikey'))) return false;
-    		$track = $this->getTrackInfo();
+       if(empty($this->getDbField('username')) | empty($this->getDbField('apikey'))) return false;
+    	$track = $this->getTrackInfo();
 
-			if(!$track) return false;
+		if(!$track) return false;
 
-			$pluginText = preg_replace_callback("/{(\w+)}/", function($m) use($track){
-				return $track[$m[1]];
-			}, $this->getDbField('plugintext'));
+		$pluginText = preg_replace_callback("/{(\w+)}/", function($m) use($track){
+			return $track[$m[1]];
+		}, $this->getDbField('plugintext'));
 
-			return '<div class="plugin LastFmNowPlaying">'.$pluginText.'</div>';
+		return '<div class="plugin LastFmNowPlaying">'.$pluginText.'</div>';
     }
 
     public function siteHead() {
-    		$head = '<link rel="stylesheet" href="'.$this->htmlPath().'css/lastfm.css">'.PHP_EOL;
+    	$head = '<link rel="stylesheet" href="'.$this->htmlPath().'css/lastfm.css">'.PHP_EOL;
     		
-    		if($this->getDbField('autoupdate')) {
-    			$head .= '<script src="'.$this->htmlPath().'js/lastfm.js"></script>';
-    		}
-    		return $head;
+    	if($this->getDbField('autoupdate')) {
+    		$head .= '<script src="'.$this->htmlPath().'js/lastfm.js"></script>'.PHP_EOL;
+    	}
+
+    	if(!empty($this->getDbField('customCSS'))) {
+    		$head .= '<style>.plugin.LastFmNowPlaying {'.$this->getDbField('customCSS').'}</style>'.PHP_EOL;
+    	}
+    	return $head;
     }
 
     protected function getTrackInfo() {
@@ -77,10 +81,11 @@ class pluginLastFM extends Plugin {
 		$this->dbFields = array(
 			'apikey'=>'',
 			'username'=>'',
-        'plugintext'=>'♪ Now playing {track} by {artist} from {album}',
+        	'plugintext'=>'♪ Now playing {track} by {artist} from {album}',
 			'showLatest'=>false,
 			'position'=>'bodyBegin',
-			'autoupdate'=>false
+			'autoupdate'=>false,
+			'customCSS'=>''
 		);
 	}
 
@@ -131,7 +136,7 @@ class pluginLastFM extends Plugin {
 		$html .= '</div>';
 
 		$html .= '<div>';
-		$html .= '<label>'.$Language->get('Auto update trackinfo?').' <small>Your API key will be visible in code</small></label>';
+		$html .= '<label>'.$Language->get('Auto update trackinfo?').'</label>';
 		$html .= '<select name="autoupdate">';
 		if($this->getDbField('autoupdate')) {
 			$html .= '<option value="1" selected>Yes</option>';
@@ -143,16 +148,21 @@ class pluginLastFM extends Plugin {
 		$html .= '</select>';
 		$html .= '</div>';
 
+		$html .= '<div>';
+		$html .= '<label>'.$Language->get('Custom CSS').'</label>';
+		$html .= '<textarea name="customCSS" placeholder="Custom CSS">'.$this->getDbField('customCSS').'</textarea>';
+		$html .= '</div>';
+
 		return $html;
 	}
 
-		public function afterFormSave() {
+	public function afterFormSave() {
 		
-			$fp = fopen(__DIR__.'/config.php', 'w'); 
-			fwrite($fp, '<?php'.PHP_EOL.'$config = '.var_export($_POST, TRUE).';'); 
-			fclose($fp);
-		
-		}
+		$fp = fopen(__DIR__.'/config.php', 'w'); 
+		fwrite($fp, '<?php'.PHP_EOL.'$config = '.var_export($_POST, TRUE).';'); 
+		fclose($fp);
+	
+	}
 	
 	
 	
