@@ -1,11 +1,10 @@
-[Bludit Plugins](https://plugins.bludit.com)
-================================
+**--------------------------------------------------**
+
 **---> This repository is no longer maintained. <---**
 
-These plugins are only compatible with Bludit v1.x., NOT for Bludit v2.x.
+**--------------------------------------------------**
 
-The new repository for Bludit plugins
-- https://github.com/bludit/plugins-repository
+These plugins are only compatible with Bludit v1.x.
 
-Official page of plugins
+You can find the new themes for the new version of Bludit here:
 - https://plugins.bludit.com
